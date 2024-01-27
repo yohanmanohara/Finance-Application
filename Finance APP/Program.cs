@@ -17,8 +17,7 @@ namespace Finance_APP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            fffffff
-            Console.WriteLine("Hello World");
+            
         }
 
     }
