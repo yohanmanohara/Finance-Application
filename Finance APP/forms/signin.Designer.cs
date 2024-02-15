@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP
 {
-    partial class Form1
+    partial class signin
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // signin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.Name = "signin";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

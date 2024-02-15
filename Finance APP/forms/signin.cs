@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finance_APP
 {
-    public partial class Form1 : Form
+    public partial class signin : Form
     {
-        public Form1()
+        public signin()
         {
             InitializeComponent();
         }
