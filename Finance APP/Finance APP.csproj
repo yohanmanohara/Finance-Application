@@ -51,15 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\signin.cs">
+    <Compile Include="window_forms\signin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\signin.Designer.cs">
+    <Compile Include="window_forms\signin.Designer.cs">
       <DependentUpon>signin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="forms\signin.resx">
+    <EmbeddedResource Include="window_forms\signin.resx">
       <DependentUpon>signin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
