@@ -90,5 +90,13 @@ namespace Finance_APP.window_forms
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login login = new login();
+            login.Show();
+            
+        }
     }
 }

@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="window_forms\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="window_forms\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="window_forms\loginas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_forms\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\loginas.resx">
       <DependentUpon>loginas.cs</DependentUpon>
@@ -160,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus-circle 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_Icon-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
