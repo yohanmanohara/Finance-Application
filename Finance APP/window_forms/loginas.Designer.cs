@@ -58,11 +58,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.label1.Location = new System.Drawing.Point(264, 52);
+            this.label1.Location = new System.Drawing.Point(170, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 77);
+            this.label1.Size = new System.Drawing.Size(245, 86);
             this.label1.TabIndex = 2;
             this.label1.Text = "Login !";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -72,7 +72,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.label2.Location = new System.Drawing.Point(335, 129);
+            this.label2.Location = new System.Drawing.Point(395, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 3;
@@ -120,6 +120,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Finance_APP.Properties.Resources.Group_33;
             this.pictureBox7.Location = new System.Drawing.Point(586, 165);
             this.pictureBox7.Name = "pictureBox7";
@@ -130,6 +131,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Finance_APP.Properties.Resources.Group_26;
             this.pictureBox6.Location = new System.Drawing.Point(586, 326);
             this.pictureBox6.Name = "pictureBox6";
@@ -140,6 +142,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::Finance_APP.Properties.Resources.Group_25;
             this.pictureBox5.Location = new System.Drawing.Point(406, 326);
             this.pictureBox5.Name = "pictureBox5";
@@ -150,6 +153,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Finance_APP.Properties.Resources.Group_23;
             this.pictureBox4.Location = new System.Drawing.Point(406, 165);
             this.pictureBox4.Name = "pictureBox4";

@@ -88,7 +88,7 @@ namespace Finance_APP.window_forms
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Form.
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
