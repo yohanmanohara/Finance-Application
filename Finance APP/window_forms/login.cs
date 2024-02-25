@@ -53,7 +53,9 @@ namespace Finance_APP.window_forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            welcome welcome = new welcome();
+            welcome.Show();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
