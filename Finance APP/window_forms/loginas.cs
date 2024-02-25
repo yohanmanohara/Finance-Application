@@ -98,5 +98,12 @@ namespace Finance_APP.window_forms
             login.Show();
             
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            adminlogin adminlogin = new adminlogin();
+            adminlogin.Show();
+        }
     }
 }

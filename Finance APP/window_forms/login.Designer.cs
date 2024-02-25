@@ -100,6 +100,7 @@
             this.label1.Size = new System.Drawing.Size(245, 86);
             this.label1.TabIndex = 23;
             this.label1.Text = "Login !";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -225,7 +226,7 @@
             // 
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = global::Finance_APP.Properties.Resources.minus_circle_1;
-            this.pictureBox9.Location = new System.Drawing.Point(679, 12);
+            this.pictureBox9.Location = new System.Drawing.Point(684, 12);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(28, 28);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +238,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Finance_APP.Properties.Resources.close_circle_icon_2048x2048_jpy4961c_1;
-            this.pictureBox1.Location = new System.Drawing.Point(713, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(718, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

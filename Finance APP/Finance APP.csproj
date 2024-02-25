@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="window_forms\adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="window_forms\adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="window_forms\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_forms\adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
