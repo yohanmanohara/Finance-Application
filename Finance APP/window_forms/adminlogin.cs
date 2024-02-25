@@ -53,5 +53,12 @@ namespace Finance_APP.window_forms
             time.Text = DateTime.Now.ToString("hh:mm:ss");
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginas lo = new loginas(); 
+            lo.Show();
+        }
     }
 }

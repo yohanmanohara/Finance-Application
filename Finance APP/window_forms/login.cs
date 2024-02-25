@@ -74,5 +74,12 @@ namespace Finance_APP.window_forms
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginas loginas = new loginas();
+            loginas.Show();
+        }
     }
 }
