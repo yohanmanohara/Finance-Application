@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP
+namespace Finance_APP.window_forms
 {
-    public partial class signin : Form
+    public partial class loginas : Form
     {
-        public signin()
+        public loginas()
         {
             InitializeComponent();
         }

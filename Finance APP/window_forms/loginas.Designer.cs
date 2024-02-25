@@ -1,6 +1,6 @@
-﻿namespace Finance_APP
+﻿namespace Finance_APP.window_forms
 {
-    partial class signin
+    partial class loginas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // signin
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "signin";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.Text = "loginas";
         }
 
         #endregion
     }
 }
-
