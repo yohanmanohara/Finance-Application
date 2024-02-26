@@ -86,12 +86,17 @@ namespace Finance_APP.window_forms
                     this.Hide();
                     admindashbord admindashbord = new admindashbord();
                     admindashbord.Show();
- ;
+
+                    
+
+                    
 
                 }
                 else
                 {
-                    MessageBox.Show("Check the values");
+                    this.Hide();
+                    erropop successpop = new erropop();
+                    successpop.Show();
                 }
 
 
