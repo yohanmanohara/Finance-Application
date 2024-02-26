@@ -83,7 +83,10 @@ namespace Finance_APP.window_forms
                 {
                     username = u_name.Text;
                     password = u_password.Text;
-                    MessageBox.Show("connected sucsee fully");
+                    this.Hide();
+                    admindashbord admindashbord = new admindashbord();
+                    admindashbord.Show();
+ ;
 
                 }
                 else
@@ -95,7 +98,7 @@ namespace Finance_APP.window_forms
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("eroooo");
+                MessageBox.Show("Error: " + ex.Message);
             }
             finally
             {

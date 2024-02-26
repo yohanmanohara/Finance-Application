@@ -34,6 +34,7 @@
             this.date = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.date2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.time = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.time = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -105,6 +105,19 @@
             this.date2.Size = new System.Drawing.Size(56, 34);
             this.date2.TabIndex = 13;
             this.date2.Text = "Date";
+            this.date2.Click += new System.EventHandler(this.date2_Click);
+            // 
+            // time
+            // 
+            this.time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.time.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(48)))), ((int)(((byte)(68)))));
+            this.time.Location = new System.Drawing.Point(408, 492);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(66, 28);
+            this.time.TabIndex = 11;
+            this.time.Text = "Time";
+            this.time.Click += new System.EventHandler(this.dd_Click);
             // 
             // pictureBox9
             // 
@@ -207,18 +220,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
-            // 
-            // time
-            // 
-            this.time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.time.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(48)))), ((int)(((byte)(68)))));
-            this.time.Location = new System.Drawing.Point(408, 492);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(66, 28);
-            this.time.TabIndex = 11;
-            this.time.Text = "Time";
-            this.time.Click += new System.EventHandler(this.dd_Click);
             // 
             // loginas
             // 

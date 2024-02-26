@@ -105,5 +105,10 @@ namespace Finance_APP.window_forms
             adminlogin adminlogin = new adminlogin();
             adminlogin.Show();
         }
+
+        private void date2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
