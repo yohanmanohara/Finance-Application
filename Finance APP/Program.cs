@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finance_APP.window_forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Finance_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new signin());
+            Application.Run(new loginas());
         }
     }
 }
