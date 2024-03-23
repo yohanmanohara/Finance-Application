@@ -40,7 +40,7 @@ namespace Finance_APP.window_forms
            
             
             this.Close();
-            adminlogin adminlogin = new adminlogin();
+            login adminlogin = new login();
             adminlogin.Show();  
             
         }

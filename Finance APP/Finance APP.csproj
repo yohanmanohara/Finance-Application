@@ -110,29 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\adminlogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="window_forms\adminlogin.Designer.cs">
-      <DependentUpon>adminlogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="window_forms\admindashbord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="window_forms\admindashbord.Designer.cs">
-      <DependentUpon>admindashbord.cs</DependentUpon>
-    </Compile>
     <Compile Include="window_forms\login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="window_forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="window_forms\loginas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="window_forms\loginas.Designer.cs">
-      <DependentUpon>loginas.cs</DependentUpon>
     </Compile>
     <Compile Include="window_forms\erropop.cs">
       <SubType>Form</SubType>
@@ -151,17 +133,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\admindashbord.resx">
-      <DependentUpon>admindashbord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\adminlogin.resx">
-      <DependentUpon>adminlogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="window_forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\loginas.resx">
-      <DependentUpon>loginas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\erropop.resx">
       <DependentUpon>erropop.cs</DependentUpon>
