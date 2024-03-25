@@ -62,7 +62,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.label1.Location = new System.Drawing.Point(278, 44);
+            this.label1.Location = new System.Drawing.Point(371, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 65);
             this.label1.TabIndex = 24;
@@ -276,12 +276,14 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Finance_APP.Properties.Resources.image_4;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(107, 91);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox9
             // 

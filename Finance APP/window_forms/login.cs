@@ -128,5 +128,10 @@ namespace Finance_APP.window_forms
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
