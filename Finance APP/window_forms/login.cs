@@ -71,11 +71,13 @@ namespace Finance_APP.window_forms
             String username, password;
             username = u_name.Text;
             password = u_password.Text;
+          
 
 
             try 
             {
-                String query = "SELECT * FROM [admintable] WHERE username='" + u_name.Text + "' AND password='" + u_password.Text + "' ";
+
+                String query = "SELECT * FROM [userdb] WHERE username='" + u_name.Text + "' AND password='" + u_password.Text + "' ";
                 SqlDataAdapter sda = new SqlDataAdapter(query,conn);
                 DataTable dt = new DataTable();
                 sda.Fill( dt );
@@ -84,7 +86,10 @@ namespace Finance_APP.window_forms
                     username = u_name.Text;
                     password = u_password.Text;
                     this.Hide();
-                   ShowDialog();
+                   Maindashbord maindashbord = new Maindashbord();
+                    maindashbord.ShowDialog();
+                   
+                 
 
                     
 
@@ -94,8 +99,8 @@ namespace Finance_APP.window_forms
                 else
                 {
                     this.Hide();
-                    erropop successpop = new erropop();
-                    successpop.Show();
+                    erropop erropop = new erropop();
+                    erropop.ShowDialog();
                 }
 
 
@@ -115,6 +120,11 @@ namespace Finance_APP.window_forms
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_Load(object sender, EventArgs e)
         {
 
         }

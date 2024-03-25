@@ -88,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maindashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maindashbord.Designer.cs">
+      <DependentUpon>Maindashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,12 +128,9 @@
     <Compile Include="window_forms\erropop.Designer.cs">
       <DependentUpon>erropop.cs</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\welcome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="window_forms\welcome.Designer.cs">
-      <DependentUpon>welcome.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Maindashbord.resx">
+      <DependentUpon>Maindashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -138,9 +141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\erropop.resx">
       <DependentUpon>erropop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\welcome.resx">
-      <DependentUpon>welcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
     <None Include="Keygen.exe.config" />
@@ -185,9 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image 11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_3-removebg-preview 1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot_2024-02-25_211554-removebg-preview 1.png" />
@@ -242,12 +239,18 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\dashboard_line.png" />
+    <None Include="Resources\perm_identity_24px.png" />
+    <None Include="Resources\close-circle-icon-2048x2048-d1.png" />
     <None Include="Resources\Group 38.png" />
     <None Include="Resources\k.png" />
     <None Include="Resources\image 4.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
