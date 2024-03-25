@@ -32,7 +32,7 @@ namespace Finance_APP.window_forms
         int nHeightEllipse // height of ellipse
              );
 
-        SqlConnection conn = new SqlConnection(@"Server=tcp:financensbm.database.windows.net,1433;Initial Catalog=finance;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=""Active Directory Default;");
+        SqlConnection conn = new SqlConnection(@"Data Source=financensbm.database.windows.net;Initial Catalog=finance;Persist Security Info=True;User ID=financeadmin;Password=finance2024$;Encrypt=True");
 
 
 
@@ -84,8 +84,7 @@ namespace Finance_APP.window_forms
                     username = u_name.Text;
                     password = u_password.Text;
                     this.Hide();
-                    admindashbord admindashbord = new admindashbord();
-                    admindashbord.Show();
+                   ShowDialog();
 
                     
 
