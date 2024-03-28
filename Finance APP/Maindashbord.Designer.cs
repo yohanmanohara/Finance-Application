@@ -53,7 +53,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(73)))), ((int)(((byte)(182)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnDeposit);
             this.panel1.Controls.Add(this.btnTransfer);
             this.panel1.Controls.Add(this.btnWithdrawal);
@@ -72,65 +74,81 @@
             // 
             // btnDeposit
             // 
+            this.btnDeposit.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeposit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDeposit.BorderRadius = 15;
+            this.btnDeposit.BorderThickness = 3;
             this.btnDeposit.CheckedState.Parent = this.btnDeposit;
             this.btnDeposit.CustomImages.Parent = this.btnDeposit;
-            this.btnDeposit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(62)))), ((int)(((byte)(234)))));
+            this.btnDeposit.FillColor = System.Drawing.Color.Transparent;
             this.btnDeposit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.Color.White;
             this.btnDeposit.HoverState.Parent = this.btnDeposit;
-            this.btnDeposit.Location = new System.Drawing.Point(6, 440);
+            this.btnDeposit.Location = new System.Drawing.Point(24, 437);
             this.btnDeposit.Name = "btnDeposit";
+            this.btnDeposit.PressedColor = System.Drawing.Color.White;
             this.btnDeposit.ShadowDecoration.Parent = this.btnDeposit;
-            this.btnDeposit.Size = new System.Drawing.Size(322, 66);
+            this.btnDeposit.Size = new System.Drawing.Size(262, 65);
             this.btnDeposit.TabIndex = 12;
             this.btnDeposit.Text = "Deposit";
             // 
             // btnTransfer
             // 
+            this.btnTransfer.BackColor = System.Drawing.Color.Transparent;
+            this.btnTransfer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnTransfer.BorderRadius = 15;
+            this.btnTransfer.BorderThickness = 3;
             this.btnTransfer.CheckedState.Parent = this.btnTransfer;
             this.btnTransfer.CustomImages.Parent = this.btnTransfer;
-            this.btnTransfer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(62)))), ((int)(((byte)(234)))));
+            this.btnTransfer.FillColor = System.Drawing.Color.Transparent;
             this.btnTransfer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransfer.ForeColor = System.Drawing.Color.White;
             this.btnTransfer.HoverState.Parent = this.btnTransfer;
-            this.btnTransfer.Location = new System.Drawing.Point(6, 357);
+            this.btnTransfer.Location = new System.Drawing.Point(24, 355);
             this.btnTransfer.Name = "btnTransfer";
+            this.btnTransfer.PressedColor = System.Drawing.Color.White;
             this.btnTransfer.ShadowDecoration.Parent = this.btnTransfer;
-            this.btnTransfer.Size = new System.Drawing.Size(322, 66);
+            this.btnTransfer.Size = new System.Drawing.Size(262, 65);
             this.btnTransfer.TabIndex = 11;
             this.btnTransfer.Text = "Transfer";
             // 
             // btnWithdrawal
             // 
+            this.btnWithdrawal.BackColor = System.Drawing.Color.Transparent;
+            this.btnWithdrawal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnWithdrawal.BorderRadius = 15;
+            this.btnWithdrawal.BorderThickness = 3;
             this.btnWithdrawal.CheckedState.Parent = this.btnWithdrawal;
             this.btnWithdrawal.CustomImages.Parent = this.btnWithdrawal;
-            this.btnWithdrawal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(62)))), ((int)(((byte)(234)))));
+            this.btnWithdrawal.FillColor = System.Drawing.Color.Transparent;
             this.btnWithdrawal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdrawal.ForeColor = System.Drawing.Color.White;
+            this.btnWithdrawal.ForeColor = System.Drawing.Color.Black;
             this.btnWithdrawal.HoverState.Parent = this.btnWithdrawal;
-            this.btnWithdrawal.Location = new System.Drawing.Point(7, 272);
+            this.btnWithdrawal.Location = new System.Drawing.Point(24, 272);
             this.btnWithdrawal.Name = "btnWithdrawal";
+            this.btnWithdrawal.PressedColor = System.Drawing.Color.White;
             this.btnWithdrawal.ShadowDecoration.Parent = this.btnWithdrawal;
-            this.btnWithdrawal.Size = new System.Drawing.Size(322, 66);
+            this.btnWithdrawal.Size = new System.Drawing.Size(262, 65);
             this.btnWithdrawal.TabIndex = 10;
             this.btnWithdrawal.Text = "Withdrawal";
             // 
             // btnCreateAC
             // 
+            this.btnCreateAC.BackColor = System.Drawing.Color.Transparent;
+            this.btnCreateAC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCreateAC.BorderRadius = 15;
+            this.btnCreateAC.BorderThickness = 3;
             this.btnCreateAC.CheckedState.Parent = this.btnCreateAC;
             this.btnCreateAC.CustomImages.Parent = this.btnCreateAC;
-            this.btnCreateAC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(62)))), ((int)(((byte)(234)))));
+            this.btnCreateAC.FillColor = System.Drawing.Color.Transparent;
             this.btnCreateAC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAC.ForeColor = System.Drawing.Color.White;
+            this.btnCreateAC.ForeColor = System.Drawing.Color.Black;
             this.btnCreateAC.HoverState.Parent = this.btnCreateAC;
-            this.btnCreateAC.Location = new System.Drawing.Point(7, 190);
+            this.btnCreateAC.Location = new System.Drawing.Point(24, 192);
             this.btnCreateAC.Name = "btnCreateAC";
+            this.btnCreateAC.PressedColor = System.Drawing.Color.White;
             this.btnCreateAC.ShadowDecoration.Parent = this.btnCreateAC;
-            this.btnCreateAC.Size = new System.Drawing.Size(322, 66);
+            this.btnCreateAC.Size = new System.Drawing.Size(262, 65);
             this.btnCreateAC.TabIndex = 8;
             this.btnCreateAC.Text = "Create New Account";
             this.btnCreateAC.Click += new System.EventHandler(this.btnCreateAC_Click);
@@ -143,7 +161,7 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(112, 86);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(91, 33);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(111, 42);
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "System";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,6 +171,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Finance_APP.Properties.Resources.dashboard_line1;
             this.pictureBox3.Location = new System.Drawing.Point(52, 134);
             this.pictureBox3.Name = "pictureBox3";
@@ -169,7 +188,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 51);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(251, 33);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(307, 42);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Finance Manegment \r\n";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,6 +199,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Finance_APP.Properties.Resources.perm_identity_24px;
             this.pictureBox2.Location = new System.Drawing.Point(273, 718);
@@ -191,6 +211,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::Finance_APP.Properties.Resources.close_circle_icon_2048x2048_d1;
@@ -212,7 +233,7 @@
             // 
             // Maindashbord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1238, 777);
             this.Controls.Add(this.panel2);
