@@ -133,5 +133,10 @@ namespace Finance_APP.window_forms
         {
 
         }
+
+        private void u_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

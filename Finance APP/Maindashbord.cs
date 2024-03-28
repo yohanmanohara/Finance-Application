@@ -1,4 +1,5 @@
-﻿using Finance_APP.window_forms;
+﻿using Finance_APP.pages;
+using Finance_APP.window_forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,6 +81,18 @@ namespace Finance_APP
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnCreateAC_Click(object sender, EventArgs e)
+        {
+            CreateAccount f = new CreateAccount();
+            f.Dock = DockStyle.Fill;
+            this.panel2.Controls.Add(f);
+            this.panel2.Tag = f;
+            f.Show();
+
+
 
         }
     }
