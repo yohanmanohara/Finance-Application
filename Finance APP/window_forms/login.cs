@@ -71,48 +71,57 @@ namespace Finance_APP.window_forms
             String username, password;
             username = u_name.Text;
             password = u_password.Text;
-          
 
-
-            try 
+            if (username == "" || password=="")
             {
-
-                String query = "SELECT * FROM [userdb] WHERE username='" + u_name.Text + "' AND password='" + u_password.Text + "' ";
-                SqlDataAdapter sda = new SqlDataAdapter(query,conn);
-                DataTable dt = new DataTable();
-                sda.Fill( dt );
-                if(dt.Rows.Count > 0)
-                {
-                    username = u_name.Text;
-                    password = u_password.Text;
-                    this.Hide();
-                   Maindashbord maindashbord = new Maindashbord();
-                    maindashbord.ShowDialog();
-                   
-                 
-
-                    
-
-                    
-
-                }
-                else
-                {
-                    this.Hide();
-                    erropop erropop = new erropop();
-                    erropop.ShowDialog();
-                }
-
+                this.Hide();
+                erropop erropop = new erropop();
+                erropop.ShowDialog();
 
             }
-            catch (Exception ex) 
+            else
             {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
 
+                try
+                {
+
+                    String query = "SELECT * FROM [userdb] WHERE username='" + u_name.Text + "' AND password='" + u_password.Text + "' ";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    if (dt.Rows.Count > 0)
+                    {
+                        username = u_name.Text;
+                        password = u_password.Text;
+                        this.Hide();
+                        Maindashbord maindashbord = new Maindashbord();
+                        maindashbord.ShowDialog();
+
+
+
+
+
+
+
+                    }
+                    else
+                    {
+                        this.Hide();
+                        erropop erropop = new erropop();
+                        erropop.ShowDialog();
+                    }
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+
+                }
             }
 
 
