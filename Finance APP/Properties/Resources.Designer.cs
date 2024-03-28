@@ -63,6 +63,16 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_circle_icon_2048x2048_d1 {
+            get {
+                object obj = ResourceManager.GetObject("close-circle-icon-2048x2048-d1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_circle_icon_2048x2048_jpy4961c_1 {
             get {
                 object obj = ResourceManager.GetObject("close_circle_icon_2048x2048_jpy4961c_1", resourceCulture);
@@ -76,6 +86,26 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap d81837609ad2fa0c60e9f0f51e98ea67_removebg_preview_1 {
             get {
                 object obj = ResourceManager.GetObject("d81837609ad2fa0c60e9f0f51e98ea67_removebg_preview_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dashboard_line {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dashboard_line1 {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_line1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,16 +193,6 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap image_3_removebg_preview_1 {
-            get {
-                object obj = ResourceManager.GetObject("image_3_removebg_preview_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap image_4 {
             get {
                 object obj = ResourceManager.GetObject("image_4", resourceCulture);
@@ -216,6 +236,16 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap minus_circle_1 {
             get {
                 object obj = ResourceManager.GetObject("minus_circle_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perm_identity_24px {
+            get {
+                object obj = ResourceManager.GetObject("perm_identity_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
