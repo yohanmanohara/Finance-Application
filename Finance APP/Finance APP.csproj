@@ -140,6 +140,12 @@
     <Compile Include="window_forms\erropop.Designer.cs">
       <DependentUpon>erropop.cs</DependentUpon>
     </Compile>
+    <Compile Include="window_forms\logoutpopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="window_forms\logoutpopup.Designer.cs">
+      <DependentUpon>logoutpopup.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\erropop.resx">
       <DependentUpon>erropop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_forms\logoutpopup.resx">
+      <DependentUpon>logoutpopup.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
     <None Include="Keygen.exe.config" />
