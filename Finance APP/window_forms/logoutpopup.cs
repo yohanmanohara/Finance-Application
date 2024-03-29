@@ -41,7 +41,10 @@ namespace Finance_APP.window_forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
+
+         Application.Exit();
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
