@@ -58,7 +58,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -88,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maindashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maindashbord.Designer.cs">
+      <DependentUpon>Maindashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +108,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Create customer account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Create customer account.Designer.cs">
+      <DependentUpon>Create customer account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\CreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,12 +140,21 @@
     <Compile Include="window_forms\erropop.Designer.cs">
       <DependentUpon>erropop.cs</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\welcome.cs">
+    <Compile Include="window_forms\logoutpopup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window_forms\welcome.Designer.cs">
-      <DependentUpon>welcome.cs</DependentUpon>
+    <Compile Include="window_forms\logoutpopup.Designer.cs">
+      <DependentUpon>logoutpopup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Maindashbord.resx">
+      <DependentUpon>Maindashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Create customer account.resx">
+      <DependentUpon>Create customer account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -139,8 +166,8 @@
     <EmbeddedResource Include="window_forms\erropop.resx">
       <DependentUpon>erropop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\welcome.resx">
-      <DependentUpon>welcome.cs</DependentUpon>
+    <EmbeddedResource Include="window_forms\logoutpopup.resx">
+      <DependentUpon>logoutpopup.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
     <None Include="Keygen.exe.config" />
@@ -187,9 +214,6 @@
     <None Include="Resources\image 11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image_3-removebg-preview 1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Screenshot_2024-02-25_211554-removebg-preview 1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +256,7 @@
     <None Include="Resources\Lock_Icon-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Guna.UI2.dll" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -242,6 +267,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\dashboard_line.png" />
+    <None Include="Resources\perm_identity_24px.png" />
+    <None Include="Resources\close-circle-icon-2048x2048-d1.png" />
     <None Include="Resources\Group 38.png" />
     <None Include="Resources\k.png" />
     <None Include="Resources\image 4.png" />
@@ -249,5 +277,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
