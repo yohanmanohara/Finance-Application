@@ -121,7 +121,7 @@ namespace Finance_APP
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
-            branchofficer f = new branchofficer();
+            cashierview f = new cashierview();
             f.Dock = DockStyle.Fill;
             this.guna2Panel2.Controls.Add(f);
             this.guna2Panel2.Tag = f;

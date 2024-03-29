@@ -26,5 +26,15 @@ namespace Finance_APP.pages.dasbordpanel
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
