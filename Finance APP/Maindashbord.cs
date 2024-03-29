@@ -1,4 +1,5 @@
 ﻿using Finance_APP.pages;
+using Finance_APP.pages.dasbordpanel;
 using Finance_APP.window_forms;
 using System;
 using System.Collections.Generic;
@@ -116,6 +117,15 @@ namespace Finance_APP
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+            branchofficer f = new branchofficer();
+            f.Dock = DockStyle.Fill;
+            this.guna2Panel2.Controls.Add(f);
+            this.guna2Panel2.Tag = f;
+            f.Show();
         }
     }
 }
