@@ -95,5 +95,27 @@ namespace Finance_APP
 
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            logoutpopup logoutpopup = new logoutpopup(); // Creates an instance of the logoutpopup class
+            logoutpopup.ShowDialog(); //  
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
