@@ -43,13 +43,22 @@ namespace Finance_APP.window_forms
         {
             
 
-         Application.Exit();
+       this.Hide();
+            Maindashbord mainForm = Application.OpenForms.OfType<Maindashbord>().FirstOrDefault();
+            mainForm.Hide();
+            login login = new login();
+            login.Show();
             
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

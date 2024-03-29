@@ -138,5 +138,15 @@ namespace Finance_APP.window_forms
         {
 
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
