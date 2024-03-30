@@ -48,6 +48,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(334, 69);
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Search Accounts";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button1
             // 
@@ -81,6 +82,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(331, 69);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "Create Customer Account";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // branchofficer
             // 

@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.u_password = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,35 +77,6 @@
             this.label2.Size = new System.Drawing.Size(112, 18);
             this.label2.TabIndex = 25;
             this.label2.Text = "Welcome back,";
-            // 
-            // guna2ToggleSwitch1
-            // 
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(408, 372);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
-            this.guna2ToggleSwitch1.TabIndex = 42;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(451, 373);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 16);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "Remember me";
             // 
             // label5
             // 
@@ -157,7 +126,7 @@
             this.u_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.u_password.HoverState.Parent = this.u_password;
             this.u_password.Location = new System.Drawing.Point(405, 315);
-            this.u_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.u_password.Margin = new System.Windows.Forms.Padding(4);
             this.u_password.Name = "u_password";
             this.u_password.PasswordChar = '\0';
             this.u_password.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -186,7 +155,7 @@
             this.u_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.u_name.HoverState.Parent = this.u_name;
             this.u_name.Location = new System.Drawing.Point(405, 224);
-            this.u_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.u_name.Margin = new System.Windows.Forms.Padding(4);
             this.u_name.Name = "u_name";
             this.u_name.PasswordChar = '\0';
             this.u_name.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -334,8 +303,6 @@
             this.Controls.Add(this.time);
             this.Controls.Add(this.date);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.guna2ToggleSwitch1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.pictureBox4);
@@ -372,8 +339,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.PictureBox pictureBox4;
