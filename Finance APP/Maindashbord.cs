@@ -1,4 +1,5 @@
 ﻿using Finance_APP.pages;
+using Finance_APP.pages.dasbordpanel;
 using Finance_APP.window_forms;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,10 @@ namespace Finance_APP
 {
     public partial class Maindashbord : Form
     {
+
+
+
+        public string job_rollnum { get; set; }
         public Maindashbord()
         {
             InitializeComponent();
@@ -38,51 +43,7 @@ namespace Finance_APP
 
 
 
-        private void Maindashbord_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            login login = new login();
-            login.ShowDialog();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void guna2Button1_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void btnCreateAC_Click(object sender, EventArgs e)
         {
@@ -116,6 +77,16 @@ namespace Finance_APP
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+            cashierview f = new cashierview();
+            f.Dock = DockStyle.Fill;
+            this.guna2Panel2.Controls.Add(f);
+            this.guna2Panel2.Tag = f;
+            f.Show();
         }
     }
 }

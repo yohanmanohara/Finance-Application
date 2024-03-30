@@ -17,7 +17,7 @@ namespace Finance_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Maindashbord());
+            Application.Run(new login());
         }
     }
 }

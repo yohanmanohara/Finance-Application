@@ -11,10 +11,8 @@ using System.Windows.Forms;
 
 namespace Finance_APP.window_forms
 {
-    public partial class logoutpopup : Form
+    public partial class jobrollerro : Form
     {
-
-
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
     (
@@ -25,40 +23,40 @@ namespace Finance_APP.window_forms
         int nWidthEllipse, // width of ellipse
         int nHeightEllipse // height of ellipse
     );
-
-
-        public logoutpopup()
+        public jobrollerro()
         {
+            InitializeComponent();
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
-
-       this.Hide();
-            Maindashbord mainForm = Application.OpenForms.OfType<Maindashbord>().FirstOrDefault();
-            mainForm.Hide();
-            login login = new login();
-            login.Show();
-            
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-Application.Exit();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
             this.Close();
+            login adminlogin = new login();
+            adminlogin.Show();
+
+        }
+
+        private void jobrollerro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
