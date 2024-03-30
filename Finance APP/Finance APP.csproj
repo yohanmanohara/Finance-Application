@@ -77,6 +77,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -140,6 +141,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="window_forms\jobrollerro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="window_forms\jobrollerro.Designer.cs">
+      <DependentUpon>jobrollerro.cs</DependentUpon>
+    </Compile>
     <Compile Include="window_forms\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +184,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_forms\jobrollerro.resx">
+      <DependentUpon>jobrollerro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="window_forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>

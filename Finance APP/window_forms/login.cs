@@ -68,33 +68,36 @@ namespace Finance_APP.window_forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            String username, password;
-            username = u_name.Text;
-            password = u_password.Text;
-          
+            string username = u_name.Text;
+            string password = u_password.Text;
 
-
-            try 
+            try
             {
-
-                String query = "SELECT * FROM [userdb] WHERE username='" + u_name.Text + "' AND password='" + u_password.Text + "' ";
-                SqlDataAdapter sda = new SqlDataAdapter(query,conn);
+                string query = "SELECT * FROM [userdb] WHERE username='" + username + "' AND password='" + password + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
-                sda.Fill( dt );
-                if(dt.Rows.Count > 0)
+                sda.Fill(dt);
+
+                if (dt.Rows.Count > 0)
                 {
-                    username = u_name.Text;
-                    password = u_password.Text;
-                    this.Hide();
-                   Maindashbord maindashbord = new Maindashbord();
-                    maindashbord.ShowDialog();
-                   
-                 
+                    int jobroll = Convert.ToInt32(dt.Rows[0]["jobroll"]);
 
+                    switch (jobroll)
+                    {
+                        case 100:
+                            this.Hide();
+                            Maindashbord maindashbord = new Maindashbord();
+                            maindashbord.ShowDialog();
+                            break;
                     
+                        default:
 
-                    
 
+                            this.Hide();
+                            jobrollerro erropop = new jobrollerro();
+                            erropop.ShowDialog();
+                            break;
+                    }
                 }
                 else
                 {
@@ -102,21 +105,15 @@ namespace Finance_APP.window_forms
                     erropop erropop = new erropop();
                     erropop.ShowDialog();
                 }
-
-
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
             finally
             {
                 conn.Close();
-
             }
-
-
-
         }
 
         private void label1_Click(object sender, EventArgs e)

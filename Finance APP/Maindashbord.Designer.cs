@@ -144,7 +144,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1238, 777);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // guna2Panel3
             // 
@@ -198,7 +197,6 @@
             this.Text = "Finance Grow Company";
             this.TransparencyKey = System.Drawing.Color.Green;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Maindashbord_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panel1.ResumeLayout(false);
