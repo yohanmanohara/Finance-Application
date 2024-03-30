@@ -12,8 +12,10 @@ using System.Windows.Forms;
 
 namespace Finance_APP.window_forms
 {
+   
     public partial class login : Form
     {
+       
         public login()
         {
             InitializeComponent();
@@ -80,23 +82,59 @@ namespace Finance_APP.window_forms
 
                 if (dt.Rows.Count > 0)
                 {
-                    int jobroll = Convert.ToInt32(dt.Rows[0]["jobroll"]);
+                    string jobroll = dt.Rows[0]["jobroll"].ToString();
+
 
                     switch (jobroll)
                     {
-                        case 100:
+                        case "hro":
+
+                            
                             this.Hide();
-                            Maindashbord maindashbord = new Maindashbord();
-                            maindashbord.ShowDialog();
+                            Maindashbord HRO = new Maindashbord();
+                            HRO.jobroll = jobroll;
+                            HRO.ShowDialog();
                             break;
-                    
-                        default:
+
+                        case "bro":
 
 
+                            this.Hide();
+                            Maindashbord BRO = new Maindashbord();
+                            BRO.jobroll = jobroll;
+                            BRO.ShowDialog();
+                            break;
+
+                        case "ca":
+
+
+                            this.Hide();
+                            Maindashbord CA = new Maindashbord();
+                            CA.jobroll = jobroll;
+                            CA.ShowDialog();
+                            break;
+
+                        case "acc":
+
+
+                            this.Hide();
+                            Maindashbord ACC = new Maindashbord();
+                            ACC.jobroll = jobroll;
+                            ACC.ShowDialog();
+                            break;
+
+
+
+
+
+                        case "noroll":
                             this.Hide();
                             jobrollerro erropop = new jobrollerro();
                             erropop.ShowDialog();
                             break;
+
+
+                        
                     }
                 }
                 else
