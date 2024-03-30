@@ -110,17 +110,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Create customer account.cs">
+    <Compile Include="pages\centerpanel\Create customer account.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\Create customer account.Designer.cs">
+    <Compile Include="pages\centerpanel\Create customer account.Designer.cs">
       <DependentUpon>Create customer account.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\CreateAccount.cs">
+    <Compile Include="pages\centerpanel\CreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\CreateAccount.Designer.cs">
+    <Compile Include="pages\centerpanel\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\dasbordpanel\Accounthadle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\dasbordpanel\Accounthadle.Designer.cs">
+      <DependentUpon>Accounthadle.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\branchofficer.cs">
       <SubType>UserControl</SubType>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="pages\dasbordpanel\cashierview.Designer.cs">
       <DependentUpon>cashierview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\dasbordpanel\hrofficer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\dasbordpanel\hrofficer.Designer.cs">
+      <DependentUpon>hrofficer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,17 +180,23 @@
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\Create customer account.resx">
+    <EmbeddedResource Include="pages\centerpanel\Create customer account.resx">
       <DependentUpon>Create customer account.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\CreateAccount.resx">
+    <EmbeddedResource Include="pages\centerpanel\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
+      <DependentUpon>Accounthadle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\branchofficer.resx">
       <DependentUpon>branchofficer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\cashierview.resx">
       <DependentUpon>cashierview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\dasbordpanel\hrofficer.resx">
+      <DependentUpon>hrofficer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

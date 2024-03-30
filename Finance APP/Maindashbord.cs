@@ -16,9 +16,10 @@ namespace Finance_APP
     public partial class Maindashbord : Form
     {
 
+        // In Form2
+        public string jobroll { get; set; }
 
 
-        public string job_rollnum { get; set; }
         public Maindashbord()
         {
             InitializeComponent();
@@ -76,17 +77,48 @@ namespace Finance_APP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            MessageBox.Show($"Job Roll: {jobroll}");
 
         }
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
+           
+            switch (jobroll)
+            {
+                case "hro" :
+                    hrofficer hro = new hrofficer();
+                    hro.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(hro);
+                    this.guna2Panel2.Tag = hro;
+                    hro.Show();
+                    break;
 
-            cashierview f = new cashierview();
-            f.Dock = DockStyle.Fill;
-            this.guna2Panel2.Controls.Add(f);
-            this.guna2Panel2.Tag = f;
-            f.Show();
+                case "bro":
+                    branchofficer bro = new branchofficer();
+                    bro.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(bro);
+                    this.guna2Panel2.Tag = bro;
+                    bro.Show();
+                    break;
+
+                case "ca":
+                    cashierview ca = new cashierview();
+                    ca.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(ca);
+                    this.guna2Panel2.Tag = ca;
+                    ca.Show();
+                    break;
+                case "acc":
+                    Accounthadle acc = new Accounthadle();
+                    acc.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(acc);
+                    this.guna2Panel2.Tag = acc;
+                    acc.Show();
+                    break;
+
+            }
+         
         }
     }
 }
