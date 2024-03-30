@@ -12,6 +12,8 @@ namespace Finance_APP.pages.dasbordpanel
 {
     public partial class branchofficer : UserControl
     {
+        public Panel Panel2 { get; set; }
+
         public branchofficer()
         {
             InitializeComponent();
@@ -29,6 +31,10 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+
+           
+           
+
 
         }
 

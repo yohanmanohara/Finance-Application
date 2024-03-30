@@ -16,6 +16,8 @@ namespace Finance_APP
     public partial class Maindashbord : Form
     {
 
+       
+
         // In Form2
         public string jobroll { get; set; }
 
@@ -120,5 +122,13 @@ namespace Finance_APP
             }
          
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+
     }
 }
