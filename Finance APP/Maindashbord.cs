@@ -16,6 +16,8 @@ namespace Finance_APP
     public partial class Maindashbord : Form
     {
 
+       
+
         // In Form2
         public string jobroll { get; set; }
 
@@ -123,7 +125,15 @@ namespace Finance_APP
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+<
 
+            CreateAccount hro = new CreateAccount();
+            hro.Dock = DockStyle.Fill;
+            this.panel2.Controls.Add(hro);
+            this.panel2.Tag = hro;
+            hro.Show();
         }
+
+
     }
 }

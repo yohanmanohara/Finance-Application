@@ -83,6 +83,7 @@
             this.panel2.Size = new System.Drawing.Size(323, 231);
             this.panel2.TabIndex = 12;
             // 
+
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -159,6 +160,36 @@
             this.txtFullName.ShadowDecoration.Parent = this.txtFullName;
             this.txtFullName.Size = new System.Drawing.Size(507, 28);
             this.txtFullName.TabIndex = 37;
+
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtName.BackColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderRadius = 15;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.Parent = this.txtName;
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedState.Parent = this.txtName;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(255)))));
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.HoverState.Parent = this.txtName;
+            this.txtName.Location = new System.Drawing.Point(87, 137);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtName.PlaceholderText = "Full Name";
+            this.txtName.SelectedText = "";
+            this.txtName.ShadowDecoration.Parent = this.txtName;
+            this.txtName.Size = new System.Drawing.Size(507, 28);
+            this.txtName.TabIndex = 1;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+
             // 
             // txtAddress
             // 
@@ -175,8 +206,13 @@
             this.txtAddress.FocusedState.Parent = this.txtAddress;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.HoverState.Parent = this.txtAddress;
+
             this.txtAddress.Location = new System.Drawing.Point(87, 174);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+=
+            this.txtAddress.Location = new System.Drawing.Point(87, 176);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -184,7 +220,13 @@
             this.txtAddress.SelectedText = "";
             this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
             this.txtAddress.Size = new System.Drawing.Size(507, 28);
+
             this.txtAddress.TabIndex = 38;
+
+            this.txtAddress.TabIndex = 2;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAddress.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+
             // 
             // txtPhoneNo
             // 
@@ -201,8 +243,11 @@
             this.txtPhoneNo.FocusedState.Parent = this.txtPhoneNo;
             this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNo.HoverState.Parent = this.txtPhoneNo;
-            this.txtPhoneNo.Location = new System.Drawing.Point(370, 219);
+
             this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(4);
+
+            this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.PasswordChar = '\0';
             this.txtPhoneNo.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -210,7 +255,13 @@
             this.txtPhoneNo.SelectedText = "";
             this.txtPhoneNo.ShadowDecoration.Parent = this.txtPhoneNo;
             this.txtPhoneNo.Size = new System.Drawing.Size(224, 28);
+
             this.txtPhoneNo.TabIndex = 39;
+
+            this.txtPhoneNo.TabIndex = 4;
+            this.txtPhoneNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhoneNo.TextChanged += new System.EventHandler(this.txtPhoneNo_TextChanged);
+
             // 
             // txtEmail
             // 
@@ -228,7 +279,11 @@
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
             this.txtEmail.Location = new System.Drawing.Point(87, 267);
+
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -236,10 +291,15 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
             this.txtEmail.Size = new System.Drawing.Size(507, 28);
+
             this.txtEmail.TabIndex = 40;
+
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+
             // 
             // txtTIN
-            // 
+
             this.txtTIN.BackColor = System.Drawing.Color.Transparent;
             this.txtTIN.BorderRadius = 13;
             this.txtTIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -263,6 +323,34 @@
             this.txtTIN.ShadowDecoration.Parent = this.txtTIN;
             this.txtTIN.Size = new System.Drawing.Size(224, 28);
             this.txtTIN.TabIndex = 41;
+
+            this.txtTin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTin.BorderRadius = 15;
+            this.txtTin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTin.DefaultText = "";
+            this.txtTin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTin.DisabledState.Parent = this.txtTin;
+            this.txtTin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTin.FocusedState.Parent = this.txtTin;
+            this.txtTin.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTin.HoverState.Parent = this.txtTin;
+            this.txtTin.Location = new System.Drawing.Point(87, 311);
+            this.txtTin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtTin.Name = "txtTin";
+            this.txtTin.PasswordChar = '\0';
+            this.txtTin.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtTin.PlaceholderText = "TIN";
+            this.txtTin.SelectedText = "";
+            this.txtTin.ShadowDecoration.Parent = this.txtTin;
+            this.txtTin.Size = new System.Drawing.Size(224, 28);
+            this.txtTin.TabIndex = 6;
+            this.txtTin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTin.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
+
             // 
             // txtDeposit
             // 
@@ -279,8 +367,13 @@
             this.txtDeposit.FocusedState.Parent = this.txtDeposit;
             this.txtDeposit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDeposit.HoverState.Parent = this.txtDeposit;
+
             this.txtDeposit.Location = new System.Drawing.Point(370, 303);
             this.txtDeposit.Margin = new System.Windows.Forms.Padding(4);
+=
+            this.txtDeposit.Location = new System.Drawing.Point(370, 311);
+            this.txtDeposit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+
             this.txtDeposit.Name = "txtDeposit";
             this.txtDeposit.PasswordChar = '\0';
             this.txtDeposit.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -288,7 +381,104 @@
             this.txtDeposit.SelectedText = "";
             this.txtDeposit.ShadowDecoration.Parent = this.txtDeposit;
             this.txtDeposit.Size = new System.Drawing.Size(224, 28);
+
             this.txtDeposit.TabIndex = 42;
+=======
+            this.txtDeposit.TabIndex = 7;
+            this.txtDeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackgroundImage = global::Finance_APP.Properties.Resources.Group_3;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Location = new System.Drawing.Point(291, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(129, 124);
+            this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnActivate
+            // 
+            this.btnActivate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnActivate.BorderRadius = 15;
+            this.btnActivate.CheckedState.Parent = this.btnActivate;
+            this.btnActivate.CustomImages.Parent = this.btnActivate;
+            this.btnActivate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(93)))), ((int)(((byte)(243)))));
+            this.btnActivate.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActivate.ForeColor = System.Drawing.Color.White;
+            this.btnActivate.HoverState.Parent = this.btnActivate;
+            this.btnActivate.Location = new System.Drawing.Point(87, 420);
+            this.btnActivate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActivate.Name = "btnActivate";
+            this.btnActivate.ShadowDecoration.Parent = this.btnActivate;
+            this.btnActivate.Size = new System.Drawing.Size(111, 37);
+            this.btnActivate.TabIndex = 11;
+            this.btnActivate.Text = "Activate";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.BackgroundImage = global::Finance_APP.Properties.Resources.Group_32;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(315, 389);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(323, 231);
+            this.panel2.TabIndex = 12;
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2DateTimePicker1.BorderRadius = 15;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(198, 212);
+            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(165, 40);
+            this.guna2DateTimePicker1.TabIndex = 14;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 3, 28, 10, 3, 13, 731);
+            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+            // 
+            // btnSignature
+            // 
+            this.btnSignature.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSignature.BorderRadius = 15;
+            this.btnSignature.CheckedState.Parent = this.btnSignature;
+            this.btnSignature.CustomImages.Parent = this.btnSignature;
+            this.btnSignature.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(93)))), ((int)(((byte)(243)))));
+            this.btnSignature.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignature.ForeColor = System.Drawing.Color.White;
+            this.btnSignature.HoverState.Parent = this.btnSignature;
+            this.btnSignature.Location = new System.Drawing.Point(87, 357);
+            this.btnSignature.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignature.Name = "btnSignature";
+            this.btnSignature.ShadowDecoration.Parent = this.btnSignature;
+            this.btnSignature.Size = new System.Drawing.Size(224, 37);
+            this.btnSignature.TabIndex = 15;
+            this.btnSignature.Text = "Upload Signature";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 228);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Date Of Birth  :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // CreateAccount
             // 
@@ -306,6 +496,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnActivate);
             this.Controls.Add(this.panel1);
+
+            this.Controls.Add(this.txtDeposit);
+            this.Controls.Add(this.txtTin);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPhoneNo);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtName);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CreateAccount";
             this.Size = new System.Drawing.Size(677, 631);
