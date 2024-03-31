@@ -57,7 +57,7 @@
             this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
             this.guna2TextBox1.BorderRadius = 13;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Payout Amoount";
+            this.guna2TextBox1.DefaultText = "Payout Amount";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -75,7 +75,6 @@
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox1.PlaceholderText = "Payout Amount";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 14;
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(664, 42);
             this.guna2TextBox1.TabIndex = 39;
@@ -230,6 +229,7 @@
             this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox6.PlaceholderText = "Customer ID";
             this.guna2TextBox6.SelectedText = "";
+            this.guna2TextBox6.SelectionStart = 11;
             this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
             this.guna2TextBox6.Size = new System.Drawing.Size(232, 42);
             this.guna2TextBox6.TabIndex = 44;
@@ -260,6 +260,7 @@
             this.guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox7.PlaceholderText = "Branch";
             this.guna2TextBox7.SelectedText = "";
+            this.guna2TextBox7.SelectionStart = 6;
             this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Size = new System.Drawing.Size(232, 42);
             this.guna2TextBox7.TabIndex = 45;
