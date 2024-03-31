@@ -116,12 +116,6 @@
     <Compile Include="pages\centerpanel\Create customer account.Designer.cs">
       <DependentUpon>Create customer account.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\CreateAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\CreateAccount.Designer.cs">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Create customer account.resx">
       <DependentUpon>Create customer account.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\CreateAccount.resx">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
