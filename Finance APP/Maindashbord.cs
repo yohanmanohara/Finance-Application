@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Finance_APP
 {
-    public partial class Maindashbord : Form
+    public partial class MainDashbord : Form
     {
 
         public Panel Guna2Panel4 { get { return guna2Panel4; } }
@@ -21,7 +21,7 @@ namespace Finance_APP
         public string jobroll { get; set; } 
 
 
-        public Maindashbord()
+        public MainDashbord()
         {
             InitializeComponent();
 
@@ -62,7 +62,7 @@ namespace Finance_APP
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            logoutpopup logoutpopup = new logoutpopup(); // Creates an instance of the logoutpopup class
+            LogOutPopUp logoutpopup = new LogOutPopUp(); // Creates an instance of the logoutpopup class
             logoutpopup.ShowDialog(); //  
 
         }

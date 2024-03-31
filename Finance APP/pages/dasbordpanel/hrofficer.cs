@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.dasbordpanel
 {
-    public partial class hrofficer : UserControl
+    public partial class HROfficer : UserControl
     {
-        public hrofficer()
+        public HROfficer()
         {
             InitializeComponent();
         }

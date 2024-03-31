@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.window_forms
 {
-    partial class logoutpopup
+    partial class LogOutPopUp
     {
         /// <summary>
         /// Required designer variable.

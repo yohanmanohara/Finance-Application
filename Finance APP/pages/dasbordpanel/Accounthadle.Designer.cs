@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.dasbordpanel
 {
-    partial class Accounthadle
+    partial class AccountHadle
     {
         /// <summary> 
         /// Required designer variable.

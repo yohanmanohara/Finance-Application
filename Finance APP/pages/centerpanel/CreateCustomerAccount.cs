@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages
 {
-    public partial class Create_customer_account : UserControl
+    public partial class CreateCustomerAccount : UserControl
     {
         public bool TopLevel { get; internal set; }
-        public Create_customer_account()
+        public CreateCustomerAccount()
         {
             InitializeComponent();
         }

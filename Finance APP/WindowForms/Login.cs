@@ -13,10 +13,10 @@ using System.Windows.Forms;
 namespace Finance_APP.window_forms
 {
    
-    public partial class login : Form
+    public partial class Login : Form
     {
        
-        public login()
+        public Login()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -91,7 +91,7 @@ namespace Finance_APP.window_forms
 
                             
                             this.Hide();
-                            Maindashbord HRO = new Maindashbord();
+                            MainDashbord HRO = new MainDashbord();
                             HRO.jobroll = jobroll;
                             HRO.ShowDialog();
                             break;
@@ -100,7 +100,7 @@ namespace Finance_APP.window_forms
 
 
                             this.Hide();
-                            Maindashbord BRO = new Maindashbord();
+                            MainDashbord BRO = new MainDashbord();
                             BRO.jobroll = jobroll;
                             BRO.ShowDialog();
                             break;
@@ -109,7 +109,7 @@ namespace Finance_APP.window_forms
 
 
                             this.Hide();
-                            Maindashbord CA = new Maindashbord();
+                            MainDashbord CA = new MainDashbord();
                             CA.jobroll = jobroll;
                             CA.ShowDialog();
                             break;
@@ -118,7 +118,7 @@ namespace Finance_APP.window_forms
 
 
                             this.Hide();
-                            Maindashbord ACC = new Maindashbord();
+                            MainDashbord ACC = new MainDashbord();
                             ACC.jobroll = jobroll;
                             ACC.ShowDialog();
                             break;
@@ -129,7 +129,7 @@ namespace Finance_APP.window_forms
 
                         case "noroll":
                             this.Hide();
-                            jobrollerro erropop = new jobrollerro();
+                            JobRollError erropop = new JobRollError();
                             erropop.ShowDialog();
                             break;
 
@@ -140,7 +140,7 @@ namespace Finance_APP.window_forms
                 else
                 {
                     this.Hide();
-                    erropop erropop = new erropop();
+                    ErrorPopUp erropop = new ErrorPopUp();
                     erropop.ShowDialog();
                 }
             }

@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.window_forms
 {
-    partial class erropop
+    partial class ErrorPopUp
     {
         /// <summary>
         /// Required designer variable.

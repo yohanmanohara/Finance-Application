@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.window_forms
 {
-    partial class login
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

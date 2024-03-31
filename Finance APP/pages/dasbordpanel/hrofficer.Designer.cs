@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.dasbordpanel
 {
-    partial class hrofficer
+    partial class HROfficer
     {
         /// <summary> 
         /// Required designer variable.

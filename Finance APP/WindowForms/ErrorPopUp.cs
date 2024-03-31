@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Finance_APP.window_forms
 {
-    public partial class erropop : Form
+    public partial class ErrorPopUp : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -27,7 +27,7 @@ namespace Finance_APP.window_forms
 
         //it is end up on here
 
-        public erropop()
+        public ErrorPopUp()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -40,7 +40,7 @@ namespace Finance_APP.window_forms
            
             
             this.Close();
-            login adminlogin = new login();
+            Login adminlogin = new Login();
             adminlogin.Show();  
             
         }

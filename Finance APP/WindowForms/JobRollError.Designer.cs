@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.window_forms
 {
-    partial class jobrollerro
+    partial class JobRollError
     {
         /// <summary>
         /// Required designer variable.

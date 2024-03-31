@@ -13,13 +13,13 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.dasbordpanel
 {
-    public partial class branchofficer : UserControl
+    public partial class BranchOfficer : UserControl
     {
 
 
 
 
-        public branchofficer()
+        public BranchOfficer()
         {
             InitializeComponent();
            
@@ -39,7 +39,7 @@ namespace Finance_APP.pages.dasbordpanel
             fm.Show();
 
             // Access guna2Panel4 directly from the parent form (Maindashbord)
-            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            MainDashbord maindashbord = (MainDashbord)this.ParentForm;
             maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
             maindashbord.Guna2Panel4.Controls.Add(fm); 
 
@@ -49,13 +49,13 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Create_customer_account fm = new Create_customer_account();
+            CreateCustomerAccount fm = new CreateCustomerAccount();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();
 
             // Access guna2Panel4 directly from the parent form (Maindashbord)
-            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            MainDashbord maindashbord = (MainDashbord)this.ParentForm;
             maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
             maindashbord.Guna2Panel4.Controls.Add(fm);
 
@@ -66,13 +66,13 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            searchaccout fm = new searchaccout();
+            SearchAccout fm = new SearchAccout();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();
 
             // Access guna2Panel4 directly from the parent form (Maindashbord)
-            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            MainDashbord maindashbord = (MainDashbord)this.ParentForm;
             maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
             maindashbord.Guna2Panel4.Controls.Add(fm);
 

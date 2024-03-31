@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages
 {
-    partial class Create_customer_account
+    partial class CreateCustomerAccount
     {
         /// <summary> 
         /// Required designer variable.

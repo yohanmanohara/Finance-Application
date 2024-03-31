@@ -89,11 +89,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Maindashbord.cs">
+    <Compile Include="MainDashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Maindashbord.Designer.cs">
-      <DependentUpon>Maindashbord.cs</DependentUpon>
+    <Compile Include="MainDashbord.Designer.cs">
+      <DependentUpon>MainDashbord.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -110,46 +110,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.cs">
+    <Compile Include="Pages\CenterPanel\Create_customer_account.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
+    <Compile Include="Pages\CenterPanel\Create_customer_account.Designer.cs">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\searchaccout.cs">
+    <Compile Include="Pages\CenterPanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
+    <Compile Include="Pages\CenterPanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\UpdateAccount.cs">
+    <Compile Include="Pages\CenterPanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
+    <Compile Include="Pages\CenterPanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\dasbordpanel\Accounthadle.cs">
+    <Compile Include="Pages\DasbordPanel\Accounthadle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\dasbordpanel\Accounthadle.Designer.cs">
+    <Compile Include="Pages\DasbordPanel\Accounthadle.Designer.cs">
       <DependentUpon>Accounthadle.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\dasbordpanel\branchofficer.cs">
+    <Compile Include="Pages\DasbordPanel\branchofficer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\dasbordpanel\branchofficer.Designer.cs">
+    <Compile Include="Pages\DasbordPanel\branchofficer.Designer.cs">
       <DependentUpon>branchofficer.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\dasbordpanel\cashierview.cs">
+    <Compile Include="Pages\DasbordPanel\cashierview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\dasbordpanel\cashierview.Designer.cs">
+    <Compile Include="Pages\DasbordPanel\cashierview.Designer.cs">
       <DependentUpon>cashierview.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\dasbordpanel\hrofficer.cs">
+    <Compile Include="Pages\DasbordPanel\hrofficer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\dasbordpanel\hrofficer.Designer.cs">
+    <Compile Include="Pages\DasbordPanel\hrofficer.Designer.cs">
       <DependentUpon>hrofficer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -159,52 +159,52 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\jobrollerro.cs">
+    <Compile Include="WindowForms\JobRollError.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window_forms\jobrollerro.Designer.cs">
-      <DependentUpon>jobrollerro.cs</DependentUpon>
+    <Compile Include="WindowForms\JobRollError.Designer.cs">
+      <DependentUpon>JobRollError.cs</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\login.cs">
+    <Compile Include="WindowForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window_forms\login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="WindowForms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\erropop.cs">
+    <Compile Include="WindowForms\ErrorPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window_forms\erropop.Designer.cs">
-      <DependentUpon>erropop.cs</DependentUpon>
+    <Compile Include="WindowForms\ErrorPopUp.Designer.cs">
+      <DependentUpon>ErrorPopUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="window_forms\logoutpopup.cs">
+    <Compile Include="WindowForms\LogOutPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="window_forms\logoutpopup.Designer.cs">
-      <DependentUpon>logoutpopup.cs</DependentUpon>
+    <Compile Include="WindowForms\LogOutPopUp.Designer.cs">
+      <DependentUpon>LogOutPopUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Maindashbord.resx">
-      <DependentUpon>Maindashbord.cs</DependentUpon>
+    <EmbeddedResource Include="MainDashbord.resx">
+      <DependentUpon>MainDashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
+    <EmbeddedResource Include="Pages\CenterPanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
+    <EmbeddedResource Include="Pages\CenterPanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
+    <EmbeddedResource Include="Pages\CenterPanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
+    <EmbeddedResource Include="Pages\DasbordPanel\Accounthadle.resx">
       <DependentUpon>Accounthadle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\dasbordpanel\branchofficer.resx">
+    <EmbeddedResource Include="Pages\DasbordPanel\branchofficer.resx">
       <DependentUpon>branchofficer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\dasbordpanel\cashierview.resx">
+    <EmbeddedResource Include="Pages\DasbordPanel\cashierview.resx">
       <DependentUpon>cashierview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\dasbordpanel\hrofficer.resx">
+    <EmbeddedResource Include="Pages\DasbordPanel\hrofficer.resx">
       <DependentUpon>hrofficer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -212,17 +212,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\jobrollerro.resx">
-      <DependentUpon>jobrollerro.cs</DependentUpon>
+    <EmbeddedResource Include="WindowForms\JobRollError.resx">
+      <DependentUpon>JobRollError.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="WindowForms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\erropop.resx">
-      <DependentUpon>erropop.cs</DependentUpon>
+    <EmbeddedResource Include="WindowForms\ErrorPopUp.resx">
+      <DependentUpon>ErrorPopUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="window_forms\logoutpopup.resx">
-      <DependentUpon>logoutpopup.cs</DependentUpon>
+    <EmbeddedResource Include="WindowForms\LogOutPopUp.resx">
+      <DependentUpon>LogOutPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
     <None Include="Keygen.exe.config" />

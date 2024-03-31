@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.centerpanel
 {
-    partial class searchaccout
+    partial class SearchAccout
     {
         /// <summary> 
         /// Required designer variable.
