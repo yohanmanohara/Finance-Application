@@ -189,6 +189,9 @@
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
+      <DependentUpon>searchaccout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
