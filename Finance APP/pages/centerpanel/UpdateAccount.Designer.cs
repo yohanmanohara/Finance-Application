@@ -54,7 +54,7 @@
             this.txtFullName.FocusedState.Parent = this.txtFullName;
             this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.HoverState.Parent = this.txtFullName;
-            this.txtFullName.Location = new System.Drawing.Point(325, 228);
+            this.txtFullName.Location = new System.Drawing.Point(194, 208);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
@@ -71,7 +71,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackgroundImage = global::Finance_APP.Properties.Resources.Group_3;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(512, 44);
+            this.panel1.Location = new System.Drawing.Point(345, 44);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(164, 150);
@@ -82,7 +82,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackgroundImage = global::Finance_APP.Properties.Resources.Group_32;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(790, 506);
+            this.panel2.Location = new System.Drawing.Point(492, 486);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(406, 254);
@@ -103,7 +103,7 @@
             this.txtAddress.FocusedState.Parent = this.txtAddress;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.HoverState.Parent = this.txtAddress;
-            this.txtAddress.Location = new System.Drawing.Point(325, 280);
+            this.txtAddress.Location = new System.Drawing.Point(194, 260);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
@@ -129,7 +129,7 @@
             this.txtEmail.FocusedState.Parent = this.txtEmail;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(325, 394);
+            this.txtEmail.Location = new System.Drawing.Point(194, 374);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -156,7 +156,7 @@
             this.txtPhoneNo.FocusedState.Parent = this.txtPhoneNo;
             this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNo.HoverState.Parent = this.txtPhoneNo;
-            this.txtPhoneNo.Location = new System.Drawing.Point(643, 337);
+            this.txtPhoneNo.Location = new System.Drawing.Point(512, 317);
             this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.PasswordChar = '\0';
@@ -183,7 +183,7 @@
             this.txtTIN.FocusedState.Parent = this.txtTIN;
             this.txtTIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTIN.HoverState.Parent = this.txtTIN;
-            this.txtTIN.Location = new System.Drawing.Point(477, 446);
+            this.txtTIN.Location = new System.Drawing.Point(346, 426);
             this.txtTIN.Margin = new System.Windows.Forms.Padding(4);
             this.txtTIN.Name = "txtTIN";
             this.txtTIN.PasswordChar = '\0';
@@ -199,7 +199,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(314, 337);
+            this.label1.Location = new System.Drawing.Point(16, 317);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 20);
@@ -215,7 +215,7 @@
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(429, 337);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(131, 317);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -240,7 +240,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtFullName);
             this.Name = "UpdateAccount";
-            this.Size = new System.Drawing.Size(1238, 777);
+            this.Size = new System.Drawing.Size(904, 711);
             this.Load += new System.EventHandler(this.UpdateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
