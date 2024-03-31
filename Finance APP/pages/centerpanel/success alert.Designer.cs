@@ -48,7 +48,7 @@
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Finance_APP.Properties.Resources.Group_38;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(285, 158);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(270, 154);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
