@@ -16,10 +16,9 @@ namespace Finance_APP
     public partial class Maindashbord : Form
     {
 
-       
+        public Panel Guna2Panel4 { get { return guna2Panel4; } }
 
-        // In Form2
-        public string jobroll { get; set; }
+        public string jobroll { get; set; } 
 
 
         public Maindashbord()
@@ -30,7 +29,7 @@ namespace Finance_APP
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
+
             if (e.CloseReason == CloseReason.UserClosing)
             {
                 Application.Exit();
@@ -46,7 +45,7 @@ namespace Finance_APP
 
 
 
-       
+
 
         private void btnCreateAC_Click(object sender, EventArgs e)
         {
@@ -85,10 +84,10 @@ namespace Finance_APP
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
-           
+
             switch (jobroll)
             {
-                case "hro" :
+                case "hro":
                     hrofficer hro = new hrofficer();
                     hro.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(hro);
@@ -120,7 +119,7 @@ namespace Finance_APP
                     break;
 
             }
-         
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -129,6 +128,9 @@ namespace Finance_APP
 
         }
 
+        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
