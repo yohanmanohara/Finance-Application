@@ -32,5 +32,10 @@ namespace Finance_APP.pages
         {
 
         }
+
+        private void txtFullName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,7 +33,6 @@
             this.btnActivate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.u_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,7 +45,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::Finance_APP.Properties.Resources.Group_3;
             this.pictureBox1.Location = new System.Drawing.Point(382, 27);
@@ -58,7 +57,7 @@
             // 
             // btnActivate
             // 
-            this.btnActivate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnActivate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnActivate.BorderRadius = 20;
             this.btnActivate.CheckedState.Parent = this.btnActivate;
             this.btnActivate.CustomImages.Parent = this.btnActivate;
@@ -76,63 +75,39 @@
             // 
             // guna2DateTimePicker1
             // 
+            this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2DateTimePicker1.BorderRadius = 15;
             this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(218, 324);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(112, 301);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(213, 29);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(307, 37);
             this.guna2DateTimePicker1.TabIndex = 48;
             this.guna2DateTimePicker1.Value = new System.DateTime(2024, 3, 31, 21, 34, 55, 766);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 332);
+            this.label1.Location = new System.Drawing.Point(3, 310);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 49;
             this.label1.Text = ":  Date Of Birth   ";
             // 
-            // u_name
-            // 
-            this.u_name.BackColor = System.Drawing.Color.Transparent;
-            this.u_name.BorderColor = System.Drawing.Color.White;
-            this.u_name.BorderRadius = 13;
-            this.u_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.u_name.DefaultText = "";
-            this.u_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.u_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.u_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.u_name.DisabledState.Parent = this.u_name;
-            this.u_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.u_name.FillColor = System.Drawing.Color.Gainsboro;
-            this.u_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.u_name.FocusedState.Parent = this.u_name;
-            this.u_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.u_name.HoverState.Parent = this.u_name;
-            this.u_name.Location = new System.Drawing.Point(400, 213);
-            this.u_name.Margin = new System.Windows.Forms.Padding(4);
-            this.u_name.Name = "u_name";
-            this.u_name.PasswordChar = '\0';
-            this.u_name.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.u_name.PlaceholderText = "Full Name";
-            this.u_name.SelectedText = "";
-            this.u_name.ShadowDecoration.Parent = this.u_name;
-            this.u_name.Size = new System.Drawing.Size(322, 37);
-            this.u_name.TabIndex = 50;
-            // 
             // txtFullName
             // 
+            this.txtFullName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFullName.Animated = true;
+            this.txtFullName.AutoSize = true;
             this.txtFullName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtFullName.BorderRadius = 15;
             this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -146,7 +121,7 @@
             this.txtFullName.FocusedState.Parent = this.txtFullName;
             this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.HoverState.Parent = this.txtFullName;
-            this.txtFullName.Location = new System.Drawing.Point(62, 213);
+            this.txtFullName.Location = new System.Drawing.Point(3, 188);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -156,10 +131,13 @@
             this.txtFullName.ShadowDecoration.Parent = this.txtFullName;
             this.txtFullName.Size = new System.Drawing.Size(784, 37);
             this.txtFullName.TabIndex = 52;
+            this.txtFullName.TextChanged += new System.EventHandler(this.txtFullName_TextChanged);
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAddress.Animated = true;
+            this.txtAddress.AutoSize = true;
             this.txtAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtAddress.BorderRadius = 15;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -173,7 +151,7 @@
             this.txtAddress.FocusedState.Parent = this.txtAddress;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.HoverState.Parent = this.txtAddress;
-            this.txtAddress.Location = new System.Drawing.Point(62, 267);
+            this.txtAddress.Location = new System.Drawing.Point(3, 244);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -186,7 +164,9 @@
             // 
             // txtPhoneNo
             // 
+            this.txtPhoneNo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPhoneNo.Animated = true;
+            this.txtPhoneNo.AutoSize = true;
             this.txtPhoneNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtPhoneNo.BorderRadius = 15;
             this.txtPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -200,7 +180,7 @@
             this.txtPhoneNo.FocusedState.Parent = this.txtPhoneNo;
             this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNo.HoverState.Parent = this.txtPhoneNo;
-            this.txtPhoneNo.Location = new System.Drawing.Point(539, 316);
+            this.txtPhoneNo.Location = new System.Drawing.Point(480, 290);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.PasswordChar = '\0';
             this.txtPhoneNo.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -213,7 +193,9 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Animated = true;
+            this.txtEmail.AutoSize = true;
             this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtEmail.BorderRadius = 15;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -227,7 +209,7 @@
             this.txtEmail.FocusedState.Parent = this.txtEmail;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(62, 369);
+            this.txtEmail.Location = new System.Drawing.Point(3, 359);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -240,7 +222,9 @@
             // 
             // txtTIN
             // 
+            this.txtTIN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTIN.Animated = true;
+            this.txtTIN.AutoSize = true;
             this.txtTIN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtTIN.BorderRadius = 15;
             this.txtTIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -254,7 +238,7 @@
             this.txtTIN.FocusedState.Parent = this.txtTIN;
             this.txtTIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTIN.HoverState.Parent = this.txtTIN;
-            this.txtTIN.Location = new System.Drawing.Point(62, 421);
+            this.txtTIN.Location = new System.Drawing.Point(3, 411);
             this.txtTIN.Name = "txtTIN";
             this.txtTIN.PasswordChar = '\0';
             this.txtTIN.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -267,7 +251,9 @@
             // 
             // txtDeposit
             // 
+            this.txtDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDeposit.Animated = true;
+            this.txtDeposit.AutoSize = true;
             this.txtDeposit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtDeposit.BorderRadius = 15;
             this.txtDeposit.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -281,7 +267,7 @@
             this.txtDeposit.FocusedState.Parent = this.txtDeposit;
             this.txtDeposit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDeposit.HoverState.Parent = this.txtDeposit;
-            this.txtDeposit.Location = new System.Drawing.Point(539, 421);
+            this.txtDeposit.Location = new System.Drawing.Point(480, 411);
             this.txtDeposit.Name = "txtDeposit";
             this.txtDeposit.PasswordChar = '\0';
             this.txtDeposit.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -294,6 +280,8 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2Panel1.AutoSize = true;
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2Panel1.Location = new System.Drawing.Point(539, 464);
@@ -314,7 +302,6 @@
             this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtFullName);
-            this.Controls.Add(this.u_name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.btnActivate);
@@ -335,7 +322,6 @@
         public Guna.UI2.WinForms.Guna2Button btnActivate;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox u_name;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
