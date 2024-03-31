@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.centerpanel
 {
-    public partial class SearchAccout : UserControl
+    public partial class searchaccout : UserControl
     {
         public bool TopLevel { get; internal set; }
-        public SearchAccout()
+        public searchaccout()
         {
             InitializeComponent();
         }

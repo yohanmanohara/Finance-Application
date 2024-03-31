@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.dasbordpanel
 {
-    partial class BranchOfficer
+    partial class branchofficer
     {
         /// <summary> 
         /// Required designer variable.

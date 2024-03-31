@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.dasbordpanel
 {
-    public partial class AccountHadle : UserControl
+    public partial class Accounthadle : UserControl
     {
-        public AccountHadle()
+        public Accounthadle()
         {
             InitializeComponent();
         }

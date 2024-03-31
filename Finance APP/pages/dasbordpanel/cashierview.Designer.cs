@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.dasbordpanel
 {
-    partial class CashierView
+    partial class cashierview
     {
         /// <summary> 
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.dasbordpanel
 {
-    public partial class CashierView : UserControl
+    public partial class cashierview : UserControl
     {
-        public CashierView()
+        public cashierview()
         {
             InitializeComponent();
         }
