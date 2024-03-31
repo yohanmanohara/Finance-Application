@@ -48,7 +48,7 @@
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Finance_APP.Properties.Resources.Group_38;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(270, 161);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(285, 158);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -62,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Text", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(80)))), ((int)(((byte)(225)))));
-            this.label2.Location = new System.Drawing.Point(136, 548);
+            this.label2.Location = new System.Drawing.Point(150, 536);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(623, 53);
             this.label2.TabIndex = 2;
