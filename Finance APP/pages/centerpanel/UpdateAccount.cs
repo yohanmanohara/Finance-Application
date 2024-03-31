@@ -38,5 +38,10 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
+
+        private void UpdateAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

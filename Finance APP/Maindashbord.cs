@@ -49,11 +49,7 @@ namespace Finance_APP
 
         private void btnCreateAC_Click(object sender, EventArgs e)
         {
-            CreateAccount f = new CreateAccount();
-            f.Dock = DockStyle.Fill;
-            this.panel2.Controls.Add(f);
-            this.panel2.Tag = f;
-            f.Show();
+            
 
 
 

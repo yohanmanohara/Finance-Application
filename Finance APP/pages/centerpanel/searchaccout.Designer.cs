@@ -1,6 +1,6 @@
-﻿namespace Finance_APP.pages
+﻿namespace Finance_APP.pages.centerpanel
 {
-    partial class Create_customer_account
+    partial class searchaccout
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Create_customer_account
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Create_customer_account";
-            this.Size = new System.Drawing.Size(903, 777);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

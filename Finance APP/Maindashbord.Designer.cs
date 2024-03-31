@@ -150,6 +150,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.BackColor = System.Drawing.SystemColors.HighlightText;
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel4.Location = new System.Drawing.Point(334, 66);
             this.guna2Panel4.Name = "guna2Panel4";
@@ -160,6 +161,7 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.BackColor = System.Drawing.SystemColors.HighlightText;
             this.guna2Panel3.Controls.Add(this.pictureBox1);
             this.guna2Panel3.Controls.Add(this.pictureBox9);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
