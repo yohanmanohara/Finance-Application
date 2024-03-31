@@ -67,7 +67,7 @@
             this.btnActivate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActivate.ForeColor = System.Drawing.Color.White;
             this.btnActivate.HoverState.Parent = this.btnActivate;
-            this.btnActivate.Location = new System.Drawing.Point(142, 554);
+            this.btnActivate.Location = new System.Drawing.Point(72, 557);
             this.btnActivate.Name = "btnActivate";
             this.btnActivate.ShadowDecoration.Parent = this.btnActivate;
             this.btnActivate.Size = new System.Drawing.Size(138, 43);
@@ -82,7 +82,7 @@
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(218, 324);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -120,7 +120,7 @@
             this.u_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.u_name.HoverState.Parent = this.u_name;
             this.u_name.Location = new System.Drawing.Point(400, 213);
-            this.u_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.u_name.Margin = new System.Windows.Forms.Padding(4);
             this.u_name.Name = "u_name";
             this.u_name.PasswordChar = '\0';
             this.u_name.PlaceholderForeColor = System.Drawing.Color.Gray;
