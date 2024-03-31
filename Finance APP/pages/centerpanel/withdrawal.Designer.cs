@@ -49,6 +49,7 @@
             this.Controls.Add(this.label1);
             this.Name = "withdrawal";
             this.Size = new System.Drawing.Size(904, 711);
+            this.Load += new System.EventHandler(this.withdrawal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

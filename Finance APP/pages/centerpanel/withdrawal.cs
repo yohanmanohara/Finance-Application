@@ -12,12 +12,18 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class withdrawal : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public withdrawal()
         {
             InitializeComponent();
         }
 
         private void u_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void withdrawal_Load(object sender, EventArgs e)
         {
 
         }
