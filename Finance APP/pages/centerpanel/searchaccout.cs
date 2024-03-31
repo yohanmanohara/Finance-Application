@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP.pages
+namespace Finance_APP.pages.centerpanel
 {
-    public partial class Create_customer_account : UserControl
+    public partial class searchaccout : UserControl
     {
-        public Create_customer_account()
+        public bool TopLevel { get; internal set; }
+        public searchaccout()
         {
             InitializeComponent();
+        }
+
+        private void searchaccout_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

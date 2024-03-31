@@ -12,6 +12,8 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class UpdateAccount : UserControl
     {
+        public bool TopLevel { get; internal set; }
+
         public UpdateAccount()
         {
             InitializeComponent();
@@ -33,6 +35,11 @@ namespace Finance_APP.pages.centerpanel
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateAccount_Load(object sender, EventArgs e)
         {
 
         }

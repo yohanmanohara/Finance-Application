@@ -110,17 +110,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\Create customer account.cs">
+    <Compile Include="pages\centerpanel\Create_customer_account.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\Create customer account.Designer.cs">
-      <DependentUpon>Create customer account.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
+      <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\CreateAccount.cs">
+    <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\CreateAccount.Designer.cs">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
+      <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
@@ -186,11 +186,11 @@
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Create customer account.resx">
-      <DependentUpon>Create customer account.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
+      <DependentUpon>Create_customer_account.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\CreateAccount.resx">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
+      <DependentUpon>searchaccout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
