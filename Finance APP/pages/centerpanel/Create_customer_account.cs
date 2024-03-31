@@ -27,5 +27,10 @@ namespace Finance_APP.pages
         {
 
         }
+
+        private void btnActivate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

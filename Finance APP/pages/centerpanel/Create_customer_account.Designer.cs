@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.u_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -73,6 +72,7 @@
             this.btnActivate.Size = new System.Drawing.Size(138, 43);
             this.btnActivate.TabIndex = 45;
             this.btnActivate.Text = "Activate";
+            this.btnActivate.Click += new System.EventHandler(this.btnActivate_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -156,20 +156,6 @@
             this.txtFullName.ShadowDecoration.Parent = this.txtFullName;
             this.txtFullName.Size = new System.Drawing.Size(784, 37);
             this.txtFullName.TabIndex = 52;
-            // 
-            // gunaContextMenuStrip1
-            // 
-            this.gunaContextMenuStrip1.Name = "gunaContextMenuStrip1";
-            this.gunaContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.gunaContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // txtAddress
             // 
@@ -351,7 +337,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox u_name;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
-        private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
