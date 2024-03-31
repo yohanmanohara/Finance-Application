@@ -16,5 +16,10 @@ namespace Finance_APP.pages.centerpanel
         {
             InitializeComponent();
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
