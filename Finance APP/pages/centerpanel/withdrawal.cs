@@ -28,8 +28,7 @@ namespace Finance_APP.pages.centerpanel
 
         }
 
-        private void u_name_TextChanged_2(object sender, EventArgs e)
-=======
+
         private void withdrawal_Load(object sender, EventArgs e)
 
         {
