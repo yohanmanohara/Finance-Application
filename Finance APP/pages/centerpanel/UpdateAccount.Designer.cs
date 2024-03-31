@@ -229,6 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.txtTIN);
@@ -240,6 +241,7 @@
             this.Controls.Add(this.txtFullName);
             this.Name = "UpdateAccount";
             this.Size = new System.Drawing.Size(1238, 777);
+            this.Load += new System.EventHandler(this.UpdateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
