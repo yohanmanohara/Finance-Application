@@ -119,6 +119,12 @@
     <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
+      <DependentUpon>search account cashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
+      <DependentUpon>search account cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
