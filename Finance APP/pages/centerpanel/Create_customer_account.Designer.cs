@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.u_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,12 +66,13 @@
             this.btnActivate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActivate.ForeColor = System.Drawing.Color.White;
             this.btnActivate.HoverState.Parent = this.btnActivate;
-            this.btnActivate.Location = new System.Drawing.Point(142, 554);
+            this.btnActivate.Location = new System.Drawing.Point(72, 557);
             this.btnActivate.Name = "btnActivate";
             this.btnActivate.ShadowDecoration.Parent = this.btnActivate;
             this.btnActivate.Size = new System.Drawing.Size(138, 43);
             this.btnActivate.TabIndex = 45;
             this.btnActivate.Text = "Activate";
+            this.btnActivate.Click += new System.EventHandler(this.btnActivate_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -82,7 +82,7 @@
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(218, 324);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -120,7 +120,7 @@
             this.u_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.u_name.HoverState.Parent = this.u_name;
             this.u_name.Location = new System.Drawing.Point(400, 213);
-            this.u_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.u_name.Margin = new System.Windows.Forms.Padding(4);
             this.u_name.Name = "u_name";
             this.u_name.PasswordChar = '\0';
             this.u_name.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -156,20 +156,6 @@
             this.txtFullName.ShadowDecoration.Parent = this.txtFullName;
             this.txtFullName.Size = new System.Drawing.Size(784, 37);
             this.txtFullName.TabIndex = 52;
-            // 
-            // gunaContextMenuStrip1
-            // 
-            this.gunaContextMenuStrip1.Name = "gunaContextMenuStrip1";
-            this.gunaContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.gunaContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // txtAddress
             // 
@@ -351,7 +337,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox u_name;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
-        private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
