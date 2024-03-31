@@ -128,6 +128,12 @@
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\withdrawal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
+      <DependentUpon>withdrawal.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\dasbordpanel\Accounthadle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
+      <DependentUpon>withdrawal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
       <DependentUpon>Accounthadle.cs</DependentUpon>
