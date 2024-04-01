@@ -149,6 +149,12 @@
     <Compile Include="pages\dasbordpanel\Accounthadle.Designer.cs">
       <DependentUpon>Accounthadle.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\dasbordpanel\branchmaneger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\dasbordpanel\branchmaneger.Designer.cs">
+      <DependentUpon>branchmaneger.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\dasbordpanel\branchofficer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
       <DependentUpon>Accounthadle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\dasbordpanel\branchmaneger.resx">
+      <DependentUpon>branchmaneger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\branchofficer.resx">
       <DependentUpon>branchofficer.cs</DependentUpon>
