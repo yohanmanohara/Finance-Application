@@ -34,7 +34,7 @@
             this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.usertxt = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.guna2Panel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.usertxt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -60,7 +60,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.panel1);
+            this.guna2Panel1.Controls.Add(this.usertxt);
             this.guna2Panel1.Controls.Add(this.pictureBox2);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -81,15 +81,16 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Dashboard";
             // 
-            // panel1
+            // usertxt
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(4, 666);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 108);
-            this.panel1.TabIndex = 2;
+            this.usertxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.usertxt.Controls.Add(this.label1);
+            this.usertxt.Controls.Add(this.pictureBox3);
+            this.usertxt.Location = new System.Drawing.Point(4, 666);
+            this.usertxt.Name = "usertxt";
+            this.usertxt.Size = new System.Drawing.Size(327, 108);
+            this.usertxt.TabIndex = 2;
+            this.usertxt.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // label1
             // 
@@ -101,6 +102,7 @@
             this.label1.Size = new System.Drawing.Size(90, 19);
             this.label1.TabIndex = 22;
             this.label1.Text = "User name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox3
             // 
@@ -112,6 +114,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -214,8 +217,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.usertxt.ResumeLayout(false);
+            this.usertxt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -239,9 +242,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel usertxt;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        public System.Windows.Forms.Label label1;
     }
 }

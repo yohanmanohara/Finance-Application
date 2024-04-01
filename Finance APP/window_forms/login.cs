@@ -84,15 +84,19 @@ namespace Finance_APP.window_forms
                 {
                     string jobroll = dt.Rows[0]["jobroll"].ToString();
 
-
+                    string firstname = dt.Rows[0]["firstname"].ToString();
+                    string lastname = dt.Rows[0]["lastname"].ToString();
                     switch (jobroll)
                     {
                         case "hro":
 
                             
                             this.Hide();
+
                             Maindashbord HRO = new Maindashbord();
                             HRO.jobroll = jobroll;
+                            HRO.firstname = firstname;
+                            HRO.lastname = lastname;
                             HRO.ShowDialog();
                             break;
 
@@ -102,6 +106,8 @@ namespace Finance_APP.window_forms
                             this.Hide();
                             Maindashbord BRO = new Maindashbord();
                             BRO.jobroll = jobroll;
+                            BRO.firstname = firstname;
+                            BRO.lastname = lastname;
                             BRO.ShowDialog();
                             break;
 
@@ -111,6 +117,8 @@ namespace Finance_APP.window_forms
                             this.Hide();
                             Maindashbord CA = new Maindashbord();
                             CA.jobroll = jobroll;
+                            CA.firstname = firstname;
+                            CA.lastname = lastname;
                             CA.ShowDialog();
                             break;
 
@@ -120,6 +128,8 @@ namespace Finance_APP.window_forms
                             this.Hide();
                             Maindashbord ACC = new Maindashbord();
                             ACC.jobroll = jobroll;
+                            ACC.firstname = firstname;
+                            ACC.lastname = lastname;
                             ACC.ShowDialog();
                             break;
 
@@ -129,6 +139,8 @@ namespace Finance_APP.window_forms
                             this.Hide();
                             Maindashbord bm = new Maindashbord();
                             bm.jobroll = jobroll;
+                            bm.firstname = firstname;
+                            bm.lastname = lastname;
                             bm.ShowDialog();
                             break;
 
