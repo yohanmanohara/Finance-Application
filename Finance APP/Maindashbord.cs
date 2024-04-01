@@ -35,7 +35,7 @@ namespace Finance_APP
         }
         private void Maindashbord_Load(object sender, EventArgs e)
         {
-            label1.Text = firstname+lastname;
+            label1.Text = $"{firstname} {lastname}";
             label3.Text = jobroll;
 
         }

@@ -94,6 +94,7 @@ namespace Finance_APP.window_forms
                             this.Hide();
 
                             Maindashbord HRO = new Maindashbord();
+                            jobroll = "HR Maneger";
                             HRO.jobroll = jobroll;
                             HRO.firstname = firstname;
                             HRO.lastname = lastname;
@@ -105,6 +106,7 @@ namespace Finance_APP.window_forms
 
                             this.Hide();
                             Maindashbord BRO = new Maindashbord();
+                            jobroll = "Branch Maneger";
                             BRO.jobroll = jobroll;
                             BRO.firstname = firstname;
                             BRO.lastname = lastname;
@@ -116,6 +118,7 @@ namespace Finance_APP.window_forms
 
                             this.Hide();
                             Maindashbord CA = new Maindashbord();
+                            jobroll = "Cashier";
                             CA.jobroll = jobroll;
                             CA.firstname = firstname;
                             CA.lastname = lastname;
@@ -138,6 +141,7 @@ namespace Finance_APP.window_forms
 
                             this.Hide();
                             Maindashbord bm = new Maindashbord();
+                            jobroll = "Branch Maneger";
                             bm.jobroll = jobroll;
                             bm.firstname = firstname;
                             bm.lastname = lastname;
