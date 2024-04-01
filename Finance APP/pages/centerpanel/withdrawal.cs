@@ -8,19 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP.pages
+namespace Finance_APP.pages.centerpanel
 {
-    public partial class Create_customer_account : UserControl
+    public partial class withdrawal : UserControl
     {
         public bool TopLevel { get; internal set; }
-        public Create_customer_account()
+        public withdrawal()
         {
             InitializeComponent();
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void u_name_TextChanged(object sender, EventArgs e)
@@ -28,7 +23,14 @@ namespace Finance_APP.pages
 
         }
 
-        private void Create_customer_account_Load(object sender, EventArgs e)
+        private void u_name_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void withdrawal_Load(object sender, EventArgs e)
+
         {
 
         }
