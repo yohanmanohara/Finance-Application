@@ -267,20 +267,46 @@
             // 
             // guna2Button1
             // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(347, 501);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 45;
-            this.guna2Button1.Text = "Activate";
+
+            this.txtDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDeposit.Animated = true;
+            this.txtDeposit.AutoSize = true;
+            this.txtDeposit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.txtDeposit.BorderRadius = 15;
+            this.txtDeposit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeposit.DefaultText = "";
+            this.txtDeposit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDeposit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDeposit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDeposit.DisabledState.Parent = this.txtDeposit;
+            this.txtDeposit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDeposit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDeposit.FocusedState.Parent = this.txtDeposit;
+            this.txtDeposit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDeposit.HoverState.Parent = this.txtDeposit;
+            this.txtDeposit.Location = new System.Drawing.Point(480, 411);
+            this.txtDeposit.Name = "txtDeposit";
+            this.txtDeposit.PasswordChar = '\0';
+            this.txtDeposit.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtDeposit.PlaceholderText = "Deposit Amount";
+            this.txtDeposit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDeposit.SelectedText = "";
+            this.txtDeposit.ShadowDecoration.Parent = this.txtDeposit;
+            this.txtDeposit.Size = new System.Drawing.Size(307, 37);
+            this.txtDeposit.TabIndex = 60;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2Panel1.AutoSize = true;
+            this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
+            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Panel1.Location = new System.Drawing.Point(517, 464);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(320, 244);
+            this.guna2Panel1.TabIndex = 61;
+
             // 
             // Create_customer_account
             // 
