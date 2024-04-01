@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP.pages.dasbordpanel
+namespace Finance_APP.pages.centerpanel
 {
-    public partial class cashierview : UserControl
+    public partial class success_alert : UserControl
     {
-        public cashierview()
+        public success_alert()
         {
             InitializeComponent();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

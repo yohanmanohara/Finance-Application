@@ -114,7 +114,6 @@
             this.guna2Button5.Size = new System.Drawing.Size(331, 69);
             this.guna2Button5.TabIndex = 10;
             this.guna2Button5.Text = "Withdrawal";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // cashierview
             // 

@@ -43,10 +43,5 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

@@ -23,17 +23,12 @@ namespace Finance_APP.pages
 
         }
 
+        private void u_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Create_customer_account_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnActivate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFullName_TextChanged(object sender, EventArgs e)
         {
 
         }
