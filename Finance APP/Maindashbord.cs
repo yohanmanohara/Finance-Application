@@ -35,7 +35,8 @@ namespace Finance_APP
         }
         private void Maindashbord_Load(object sender, EventArgs e)
         {
-            label1.Text = firstname;
+            label1.Text = firstname+lastname;
+            label3.Text = jobroll;
 
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -85,7 +86,7 @@ namespace Finance_APP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Job Roll: {jobroll}");
+            
 
         }
 
