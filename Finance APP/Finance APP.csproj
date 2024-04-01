@@ -119,6 +119,12 @@
     <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
+      <DependentUpon>search account cashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
+      <DependentUpon>search account cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
@@ -352,6 +361,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\download1.png" />
+    <None Include="Resources\download.png" />
     <None Include="Resources\dashboard_line.png" />
     <None Include="Resources\perm_identity_24px.png" />
     <None Include="Resources\close-circle-icon-2048x2048-d1.png" />
