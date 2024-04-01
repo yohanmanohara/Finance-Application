@@ -114,6 +114,14 @@ namespace Finance_APP
                     acc.Show();
                     break;
 
+                case "bm":
+                    branchmaneger bm = new branchmaneger();
+                    bm.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(bm);
+                    this.guna2Panel2.Tag = bm;
+                    bm.Show();
+                    break;
+
             }
 
         }

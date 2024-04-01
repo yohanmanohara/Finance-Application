@@ -123,6 +123,15 @@ namespace Finance_APP.window_forms
                             ACC.ShowDialog();
                             break;
 
+                        case "bm":
+
+
+                            this.Hide();
+                            Maindashbord bm = new Maindashbord();
+                            bm.jobroll = jobroll;
+                            bm.ShowDialog();
+                            break;
+
 
 
 
