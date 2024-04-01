@@ -125,6 +125,12 @@
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\successfully logged in.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\successfully logged in.Designer.cs">
+      <DependentUpon>successfully logged in.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\successfully logged in.resx">
+      <DependentUpon>successfully logged in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\transfer.resx">
       <DependentUpon>transfer.cs</DependentUpon>
