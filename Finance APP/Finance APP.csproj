@@ -113,6 +113,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\Create_Customer_Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\Create_Customer_Account.Designer.cs">
+      <DependentUpon>Create_Customer_Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\search account cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </Compile>
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\Create_Customer_Account.resx">
+      <DependentUpon>Create_Customer_Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
       <DependentUpon>search account cashier.cs</DependentUpon>
