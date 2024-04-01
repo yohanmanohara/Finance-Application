@@ -240,7 +240,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtFullName);
             this.Name = "UpdateAccount";
-            this.Size = new System.Drawing.Size(904, 711);
+            this.Size = new System.Drawing.Size(904, 777);
             this.Load += new System.EventHandler(this.UpdateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
