@@ -162,5 +162,11 @@ namespace Finance_APP
         private void pictureBox3_Click(object sender, EventArgs e)
         {
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            logoutpopup logoutpopup = new logoutpopup();
+            logoutpopup.ShowDialog();
+        }
     }
 }

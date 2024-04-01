@@ -35,6 +35,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(70, 44);
@@ -114,6 +115,7 @@
             this.Controls.Add(this.label1);
             this.Name = "search_account_cashier";
             this.Size = new System.Drawing.Size(904, 777);
+            this.Load += new System.EventHandler(this.search_account_cashier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
