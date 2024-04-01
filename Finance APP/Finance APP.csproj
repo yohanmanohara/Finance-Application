@@ -67,6 +67,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 3.5\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\kgwyo\OneDrive\softwares usable\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -116,23 +119,39 @@
     <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
+      <DependentUpon>search account cashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\success alert.cs">
+
+    
+   
+    <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\success alert.Designer.cs">
-      <DependentUpon>success alert.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\transfer.Designer.cs">
+      <DependentUpon>transfer.cs</DependentUpon>
+
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\withdrawal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
+      <DependentUpon>withdrawal.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\Accounthadle.cs">
       <SubType>UserControl</SubType>
@@ -195,14 +214,23 @@
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
+      <DependentUpon>search account cashier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\success alert.resx">
-      <DependentUpon>success alert.cs</DependentUpon>
+
+
+    
+    <EmbeddedResource Include="pages\centerpanel\transfer.resx">
+      <DependentUpon>transfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
+      <DependentUpon>withdrawal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
       <DependentUpon>Accounthadle.cs</DependentUpon>
@@ -331,6 +359,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\download1.png" />
+    <None Include="Resources\download.png" />
     <None Include="Resources\dashboard_line.png" />
     <None Include="Resources\perm_identity_24px.png" />
     <None Include="Resources\close-circle-icon-2048x2048-d1.png" />
