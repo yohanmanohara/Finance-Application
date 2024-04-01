@@ -55,9 +55,7 @@ namespace Finance_APP.window_forms
         private void timer3_Tick(object sender, EventArgs e)
         {
 
-            date.Text = DateTime.Now.ToString("dd");
-            date2.Text = DateTime.Now.ToString("MMM");
-            time.Text = DateTime.Now.ToString("hh:mm:ss");
+            
 
         }
 
@@ -205,6 +203,11 @@ namespace Finance_APP.window_forms
         }
 
         private void time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

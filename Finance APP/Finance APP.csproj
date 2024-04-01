@@ -352,6 +352,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-logout-48.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\logout.png" />
     <None Include="Resources\download.jpg" />
     <None Include="Resources\download1.png" />
     <None Include="Resources\download.png" />

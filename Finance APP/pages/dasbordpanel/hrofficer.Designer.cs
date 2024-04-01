@@ -44,12 +44,12 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 103);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 86);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(331, 69);
             this.guna2Button2.TabIndex = 7;
-            this.guna2Button2.Text = "Search Accounts";
+            this.guna2Button2.Text = "Overview";
             // 
             // guna2Button1
             // 
@@ -60,12 +60,12 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 328);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 311);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(331, 69);
             this.guna2Button1.TabIndex = 8;
-            this.guna2Button1.Text = "Deposit";
+            this.guna2Button1.Text = "Time & Attendance";
             // 
             // guna2Button3
             // 
@@ -76,12 +76,12 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 403);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 386);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(331, 69);
             this.guna2Button3.TabIndex = 9;
-            this.guna2Button3.Text = "Check Balance";
+            this.guna2Button3.Text = "Analytics";
             // 
             // guna2Button4
             // 
@@ -92,12 +92,12 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 253);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 236);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(331, 69);
             this.guna2Button4.TabIndex = 10;
-            this.guna2Button4.Text = "Transfer";
+            this.guna2Button4.Text = "Employee list";
             // 
             // guna2Button5
             // 
@@ -108,12 +108,12 @@
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(3, 178);
+            this.guna2Button5.Location = new System.Drawing.Point(3, 161);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(331, 69);
             this.guna2Button5.TabIndex = 11;
-            this.guna2Button5.Text = "Withdrawal";
+            this.guna2Button5.Text = "Add Employee";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // hrofficer

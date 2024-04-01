@@ -39,6 +39,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(89)))), ((int)(((byte)(222)))));
@@ -248,6 +249,7 @@
             this.Controls.Add(this.label1);
             this.Name = "transfer";
             this.Size = new System.Drawing.Size(904, 777);
+            this.Load += new System.EventHandler(this.transfer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
