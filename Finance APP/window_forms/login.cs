@@ -106,7 +106,7 @@ namespace Finance_APP.window_forms
 
                             this.Hide();
                             Maindashbord BRO = new Maindashbord();
-                            jobroll = "Branch Maneger";
+                            jobroll = "Branch Officer";
                             BRO.jobroll = jobroll;
                             BRO.firstname = firstname;
                             BRO.lastname = lastname;
