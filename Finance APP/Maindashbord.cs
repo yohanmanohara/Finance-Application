@@ -18,14 +18,25 @@ namespace Finance_APP
 
         public Panel Guna2Panel4 { get { return guna2Panel4; } }
 
-        public string jobroll { get; set; } 
+        public string jobroll { get; set; }
+
+        public string firstname { get; set; }
+        public string lastname { get; set; }
 
 
         public Maindashbord()
         {
             InitializeComponent();
+            this.Load += Maindashbord_Load;
 
             this.FormClosing += MainForm_FormClosing;
+          
+
+        }
+        private void Maindashbord_Load(object sender, EventArgs e)
+        {
+            label1.Text = firstname;
+
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -114,6 +125,14 @@ namespace Finance_APP
                     acc.Show();
                     break;
 
+                case "bm":
+                    branchmaneger bm = new branchmaneger();
+                    bm.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(bm);
+                    this.guna2Panel2.Tag = bm;
+                    bm.Show();
+                    break;
+
             }
 
         }
@@ -127,6 +146,20 @@ namespace Finance_APP
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
         }
     }
 }
