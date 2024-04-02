@@ -415,6 +415,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\editdddd.png" />
     <None Include="Resources\dummy-profile-icon.png" />
     <None Include="Resources\Group_51_2.png" />
     <None Include="Resources\success.png" />

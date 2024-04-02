@@ -123,6 +123,16 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editdddd {
+            get {
+                object obj = ResourceManager.GetObject("editdddd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap editdddd1 {
             get {
                 object obj = ResourceManager.GetObject("editdddd1", resourceCulture);
@@ -383,6 +393,26 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap success1 {
+            get {
+                object obj = ResourceManager.GetObject("success1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap success2 {
+            get {
+                object obj = ResourceManager.GetObject("success2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wrong {
             get {
                 object obj = ResourceManager.GetObject("wrong", resourceCulture);
@@ -396,6 +426,16 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap wrong1 {
             get {
                 object obj = ResourceManager.GetObject("wrong1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrong2 {
+            get {
+                object obj = ResourceManager.GetObject("wrong2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
