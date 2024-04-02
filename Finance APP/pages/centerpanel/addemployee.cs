@@ -285,30 +285,39 @@ namespace Finance_APP.pages.centerpanel
 
             string password = passwordTextBox.Text;
 
-
             // Create a connection to the SQL Server database
-
             try
             {
                 connectionString.Open();
 
-                // Create a SQL command to insert account data into the database
-                string insertQuery = "INSERT INTO [dbo].[userdb] (username, password, email, fullname, birthdate, gender, phonenumber, adress, tin, jobtitle, workinglocation,firstname,lastname,empstatus) " +
-                                     "VALUES ('" + username + "', '" + password + "', '" + email + "', '" + fullName + "', '" + dateOfBirth + "', '" + gender + "', '" + phoneNumber + "', '" + address + "', '" + tin + "', '" + jobtitle + "', '" + location + "','"+ firstname +"','"+lastname+"','"+empstatus+"')";
+                string insertQuery = "INSERT INTO [dbo].[userdb] (username, password, email, fullname, birthdate, gender, phonenumber, adress, tin, jobtitle, workinglocation, firstname, lastname, empstatus) " +
+                                     "VALUES (@Username, @Password, @Email, @FullName, @DateOfBirth, @Gender, @PhoneNumber, @Address, @TIN, @JobTitle, @Location, @FirstName, @LastName, @EmpStatus)";
 
                 using (SqlCommand command = new SqlCommand(insertQuery, connectionString))
                 {
-                    // Execute the command to insert data
+                    command.Parameters.AddWithValue("@Username", username);
+                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@Email", email);
+                    command.Parameters.AddWithValue("@FullName", fullName);
+                    command.Parameters.AddWithValue("@DateOfBirth", dateOfBirth);
+                    command.Parameters.AddWithValue("@Gender", gender);
+                    command.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                    command.Parameters.AddWithValue("@Address", address);
+                    command.Parameters.AddWithValue("@TIN", tin);
+                    command.Parameters.AddWithValue("@JobTitle", jobtitle);
+                    command.Parameters.AddWithValue("@Location", location);
+                    command.Parameters.AddWithValue("@FirstName", firstname);
+                    command.Parameters.AddWithValue("@LastName", lastname);
+                    command.Parameters.AddWithValue("@EmpStatus", empstatus);
+
                     int rowsAffected = command.ExecuteNonQuery();
 
-                    // Check if data insertion was successful
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Account created successfully!");
                     }
                     else
                     {
-                        // Handle the case when no rows were affected
                         MessageBox.Show("Failed to create account.");
                     }
                 }
@@ -317,18 +326,10 @@ namespace Finance_APP.pages.centerpanel
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
-
-
-
-
-
-
-
-
-
-
-
-
+            finally
+            {
+                connectionString.Close();
+            }
 
 
 
