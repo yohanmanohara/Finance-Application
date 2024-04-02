@@ -49,37 +49,72 @@ namespace Finance_APP.panel_import
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            // Retrieve input data from textboxes
             string username = usernameTxt.Text;
             string firstname = firstnametxt.Text;
             
             string newEmpStatus = empstatustxt.Text;
 
-            // SQL query to update or insert new job roll data
             string query = "IF EXISTS (SELECT 1 FROM userdb WHERE username = @Username AND firstname = @Firstname) " +
                            "BEGIN " +
                            "   UPDATE userdb SET empstatus = @EmpStatus WHERE username = @Username AND firstname = @Firstname " +
                            "END ";
+
+            if(newEmpStatus=="Delete")
+            {
+                string query1 = "DELETE FROM userdb WHERE username = @Username OR firstname = @Firstname";
+                try
+                {
+                   
+                    {
+                        connectionString.Open();
+                        using (SqlCommand command = new SqlCommand(query1, connectionString))
+                        {
+                           
+                         
+
+                            command.Parameters.AddWithValue("@Username", username);
+                            command.Parameters.AddWithValue("@Firstname", firstname);
+
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Record(s) deleted successfully.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("No record found matching the criteria.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+                finally
+                {
+                    connectionString.Close();
+                }
+            }
+
+
 
 
             try
             {
                
                 {
-                    // Open the database connection
                     connectionString.Open();
 
-                    // Create a SqlCommand to execute the query
                     using (SqlCommand command = new SqlCommand(query, connectionString))
                     {
                         command.Parameters.AddWithValue("@Username", username);
                         command.Parameters.AddWithValue("@Firstname", firstname);
                         command.Parameters.AddWithValue("@EmpStatus", newEmpStatus);
 
-                        // Execute the command
                         int rowsAffected = command.ExecuteNonQuery();
 
-                        // Check if any rows were affected
                         if (rowsAffected > 0)
                         {
                           sucess1   sucess2 = new sucess1();    

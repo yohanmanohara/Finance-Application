@@ -161,7 +161,8 @@
             this.empstatustxt.ItemHeight = 30;
             this.empstatustxt.Items.AddRange(new object[] {
             "Active",
-            "Blocked"});
+            "Blocked",
+            "Delete"});
             this.empstatustxt.ItemsAppearance.Parent = this.empstatustxt;
             this.empstatustxt.Location = new System.Drawing.Point(624, 272);
             this.empstatustxt.Margin = new System.Windows.Forms.Padding(40);
@@ -169,7 +170,7 @@
             this.empstatustxt.Name = "empstatustxt";
             this.empstatustxt.ShadowDecoration.Parent = this.empstatustxt;
             this.empstatustxt.Size = new System.Drawing.Size(173, 36);
-            this.empstatustxt.StartIndex = 0;
+            this.empstatustxt.StartIndex = 1;
             this.empstatustxt.TabIndex = 50;
             // 
             // label12
