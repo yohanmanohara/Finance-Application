@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finance_APP.window_forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -271,10 +272,10 @@ namespace Finance_APP.pages.centerpanel
             string fullName = fullnameTextBox.Text;
             DateTime dateOfBirth = dateOfBirthDateTimePicker.Value;
             string gender = genderComboBox.Text;
-            int phoneNumber = int.Parse(phoneNumberTextBox.Text);
+            string phoneNumberStr = phoneNumberTextBox.Text;
             string email = emailTextBox.Text;
             string address = addressTextBox.Text;
-            int tin = int.Parse(tinTextBox.Text);
+            string tinStr = tinTextBox.Text;
             string jobtitle= jobtitleBox1.Text;
             string location=locationTextBox.Text;
             string username = usernameTxt.Text;
@@ -285,7 +286,34 @@ namespace Finance_APP.pages.centerpanel
 
             string password = passwordTextBox.Text;
 
-            // Create a connection to the SQL Server database
+            if (string.IsNullOrWhiteSpace(fullName) ||
+                string.IsNullOrWhiteSpace(gender) ||
+                string.IsNullOrWhiteSpace(phoneNumberStr) ||
+                string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(address) ||
+                string.IsNullOrWhiteSpace(tinStr) ||
+                string.IsNullOrWhiteSpace(jobtitle) ||
+                string.IsNullOrWhiteSpace(location) ||
+                string.IsNullOrWhiteSpace(username) ||
+                string.IsNullOrWhiteSpace(firstname) ||
+                string.IsNullOrWhiteSpace(lastname) ||
+                string.IsNullOrWhiteSpace(empstatus) ||
+                string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Please fill in all the required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!int.TryParse(phoneNumberStr, out int phoneNumber) || phoneNumber == 0 ||
+                !int.TryParse(tinStr, out int tin) || tin == 0)
+            {
+                MessageBox.Show("Phone number and TIN must be valid integers.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
+
             try
             {
                 connectionString.Open();
@@ -313,18 +341,27 @@ namespace Finance_APP.pages.centerpanel
                     int rowsAffected = command.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
+
+
                     {
-                        MessageBox.Show("Account created successfully!");
+
+                        ClearFormInputs();
+                        success success = new success();
+                        success.ShowDialog();
+
                     }
                     else
                     {
-                        MessageBox.Show("Failed to create account.");
+                        ClearFormInputs();
+                        errocreateaccount errocreateaccount = new errocreateaccount();
+                        errocreateaccount.ShowDialog();
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+               erropop erro =new erropop();
+                erro.ShowDialog();  
             }
             finally
             {
@@ -350,6 +387,23 @@ namespace Finance_APP.pages.centerpanel
 
 
 
+        }
+        private void ClearFormInputs()
+        {
+            fullnameTextBox.Text = "";
+            dateOfBirthDateTimePicker.Value = DateTime.Now; 
+            genderComboBox.SelectedIndex = -1; 
+            phoneNumberTextBox.Text = "";
+            emailTextBox.Text = "";
+            addressTextBox.Text = "";
+            tinTextBox.Text = "";
+            jobtitleBox1.Text = "";
+            locationTextBox.Text = "";
+            usernameTxt.Text = "";
+            firstnametxt.Text = "";
+            lastnametxt.Text = "";
+            empstatustxt.Text = "";
+            passwordTextBox.Text = "";
         }
 
         private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)

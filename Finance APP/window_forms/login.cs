@@ -84,76 +84,102 @@ namespace Finance_APP.window_forms
 
                     string firstname = dt.Rows[0]["firstname"].ToString();
                     string lastname = dt.Rows[0]["lastname"].ToString();
+                    string empstatus = dt.Rows[0]["empstatus"].ToString();
                     switch (jobroll)
                     {
                         case "HR Maneger":
 
-                            
-                            this.Hide();
+                            if (empstatus == "Active")
+                            {
+                                this.Hide();
 
-                            Maindashbord HRO = new Maindashbord();
-                            HRO.jobroll = jobroll;
-                            HRO.firstname = firstname;
-                            HRO.lastname = lastname;
-                            HRO.ShowDialog();
+                                Maindashbord HRO = new Maindashbord();
+                                HRO.jobroll = jobroll;
+                                HRO.firstname = firstname;
+                                HRO.lastname = lastname;
+                                HRO.ShowDialog();
+                               
+
+                            }else if(empstatus== "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+
+                            }
+
                             break;
 
+
                         case "Branch Officer":
+                            if (empstatus == "Active")
+                            {
 
+                                this.Hide();
+                                Maindashbord BRO = new Maindashbord();
+                                jobroll = "Branch Officer";
+                                BRO.jobroll = jobroll;
+                                BRO.firstname = firstname;
+                                BRO.lastname = lastname;
+                                BRO.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
 
-                            this.Hide();
-                            Maindashbord BRO = new Maindashbord();
-                            jobroll = "Branch Officer";
-                            BRO.jobroll = jobroll;
-                            BRO.firstname = firstname;
-                            BRO.lastname = lastname;
-                            BRO.ShowDialog();
+                            }
                             break;
 
                         case "Cashier":
+                            if (empstatus == "Active")
+                            {
 
 
-                            this.Hide();
-                            Maindashbord CA = new Maindashbord();
-                            jobroll = "Cashier";
-                            CA.jobroll = jobroll;
-                            CA.firstname = firstname;
-                            CA.lastname = lastname;
-                            CA.ShowDialog();
+                                this.Hide();
+                                Maindashbord CA = new Maindashbord();
+                                jobroll = "Cashier";
+                                CA.jobroll = jobroll;
+                                CA.firstname = firstname;
+                                CA.lastname = lastname;
+                                CA.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+
+                            }
                             break;
 
-                        case "acc":
-
-
-                            this.Hide();
-                            Maindashbord ACC = new Maindashbord();
-                            ACC.jobroll = jobroll;
-                            ACC.firstname = firstname;
-                            ACC.lastname = lastname;
-                            ACC.ShowDialog();
-                            break;
 
                         case "Branch Maneger":
 
+                            if (empstatus == "Active")
+                            {
 
-                            this.Hide();
-                            Maindashbord bm = new Maindashbord();
-                            jobroll = "Branch Maneger";
-                            bm.jobroll = jobroll;
-                            bm.firstname = firstname;
-                            bm.lastname = lastname;
-                            bm.ShowDialog();
+                                this.Hide();
+                                Maindashbord bm = new Maindashbord();
+                                jobroll = "Branch Maneger";
+                                bm.jobroll = jobroll;
+                                bm.firstname = firstname;
+                                bm.lastname = lastname;
+                                bm.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+                            }
                             break;
 
 
 
 
 
-                        case "noroll":
-                            this.Hide();
-                            jobrollerro erropop = new jobrollerro();
-                            erropop.ShowDialog();
-                            break;
 
 
                         
