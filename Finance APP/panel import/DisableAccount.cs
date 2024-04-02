@@ -97,7 +97,7 @@ namespace Finance_APP.panel_import
                     connectionString.Close();
                 }
             }
-
+            ClearFormInputs();
 
 
 
@@ -139,6 +139,13 @@ namespace Finance_APP.panel_import
             }
         }
 
+        private void ClearFormInputs()
+        {
+            usernameTxt.Text = "";
+            firstnametxt.Text = "";
+            empstatustxt.Text = "";
+           
+        }
     }
     
     }
