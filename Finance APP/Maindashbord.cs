@@ -95,7 +95,7 @@ namespace Finance_APP
 
             switch (jobroll)
             {
-                case "HR Maneger":
+                case "HR Manager":
                     hrofficer hro = new hrofficer();
                     hro.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(hro);
@@ -126,7 +126,7 @@ namespace Finance_APP
                     acc.Show();
                     break;
 
-                case "Branch Maneger":
+                case "Branch Manager":
                     branchmaneger bm = new branchmaneger();
                     bm.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(bm);

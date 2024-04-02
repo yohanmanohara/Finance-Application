@@ -69,7 +69,6 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackgroundImage = global::Finance_APP.Properties.Resources.Group_3;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Location = new System.Drawing.Point(345, 44);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);

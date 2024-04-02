@@ -119,6 +119,12 @@
     <Compile Include="pages\centerpanel\addemployee.Designer.cs">
       <DependentUpon>addemployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\employeemanegment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\employeemanegment.Designer.cs">
+      <DependentUpon>employeemanegment.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\search account cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
+      <DependentUpon>employeemanegment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
       <DependentUpon>search account cashier.cs</DependentUpon>
@@ -379,6 +388,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\success_3.png" />
+    <None Include="Resources\Group 51~21.png" />
+    <None Include="Resources\editdddd1.png" />
+    <None Include="Resources\wrong.png" />
     <None Include="Resources\payments.png" />
     <None Include="Resources\icons8-logout-48.png" />
     <None Include="Resources\exit.png" />
@@ -396,6 +409,8 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="panel import\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

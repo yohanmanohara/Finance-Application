@@ -87,7 +87,7 @@ namespace Finance_APP.window_forms
                     string empstatus = dt.Rows[0]["empstatus"].ToString();
                     switch (jobroll)
                     {
-                        case "HR Maneger":
+                        case "HR Manager":
 
                             if (empstatus == "Active")
                             {
@@ -155,7 +155,7 @@ namespace Finance_APP.window_forms
                             break;
 
 
-                        case "Branch Maneger":
+                        case "Branch Manager":
 
                             if (empstatus == "Active")
                             {
@@ -176,7 +176,12 @@ namespace Finance_APP.window_forms
                             }
                             break;
 
+                        default:
+                            this.Hide();
+                            jobrollerro jobrollerro = new jobrollerro();
+                            jobrollerro.ShowDialog();
 
+                            break;
 
 
 

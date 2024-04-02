@@ -113,6 +113,16 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editdddd1 {
+            get {
+                object obj = ResourceManager.GetObject("editdddd1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -153,9 +163,9 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_3 {
+        internal static System.Drawing.Bitmap Group_31 {
             get {
-                object obj = ResourceManager.GetObject("Group_3", resourceCulture);
+                object obj = ResourceManager.GetObject("Group 31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +206,16 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap Group_4 {
             get {
                 object obj = ResourceManager.GetObject("Group_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_51_21 {
+            get {
+                object obj = ResourceManager.GetObject("Group 51~21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +313,16 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap perm_identity_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("perm_identity_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_02_25_211554_removebg_preview_1 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_02_25_211554_removebg_preview_1", resourceCulture);
@@ -316,6 +346,26 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_02_25_225258_removebg_preview_1 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_02_25_225258_removebg_preview_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap success_3 {
+            get {
+                object obj = ResourceManager.GetObject("success_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrong {
+            get {
+                object obj = ResourceManager.GetObject("wrong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
