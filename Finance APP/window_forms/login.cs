@@ -80,26 +80,25 @@ namespace Finance_APP.window_forms
 
                 if (dt.Rows.Count > 0)
                 {
-                    string jobroll = dt.Rows[0]["jobroll"].ToString();
+                    string jobroll = dt.Rows[0]["jobtitle"].ToString();
 
                     string firstname = dt.Rows[0]["firstname"].ToString();
                     string lastname = dt.Rows[0]["lastname"].ToString();
                     switch (jobroll)
                     {
-                        case "hro":
+                        case "HR Maneger":
 
                             
                             this.Hide();
 
                             Maindashbord HRO = new Maindashbord();
-                            jobroll = "HR Maneger";
                             HRO.jobroll = jobroll;
                             HRO.firstname = firstname;
                             HRO.lastname = lastname;
                             HRO.ShowDialog();
                             break;
 
-                        case "bro":
+                        case "Branch Officer":
 
 
                             this.Hide();
@@ -111,7 +110,7 @@ namespace Finance_APP.window_forms
                             BRO.ShowDialog();
                             break;
 
-                        case "ca":
+                        case "Cashier":
 
 
                             this.Hide();
@@ -134,7 +133,7 @@ namespace Finance_APP.window_forms
                             ACC.ShowDialog();
                             break;
 
-                        case "bm":
+                        case "Branch Maneger":
 
 
                             this.Hide();
