@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,10 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class addemployee : UserControl
     {
+
+
+
+
         public bool TopLevel { get; internal set; }
         public addemployee()
         {
@@ -258,7 +263,95 @@ namespace Finance_APP.pages.centerpanel
 
         }
 
+        SqlConnection connectionString = new SqlConnection(@"Data Source=financensbm.database.windows.net;Initial Catalog=finance;Persist Security Info=True;User ID=financeadmin;Password=finance2024$;Encrypt=True");
+
         private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            // Collect account data from the form
+            string fullName = fullnameTextBox.Text;
+            DateTime dateOfBirth = dateOfBirthDateTimePicker.Value;
+            string gender = genderComboBox.Text;
+            int phoneNumber = int.Parse(phoneNumberTextBox.Text);
+            string email = emailTextBox.Text;
+            string address = addressTextBox.Text;
+            int tin = int.Parse(tinTextBox.Text);
+            string jobtitle= jobtitleBox1.Text;
+            string location=locationTextBox.Text;
+            string username = usernameTxt.Text;
+            string firstname = firstnametxt.Text;
+            string lastname = lastnametxt.Text;
+            string empstatus = empstatustxt.Text;
+
+
+            string password = passwordTextBox.Text;
+
+
+            // Create a connection to the SQL Server database
+
+            try
+            {
+                connectionString.Open();
+
+                // Create a SQL command to insert account data into the database
+                string insertQuery = "INSERT INTO [dbo].[userdb] (username, password, email, fullname, birthdate, gender, phonenumber, adress, tin, jobtitle, workinglocation,firstname,lastname,empstatus) " +
+                                     "VALUES ('" + username + "', '" + password + "', '" + email + "', '" + fullName + "', '" + dateOfBirth + "', '" + gender + "', '" + phoneNumber + "', '" + address + "', '" + tin + "', '" + jobtitle + "', '" + location + "','"+ firstname +"','"+lastname+"','"+empstatus+"')";
+
+                using (SqlCommand command = new SqlCommand(insertQuery, connectionString))
+                {
+                    // Execute the command to insert data
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    // Check if data insertion was successful
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Account created successfully!");
+                    }
+                    else
+                    {
+                        // Handle the case when no rows were affected
+                        MessageBox.Show("Failed to create account.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
