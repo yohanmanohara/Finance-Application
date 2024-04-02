@@ -55,11 +55,12 @@ namespace Finance_APP.pages.centerpanel
 
             // Show otherForm
             otherForm.Show();
+            guna2PictureBox4.Hide();
         }
 
         private void guna2Panel1_Paint_1(object sender, PaintEventArgs e)
         {
-
+           
         }
     }
 }

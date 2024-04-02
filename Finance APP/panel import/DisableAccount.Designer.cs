@@ -190,7 +190,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 24);
+            this.label9.Location = new System.Drawing.Point(89, 21);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(194, 28);
             this.label9.TabIndex = 51;

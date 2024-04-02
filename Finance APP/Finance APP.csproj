@@ -191,6 +191,12 @@
     <Compile Include="panel import\DisableAccount.Designer.cs">
       <DependentUpon>DisableAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel import\ViewAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panel import\ViewAccount.Designer.cs">
+      <DependentUpon>ViewAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="panel import\DisableAccount.resx">
       <DependentUpon>DisableAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel import\ViewAccount.resx">
+      <DependentUpon>ViewAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -406,6 +415,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\dummy-profile-icon.png" />
     <None Include="Resources\Group_51_2.png" />
     <None Include="Resources\success.png" />
     <None Include="Resources\success_3.png" />

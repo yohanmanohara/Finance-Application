@@ -113,6 +113,16 @@ namespace Finance_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dummy_profile_icon {
+            get {
+                object obj = ResourceManager.GetObject("dummy-profile-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap editdddd1 {
             get {
                 object obj = ResourceManager.GetObject("editdddd1", resourceCulture);
@@ -316,16 +326,6 @@ namespace Finance_APP.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_02_25_211554_removebg_preview_1 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_02_25_211554_removebg_preview_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2024_02_25_224123_removebg_preview_1 {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot_2024_02_25_224123_removebg_preview_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
