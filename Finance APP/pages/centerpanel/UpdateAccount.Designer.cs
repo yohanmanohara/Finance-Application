@@ -79,7 +79,6 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.BackgroundImage = global::Finance_APP.Properties.Resources.Group_32;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Location = new System.Drawing.Point(492, 486);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);

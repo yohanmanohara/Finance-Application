@@ -8,18 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP.pages.dasbordpanel
+namespace Finance_APP.window_forms
 {
-    public partial class Accounthadle : UserControl
+    public partial class sucess1 : Form
     {
-        public Accounthadle()
+        public sucess1()
         {
             InitializeComponent();
         }
 
-        private void Accounthadle_Load(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
