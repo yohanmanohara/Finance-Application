@@ -20,6 +20,7 @@ namespace Finance_APP.panel_import
         public DisableAccount()
         {
             InitializeComponent();
+
         }
 
 
