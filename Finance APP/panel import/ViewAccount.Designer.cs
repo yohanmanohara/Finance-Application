@@ -32,6 +32,8 @@
             this.usernametxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.dateOfBirthDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.empstatustxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.jobtitleBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.genderComboBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -60,8 +62,6 @@
             this.fullnameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.dateOfBirthDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -73,7 +73,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.label9.Location = new System.Drawing.Point(321, 20);
+            this.label9.Location = new System.Drawing.Point(304, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(212, 28);
             this.label9.TabIndex = 52;
@@ -96,7 +96,7 @@
             this.usernametxt.FocusedState.Parent = this.usernametxt;
             this.usernametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernametxt.HoverState.Parent = this.usernametxt;
-            this.usernametxt.Location = new System.Drawing.Point(121, 100);
+            this.usernametxt.Location = new System.Drawing.Point(104, 100);
             this.usernametxt.Margin = new System.Windows.Forms.Padding(4);
             this.usernametxt.Name = "usernametxt";
             this.usernametxt.PasswordChar = '\0';
@@ -117,7 +117,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(691, 102);
+            this.guna2Button1.Location = new System.Drawing.Point(674, 102);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(107, 45);
@@ -161,12 +161,48 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label19);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(-17, 200);
+            this.guna2Panel1.Location = new System.Drawing.Point(-34, 200);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(867, 1429);
             this.guna2Panel1.TabIndex = 56;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Button4.BorderRadius = 20;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(691, 43);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(107, 45);
+            this.guna2Button4.TabIndex = 57;
+            this.guna2Button4.Text = "Get PDF";
+            // 
+            // dateOfBirthDateTimePicker
+            // 
+            this.dateOfBirthDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateOfBirthDateTimePicker.BorderRadius = 19;
+            this.dateOfBirthDateTimePicker.CheckedState.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
+            this.dateOfBirthDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOfBirthDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateOfBirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateOfBirthDateTimePicker.HoverState.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(148, 516);
+            this.dateOfBirthDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateOfBirthDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
+            this.dateOfBirthDateTimePicker.ShadowDecoration.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(670, 48);
+            this.dateOfBirthDateTimePicker.TabIndex = 83;
+            this.dateOfBirthDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
             // 
             // empstatustxt
             // 
@@ -718,42 +754,6 @@
             this.label19.TabIndex = 42;
             this.label19.Text = "Personal Information";
             // 
-            // dateOfBirthDateTimePicker
-            // 
-            this.dateOfBirthDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateOfBirthDateTimePicker.BorderRadius = 19;
-            this.dateOfBirthDateTimePicker.CheckedState.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.dateOfBirthDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateOfBirthDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dateOfBirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateOfBirthDateTimePicker.HoverState.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(148, 516);
-            this.dateOfBirthDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateOfBirthDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
-            this.dateOfBirthDateTimePicker.ShadowDecoration.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(670, 48);
-            this.dateOfBirthDateTimePicker.TabIndex = 83;
-            this.dateOfBirthDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button4.BorderRadius = 20;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(691, 43);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(107, 45);
-            this.guna2Button4.TabIndex = 57;
-            this.guna2Button4.Text = "Get PDF";
-            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -777,7 +777,7 @@
             this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.label9);
             this.Name = "ViewAccount";
-            this.Size = new System.Drawing.Size(867, 836);
+            this.Size = new System.Drawing.Size(833, 836);
             this.Load += new System.EventHandler(this.ViewAccount_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

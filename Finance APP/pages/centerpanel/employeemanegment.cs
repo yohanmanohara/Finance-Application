@@ -87,5 +87,22 @@ namespace Finance_APP.pages.centerpanel
             otherForm.Show();
             guna2PictureBox4.Hide();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            EmployeDatabase otherForm = new EmployeDatabase();
+            otherForm.TopLevel = false;
+            otherForm.FormBorderStyle = FormBorderStyle.None;
+            otherForm.Dock = DockStyle.Fill;
+            guna2Panel4.Controls.Clear();
+            guna2Panel4.Controls.Add(otherForm);
+            otherForm.Show();
+            guna2PictureBox4.Hide();
+        }
     }
 }

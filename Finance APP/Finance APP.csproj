@@ -92,6 +92,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="financeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>financeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Maindashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +196,12 @@
     <Compile Include="panel import\DisableAccount.Designer.cs">
       <DependentUpon>DisableAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel import\EmployeDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panel import\EmployeDatabase.Designer.cs">
+      <DependentUpon>EmployeDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="panel import\ViewAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -288,6 +299,9 @@
     <EmbeddedResource Include="panel import\DisableAccount.resx">
       <DependentUpon>DisableAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="panel import\EmployeDatabase.resx">
+      <DependentUpon>EmployeDatabase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="panel import\ViewAccount.resx">
       <DependentUpon>ViewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -318,6 +332,17 @@
       <DependentUpon>sucess1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
+    <None Include="financeDataSet.xsc">
+      <DependentUpon>financeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="financeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>financeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="financeDataSet.xss">
+      <DependentUpon>financeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Keygen.exe.config" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -440,6 +465,8 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
