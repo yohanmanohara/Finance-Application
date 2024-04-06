@@ -55,9 +55,7 @@ namespace Finance_APP.window_forms
         private void timer3_Tick(object sender, EventArgs e)
         {
 
-            date.Text = DateTime.Now.ToString("dd");
-            date2.Text = DateTime.Now.ToString("MMM");
-            time.Text = DateTime.Now.ToString("hh:mm:ss");
+            
 
         }
 
@@ -82,56 +80,111 @@ namespace Finance_APP.window_forms
 
                 if (dt.Rows.Count > 0)
                 {
-                    string jobroll = dt.Rows[0]["jobroll"].ToString();
+                    string jobroll = dt.Rows[0]["jobtitle"].ToString();
 
-
+                    string firstname = dt.Rows[0]["firstname"].ToString();
+                    string lastname = dt.Rows[0]["lastname"].ToString();
+                    string empstatus = dt.Rows[0]["empstatus"].ToString();
                     switch (jobroll)
                     {
-                        case "hro":
+                        case "HR Manager":
 
+                            if (empstatus == "Active")
+                            {
+                                this.Hide();
+
+                                Maindashbord HRO = new Maindashbord();
+                                HRO.jobroll = jobroll;
+                                HRO.firstname = firstname;
+                                HRO.lastname = lastname;
+                                HRO.ShowDialog();
+                               
+
+                            }else if(empstatus== "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+
+                            }
+
+                            break;
+
+
+                        case "Branch Officer":
+                            if (empstatus == "Active")
+                            {
+
+                                this.Hide();
+                                Maindashbord BRO = new Maindashbord();
+                               
+                                BRO.jobroll = jobroll;
+                                BRO.firstname = firstname;
+                                BRO.lastname = lastname;
+                                BRO.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+
+                            }
+                            break;
+
+                        case "Cashier":
+                            if (empstatus == "Active")
+                            {
+
+
+                                this.Hide();
+                                Maindashbord CA = new Maindashbord();
                             
-                            this.Hide();
-                            Maindashbord HRO = new Maindashbord();
-                            HRO.jobroll = jobroll;
-                            HRO.ShowDialog();
-                            break;
+                                CA.jobroll = jobroll;
+                                CA.firstname = firstname;
+                                CA.lastname = lastname;
+                                CA.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
 
-                        case "bro":
-
-
-                            this.Hide();
-                            Maindashbord BRO = new Maindashbord();
-                            BRO.jobroll = jobroll;
-                            BRO.ShowDialog();
-                            break;
-
-                        case "ca":
-
-
-                            this.Hide();
-                            Maindashbord CA = new Maindashbord();
-                            CA.jobroll = jobroll;
-                            CA.ShowDialog();
-                            break;
-
-                        case "acc":
-
-
-                            this.Hide();
-                            Maindashbord ACC = new Maindashbord();
-                            ACC.jobroll = jobroll;
-                            ACC.ShowDialog();
+                            }
                             break;
 
 
+                        case "Branch Manager":
 
+                            if (empstatus == "Active")
+                            {
 
-
-                        case "noroll":
-                            this.Hide();
-                            jobrollerro erropop = new jobrollerro();
-                            erropop.ShowDialog();
+                                this.Hide();
+                                Maindashbord bm = new Maindashbord();
+                              
+                                bm.jobroll = jobroll;
+                                bm.firstname = firstname;
+                                bm.lastname = lastname;
+                                bm.ShowDialog();
+                            }
+                            else if (empstatus == "Blocked")
+                            {
+                                this.Hide();
+                                jobrollerro erropop = new jobrollerro();
+                                erropop.ShowDialog();
+                            }
                             break;
+
+                        default:
+                            this.Hide();
+                            jobrollerro jobrollerro = new jobrollerro();
+                            jobrollerro.ShowDialog();
+
+                            break;
+
+
+
 
 
                         
@@ -180,6 +233,11 @@ namespace Finance_APP.window_forms
         }
 
         private void time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

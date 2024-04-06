@@ -18,14 +18,26 @@ namespace Finance_APP
 
         public Panel Guna2Panel4 { get { return guna2Panel4; } }
 
-        public string jobroll { get; set; } 
+        public string jobroll { get; set; }
+
+        public string firstname { get; set; }
+        public string lastname { get; set; }
 
 
         public Maindashbord()
         {
             InitializeComponent();
+            this.Load += Maindashbord_Load;
 
             this.FormClosing += MainForm_FormClosing;
+          
+
+        }
+        private void Maindashbord_Load(object sender, EventArgs e)
+        {
+            label1.Text = $"{firstname} {lastname}";
+            label3.Text = jobroll;
+
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -74,7 +86,7 @@ namespace Finance_APP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Job Roll: {jobroll}");
+            
 
         }
 
@@ -83,7 +95,7 @@ namespace Finance_APP
 
             switch (jobroll)
             {
-                case "hro":
+                case "HR Manager":
                     hrofficer hro = new hrofficer();
                     hro.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(hro);
@@ -91,7 +103,7 @@ namespace Finance_APP
                     hro.Show();
                     break;
 
-                case "bro":
+                case "Branch Officer":
                     branchofficer bro = new branchofficer();
                     bro.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(bro);
@@ -99,7 +111,7 @@ namespace Finance_APP
                     bro.Show();
                     break;
 
-                case "ca":
+                case "Cashier":
                     cashierview ca = new cashierview();
                     ca.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(ca);
@@ -112,6 +124,14 @@ namespace Finance_APP
                     this.guna2Panel2.Controls.Add(acc);
                     this.guna2Panel2.Tag = acc;
                     acc.Show();
+                    break;
+
+                case "Branch Manager":
+                    branchmaneger bm = new branchmaneger();
+                    bm.Dock = DockStyle.Fill;
+                    this.guna2Panel2.Controls.Add(bm);
+                    this.guna2Panel2.Tag = bm;
+                    bm.Show();
                     break;
 
             }
@@ -127,6 +147,26 @@ namespace Finance_APP
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            logoutpopup logoutpopup = new logoutpopup();
+            logoutpopup.ShowDialog();
         }
     }
 }

@@ -12,12 +12,18 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class search_account_cashier : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public search_account_cashier()
         {
             InitializeComponent();
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_account_cashier_Load(object sender, EventArgs e)
         {
 
         }

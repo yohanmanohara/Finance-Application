@@ -34,16 +34,13 @@ namespace Finance_APP.window_forms
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
 
-       this.Hide();
+       
             Maindashbord mainForm = Application.OpenForms.OfType<Maindashbord>().FirstOrDefault();
             mainForm.Hide();
             login login = new login();
@@ -53,15 +50,19 @@ namespace Finance_APP.window_forms
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-Application.Exit();
+
+            this.Hide();
+           
+
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+     
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutpopup_Load(object sender, EventArgs e)
         {
 
         }

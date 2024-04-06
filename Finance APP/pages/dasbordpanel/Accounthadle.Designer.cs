@@ -73,6 +73,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Name = "Accounthadle";
             this.Size = new System.Drawing.Size(334, 502);
+            this.Load += new System.EventHandler(this.Accounthadle_Load);
             this.ResumeLayout(false);
 
         }

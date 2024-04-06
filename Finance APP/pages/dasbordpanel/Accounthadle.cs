@@ -16,5 +16,10 @@ namespace Finance_APP.pages.dasbordpanel
         {
             InitializeComponent();
         }
+
+        private void Accounthadle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
