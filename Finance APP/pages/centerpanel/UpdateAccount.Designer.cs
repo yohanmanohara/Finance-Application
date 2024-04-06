@@ -521,7 +521,7 @@
             this.CustomerIDtxt.ForeColor = System.Drawing.Color.Empty;
             this.CustomerIDtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CustomerIDtxt.HoverState.Parent = this.CustomerIDtxt;
-            this.CustomerIDtxt.Location = new System.Drawing.Point(435, 222);
+            this.CustomerIDtxt.Location = new System.Drawing.Point(435, 224);
             this.CustomerIDtxt.Margin = new System.Windows.Forms.Padding(5);
             this.CustomerIDtxt.Name = "CustomerIDtxt";
             this.CustomerIDtxt.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
@@ -538,7 +538,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(344, 197);
+            this.label9.Location = new System.Drawing.Point(336, 199);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 20);
