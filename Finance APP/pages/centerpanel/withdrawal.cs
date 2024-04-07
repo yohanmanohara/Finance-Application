@@ -69,5 +69,10 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
