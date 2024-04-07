@@ -205,6 +205,12 @@
     <Compile Include="pages\dasbordpanel\hrofficer.Designer.cs">
       <DependentUpon>hrofficer.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel import\Customerdatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panel import\Customerdatabase.Designer.cs">
+      <DependentUpon>Customerdatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="panel import\DisableAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\hrofficer.resx">
       <DependentUpon>hrofficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel import\Customerdatabase.resx">
+      <DependentUpon>Customerdatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="panel import\DisableAccount.resx">
       <DependentUpon>DisableAccount.cs</DependentUpon>
