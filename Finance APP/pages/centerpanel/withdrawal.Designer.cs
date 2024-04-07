@@ -159,7 +159,7 @@
             this.guna2TextBox4.ForeColor = System.Drawing.Color.Empty;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(139, 430);
+            this.guna2TextBox4.Location = new System.Drawing.Point(139, 429);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.Padding = new System.Windows.Forms.Padding(10);
