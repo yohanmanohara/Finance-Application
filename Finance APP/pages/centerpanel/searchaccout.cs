@@ -82,6 +82,11 @@ namespace Finance_APP.pages.centerpanel
             lastnametxt.Text = "";
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
