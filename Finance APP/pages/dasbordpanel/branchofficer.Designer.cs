@@ -100,6 +100,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(331, 60);
             this.guna2Button3.TabIndex = 11;
             this.guna2Button3.Text = "Customer Database";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // branchofficer
             // 
