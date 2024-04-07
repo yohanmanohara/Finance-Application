@@ -151,12 +151,11 @@ namespace Finance_APP.pages.centerpanel
                     }
                 }
             }
-            catch (Exception sqlex)
+            catch (Exception )
             {
-                /* erropop erro = new erropop();
-                 erro.ShowDialog();*/
-                //sql Exception
-                MessageBox.Show(sqlex.Message);
+                erropop erro = new erropop();
+                erro.ShowDialog();
+
             }
             finally
             {
