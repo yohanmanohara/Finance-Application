@@ -139,6 +139,12 @@
     <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\deposit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\deposit.Designer.cs">
+      <DependentUpon>deposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\employeemanegment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -286,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\deposit.resx">
+      <DependentUpon>deposit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
