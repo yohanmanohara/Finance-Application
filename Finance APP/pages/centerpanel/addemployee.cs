@@ -282,9 +282,17 @@ namespace Finance_APP.pages.centerpanel
             string firstname = firstnametxt.Text;
             string lastname = lastnametxt.Text;
             string empstatus = empstatustxt.Text;
+            string ConPass = conpassTextbox.Text;
 
 
             string password = passwordTextBox.Text;
+            //check whether password and confirm password are same
+            if (password != ConPass)
+            {
+                MessageBox.Show("Password and Confirm Password must be same", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+           
 
             if (string.IsNullOrWhiteSpace(fullName) ||
                 string.IsNullOrWhiteSpace(gender) ||
