@@ -151,6 +151,12 @@
     <Compile Include="pages\centerpanel\employeemanegment.Designer.cs">
       <DependentUpon>employeemanegment.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\HousingLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
+      <DependentUpon>HousingLoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\search account cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
+      <DependentUpon>HousingLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
       <DependentUpon>search account cashier.cs</DependentUpon>
