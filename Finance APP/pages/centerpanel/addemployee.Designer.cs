@@ -35,7 +35,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.jobtitleBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.conpassTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.jobtitleBox1);
             this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2TextBox10);
+            this.panel1.Controls.Add(this.conpassTextbox);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.passwordTextBox);
             this.panel1.Controls.Add(this.label16);
@@ -257,35 +257,35 @@
             this.guna2Button4.Text = "Check username and  Submit";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2TextBox10
+            // conpassTextbox
             // 
-            this.guna2TextBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox10.Animated = true;
-            this.guna2TextBox10.BorderRadius = 18;
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.FocusedState.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox10.ForeColor = System.Drawing.Color.Empty;
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.HoverState.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Location = new System.Drawing.Point(471, 1721);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.Padding = new System.Windows.Forms.Padding(10);
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "Confirm Password";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.ShadowDecoration.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Size = new System.Drawing.Size(368, 45);
-            this.guna2TextBox10.TabIndex = 34;
-            this.guna2TextBox10.TextChanged += new System.EventHandler(this.guna2TextBox10_TextChanged);
+            this.conpassTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.conpassTextbox.Animated = true;
+            this.conpassTextbox.BorderRadius = 18;
+            this.conpassTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.conpassTextbox.DefaultText = "";
+            this.conpassTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.conpassTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.conpassTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.conpassTextbox.DisabledState.Parent = this.conpassTextbox;
+            this.conpassTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.conpassTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.conpassTextbox.FocusedState.Parent = this.conpassTextbox;
+            this.conpassTextbox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conpassTextbox.ForeColor = System.Drawing.Color.Empty;
+            this.conpassTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.conpassTextbox.HoverState.Parent = this.conpassTextbox;
+            this.conpassTextbox.Location = new System.Drawing.Point(471, 1721);
+            this.conpassTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.conpassTextbox.Name = "conpassTextbox";
+            this.conpassTextbox.Padding = new System.Windows.Forms.Padding(10);
+            this.conpassTextbox.PasswordChar = '\0';
+            this.conpassTextbox.PlaceholderText = "Confirm Password";
+            this.conpassTextbox.SelectedText = "";
+            this.conpassTextbox.ShadowDecoration.Parent = this.conpassTextbox;
+            this.conpassTextbox.Size = new System.Drawing.Size(368, 45);
+            this.conpassTextbox.TabIndex = 34;
+            this.conpassTextbox.TextChanged += new System.EventHandler(this.guna2TextBox10_TextChanged);
             // 
             // label17
             // 
@@ -928,7 +928,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox empstatustxt;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
+        private Guna.UI2.WinForms.Guna2TextBox conpassTextbox;
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2TextBox passwordTextBox;
         private System.Windows.Forms.Label label16;
