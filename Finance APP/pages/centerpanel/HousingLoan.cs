@@ -101,5 +101,10 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
+
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
