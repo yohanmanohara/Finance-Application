@@ -133,6 +133,12 @@
     <Compile Include="pages\centerpanel\addemployee.Designer.cs">
       <DependentUpon>addemployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\check balance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\check balance.Designer.cs">
+      <DependentUpon>check balance.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\Create_customer_account.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,12 @@
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\VehicleLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\VehicleLoan.Designer.cs">
+      <DependentUpon>VehicleLoan.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\withdrawal.cs">
       <SubType>UserControl</SubType>
@@ -296,6 +308,9 @@
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\check balance.resx">
+      <DependentUpon>check balance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
       <DependentUpon>Create_customer_account.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
+      <DependentUpon>VehicleLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
       <DependentUpon>withdrawal.cs</DependentUpon>

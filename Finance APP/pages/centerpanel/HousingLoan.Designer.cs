@@ -176,10 +176,10 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(23, 1744);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(914, 68);
+            this.label6.Size = new System.Drawing.Size(742, 102);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Enter relevant images of the following requirements. (The images must be clear an" +
-    "d visible).\r\n\r\n";
+            this.label6.Text = "Enter relevant images of the following requirements. (The images must be \r\nclear " +
+    "and visible).\r\n\r\n";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
@@ -1773,7 +1773,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "HousingLoan";
-            this.Size = new System.Drawing.Size(811, 772);
+            this.Size = new System.Drawing.Size(792, 753);
             this.Load += new System.EventHandler(this.HousingLoan_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
