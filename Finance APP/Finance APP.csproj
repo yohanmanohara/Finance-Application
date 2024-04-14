@@ -187,6 +187,12 @@
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\VehicleLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\VehicleLoan.Designer.cs">
+      <DependentUpon>VehicleLoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\withdrawal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -328,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
+      <DependentUpon>VehicleLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
       <DependentUpon>withdrawal.cs</DependentUpon>
