@@ -169,11 +169,11 @@
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\Student loan.cs">
+    <Compile Include="pages\centerpanel\Personal loan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\Student loan.Designer.cs">
-      <DependentUpon>Student loan.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\Personal loan.Designer.cs">
+      <DependentUpon>Personal loan.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
@@ -320,8 +320,8 @@
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Student loan.resx">
-      <DependentUpon>Student loan.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\Personal loan.resx">
+      <DependentUpon>Personal loan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\transfer.resx">
       <DependentUpon>transfer.cs</DependentUpon>
