@@ -157,6 +157,12 @@
     <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\Personal loan 1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\Personal loan 1.Designer.cs">
+      <DependentUpon>Personal loan 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\search account cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -168,12 +174,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\Personal loan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\Personal loan.Designer.cs">
-      <DependentUpon>Personal loan.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
@@ -314,14 +314,14 @@
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
+      <DependentUpon>Personal loan 1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
       <DependentUpon>search account cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Personal loan.resx">
-      <DependentUpon>Personal loan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\transfer.resx">
       <DependentUpon>transfer.cs</DependentUpon>
