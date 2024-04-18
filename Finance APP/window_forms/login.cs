@@ -85,6 +85,7 @@ namespace Finance_APP.window_forms
                     string firstname = dt.Rows[0]["firstname"].ToString();
                     string lastname = dt.Rows[0]["lastname"].ToString();
                     string empstatus = dt.Rows[0]["empstatus"].ToString();
+
                     switch (jobroll)
                     {
                         case "HR Manager":

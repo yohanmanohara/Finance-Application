@@ -38,9 +38,9 @@
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.dateOfBirthDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,11 +216,50 @@
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(15, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(7, 3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(861, 1268);
             this.guna2Panel1.TabIndex = 63;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // dateOfBirthDateTimePicker
+            // 
+            this.dateOfBirthDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateOfBirthDateTimePicker.BorderRadius = 19;
+            this.dateOfBirthDateTimePicker.CheckedState.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
+            this.dateOfBirthDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOfBirthDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateOfBirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateOfBirthDateTimePicker.HoverState.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(139, 551);
+            this.dateOfBirthDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateOfBirthDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
+            this.dateOfBirthDateTimePicker.ShadowDecoration.Parent = this.dateOfBirthDateTimePicker;
+            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(670, 48);
+            this.dateOfBirthDateTimePicker.TabIndex = 66;
+            this.dateOfBirthDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Button4.Animated = true;
+            this.guna2Button4.BorderRadius = 20;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(664, 797);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(179, 54);
+            this.guna2Button4.TabIndex = 65;
+            this.guna2Button4.Text = "Withdraw";
             // 
             // guna2TextBox7
             // 
@@ -251,44 +290,6 @@
             this.guna2TextBox7.Size = new System.Drawing.Size(670, 45);
             this.guna2TextBox7.TabIndex = 64;
             // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 20;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(664, 797);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(179, 54);
-            this.guna2Button4.TabIndex = 65;
-            this.guna2Button4.Text = "Withdraw";
-            // 
-            // dateOfBirthDateTimePicker
-            // 
-            this.dateOfBirthDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateOfBirthDateTimePicker.BorderRadius = 19;
-            this.dateOfBirthDateTimePicker.CheckedState.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.dateOfBirthDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateOfBirthDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dateOfBirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateOfBirthDateTimePicker.HoverState.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(139, 551);
-            this.dateOfBirthDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateOfBirthDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
-            this.dateOfBirthDateTimePicker.ShadowDecoration.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(670, 48);
-            this.dateOfBirthDateTimePicker.TabIndex = 66;
-            this.dateOfBirthDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
-            // 
             // withdrawal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,7 +298,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "withdrawal";
-            this.Size = new System.Drawing.Size(887, 777);
+            this.Size = new System.Drawing.Size(870, 777);
             this.Load += new System.EventHandler(this.withdrawal_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

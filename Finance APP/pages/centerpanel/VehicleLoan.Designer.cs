@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.guna2TextBox64 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -157,7 +158,6 @@
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel20.SuspendLayout();
             this.guna2Panel19.SuspendLayout();
@@ -220,9 +220,25 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 24);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(885, 5151);
+            this.guna2Panel1.Size = new System.Drawing.Size(904, 5041);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // Submit
+            // 
+            this.Submit.BorderRadius = 20;
+            this.Submit.CheckedState.Parent = this.Submit;
+            this.Submit.CustomImages.Parent = this.Submit;
+            this.Submit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(93)))), ((int)(((byte)(243)))));
+            this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.ForeColor = System.Drawing.Color.White;
+            this.Submit.HoverState.Parent = this.Submit;
+            this.Submit.Location = new System.Drawing.Point(375, 4977);
+            this.Submit.Name = "Submit";
+            this.Submit.ShadowDecoration.Parent = this.Submit;
+            this.Submit.Size = new System.Drawing.Size(133, 39);
+            this.Submit.TabIndex = 59;
+            this.Submit.Text = "Submit";
             // 
             // guna2Panel20
             // 
@@ -240,11 +256,11 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Location = new System.Drawing.Point(7, 3);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(115, 34);
+            this.label25.Size = new System.Drawing.Size(91, 20);
             this.label25.TabIndex = 8;
             this.label25.Text = "Insurance";
             // 
@@ -261,7 +277,7 @@
             this.guna2TextBox64.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox64.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox64.FocusedState.Parent = this.guna2TextBox64;
-            this.guna2TextBox64.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox64.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox64.HoverState.Parent = this.guna2TextBox64;
             this.guna2TextBox64.Location = new System.Drawing.Point(4, 157);
@@ -290,7 +306,7 @@
             this.guna2TextBox65.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox65.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox65.FocusedState.Parent = this.guna2TextBox65;
-            this.guna2TextBox65.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox65.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox65.HoverState.Parent = this.guna2TextBox65;
             this.guna2TextBox65.Location = new System.Drawing.Point(4, 104);
@@ -319,7 +335,7 @@
             this.guna2TextBox66.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox66.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox66.FocusedState.Parent = this.guna2TextBox66;
-            this.guna2TextBox66.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox66.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox66.HoverState.Parent = this.guna2TextBox66;
             this.guna2TextBox66.Location = new System.Drawing.Point(4, 51);
@@ -361,7 +377,7 @@
             this.guna2TextBox55.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox55.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox55.FocusedState.Parent = this.guna2TextBox55;
-            this.guna2TextBox55.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox55.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox55.HoverState.Parent = this.guna2TextBox55;
             this.guna2TextBox55.Location = new System.Drawing.Point(4, 210);
@@ -380,11 +396,11 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Location = new System.Drawing.Point(7, 3);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(134, 34);
+            this.label24.Size = new System.Drawing.Size(116, 20);
             this.label24.TabIndex = 8;
             this.label24.Text = "Loan Details";
             // 
@@ -401,7 +417,7 @@
             this.guna2TextBox60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox60.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox60.FocusedState.Parent = this.guna2TextBox60;
-            this.guna2TextBox60.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox60.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox60.HoverState.Parent = this.guna2TextBox60;
             this.guna2TextBox60.Location = new System.Drawing.Point(4, 157);
@@ -430,7 +446,7 @@
             this.guna2TextBox61.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox61.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox61.FocusedState.Parent = this.guna2TextBox61;
-            this.guna2TextBox61.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox61.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox61.HoverState.Parent = this.guna2TextBox61;
             this.guna2TextBox61.Location = new System.Drawing.Point(4, 104);
@@ -459,7 +475,7 @@
             this.guna2TextBox62.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox62.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox62.FocusedState.Parent = this.guna2TextBox62;
-            this.guna2TextBox62.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox62.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox62.HoverState.Parent = this.guna2TextBox62;
             this.guna2TextBox62.Location = new System.Drawing.Point(4, 51);
@@ -500,7 +516,7 @@
             this.guna2TextBox57.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox57.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox57.FocusedState.Parent = this.guna2TextBox57;
-            this.guna2TextBox57.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox57.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox57.HoverState.Parent = this.guna2TextBox57;
             this.guna2TextBox57.Location = new System.Drawing.Point(361, 112);
@@ -529,7 +545,7 @@
             this.guna2TextBox58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox58.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox58.FocusedState.Parent = this.guna2TextBox58;
-            this.guna2TextBox58.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox58.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox58.HoverState.Parent = this.guna2TextBox58;
             this.guna2TextBox58.Location = new System.Drawing.Point(8, 112);
@@ -558,7 +574,7 @@
             this.guna2TextBox59.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox59.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox59.FocusedState.Parent = this.guna2TextBox59;
-            this.guna2TextBox59.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox59.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox59.HoverState.Parent = this.guna2TextBox59;
             this.guna2TextBox59.Location = new System.Drawing.Point(9, 59);
@@ -576,10 +592,10 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(11, 18);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(182, 16);
+            this.label23.Size = new System.Drawing.Size(174, 13);
             this.label23.TabIndex = 9;
             this.label23.Text = "Dealer/Seller/Original Lender";
             // 
@@ -607,7 +623,7 @@
             this.guna2TextBox49.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox49.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox49.FocusedState.Parent = this.guna2TextBox49;
-            this.guna2TextBox49.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox49.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox49.HoverState.Parent = this.guna2TextBox49;
             this.guna2TextBox49.Location = new System.Drawing.Point(8, 54);
@@ -636,7 +652,7 @@
             this.guna2TextBox56.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox56.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox56.FocusedState.Parent = this.guna2TextBox56;
-            this.guna2TextBox56.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox56.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox56.HoverState.Parent = this.guna2TextBox56;
             this.guna2TextBox56.Location = new System.Drawing.Point(5, 107);
@@ -655,10 +671,10 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(11, 20);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(416, 16);
+            this.label22.Size = new System.Drawing.Size(391, 13);
             this.label22.TabIndex = 9;
             this.label22.Text = "Brand New Unregistered, Reconditioned Unregistered or Registered";
             // 
@@ -688,7 +704,7 @@
             this.guna2TextBox50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox50.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox50.FocusedState.Parent = this.guna2TextBox50;
-            this.guna2TextBox50.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox50.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox50.HoverState.Parent = this.guna2TextBox50;
             this.guna2TextBox50.Location = new System.Drawing.Point(5, 230);
@@ -717,7 +733,7 @@
             this.guna2TextBox51.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox51.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox51.FocusedState.Parent = this.guna2TextBox51;
-            this.guna2TextBox51.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox51.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox51.HoverState.Parent = this.guna2TextBox51;
             this.guna2TextBox51.Location = new System.Drawing.Point(6, 177);
@@ -746,7 +762,7 @@
             this.guna2TextBox52.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox52.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox52.FocusedState.Parent = this.guna2TextBox52;
-            this.guna2TextBox52.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox52.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox52.HoverState.Parent = this.guna2TextBox52;
             this.guna2TextBox52.Location = new System.Drawing.Point(6, 119);
@@ -775,7 +791,7 @@
             this.guna2TextBox53.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox53.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox53.FocusedState.Parent = this.guna2TextBox53;
-            this.guna2TextBox53.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox53.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox53.HoverState.Parent = this.guna2TextBox53;
             this.guna2TextBox53.Location = new System.Drawing.Point(6, 64);
@@ -804,7 +820,7 @@
             this.guna2TextBox54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox54.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox54.FocusedState.Parent = this.guna2TextBox54;
-            this.guna2TextBox54.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox54.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox54.HoverState.Parent = this.guna2TextBox54;
             this.guna2TextBox54.Location = new System.Drawing.Point(5, 9);
@@ -847,7 +863,7 @@
             this.guna2TextBox48.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox48.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox48.FocusedState.Parent = this.guna2TextBox48;
-            this.guna2TextBox48.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox48.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox48.HoverState.Parent = this.guna2TextBox48;
             this.guna2TextBox48.Location = new System.Drawing.Point(6, 284);
@@ -876,7 +892,7 @@
             this.guna2TextBox47.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox47.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox47.FocusedState.Parent = this.guna2TextBox47;
-            this.guna2TextBox47.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox47.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox47.HoverState.Parent = this.guna2TextBox47;
             this.guna2TextBox47.Location = new System.Drawing.Point(5, 230);
@@ -905,7 +921,7 @@
             this.guna2TextBox46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox46.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox46.FocusedState.Parent = this.guna2TextBox46;
-            this.guna2TextBox46.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox46.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox46.HoverState.Parent = this.guna2TextBox46;
             this.guna2TextBox46.Location = new System.Drawing.Point(6, 177);
@@ -934,7 +950,7 @@
             this.guna2TextBox45.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox45.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox45.FocusedState.Parent = this.guna2TextBox45;
-            this.guna2TextBox45.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox45.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox45.HoverState.Parent = this.guna2TextBox45;
             this.guna2TextBox45.Location = new System.Drawing.Point(6, 119);
@@ -963,7 +979,7 @@
             this.guna2TextBox44.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox44.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox44.FocusedState.Parent = this.guna2TextBox44;
-            this.guna2TextBox44.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox44.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox44.HoverState.Parent = this.guna2TextBox44;
             this.guna2TextBox44.Location = new System.Drawing.Point(6, 64);
@@ -992,7 +1008,7 @@
             this.guna2TextBox43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox43.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox43.FocusedState.Parent = this.guna2TextBox43;
-            this.guna2TextBox43.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox43.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox43.HoverState.Parent = this.guna2TextBox43;
             this.guna2TextBox43.Location = new System.Drawing.Point(5, 9);
@@ -1011,11 +1027,11 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(53, 3574);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(220, 34);
+            this.label21.Size = new System.Drawing.Size(191, 20);
             this.label21.TabIndex = 47;
             this.label21.Text = "Details of the Vehicle";
             // 
@@ -1034,11 +1050,11 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(11, 2);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(296, 34);
+            this.label20.Size = new System.Drawing.Size(249, 20);
             this.label20.TabIndex = 9;
             this.label20.Text = "Assets Owned by Applicants";
             // 
@@ -1055,7 +1071,7 @@
             this.guna2TextBox40.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox40.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox40.FocusedState.Parent = this.guna2TextBox40;
-            this.guna2TextBox40.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox40.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox40.HoverState.Parent = this.guna2TextBox40;
             this.guna2TextBox40.Location = new System.Drawing.Point(4, 157);
@@ -1083,7 +1099,7 @@
             this.guna2TextBox41.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox41.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox41.FocusedState.Parent = this.guna2TextBox41;
-            this.guna2TextBox41.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox41.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox41.HoverState.Parent = this.guna2TextBox41;
             this.guna2TextBox41.Location = new System.Drawing.Point(4, 104);
@@ -1111,7 +1127,7 @@
             this.guna2TextBox42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox42.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox42.FocusedState.Parent = this.guna2TextBox42;
-            this.guna2TextBox42.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox42.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox42.HoverState.Parent = this.guna2TextBox42;
             this.guna2TextBox42.Location = new System.Drawing.Point(4, 51);
@@ -1151,7 +1167,7 @@
             this.guna2TextBox37.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox37.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox37.FocusedState.Parent = this.guna2TextBox37;
-            this.guna2TextBox37.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox37.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox37.HoverState.Parent = this.guna2TextBox37;
             this.guna2TextBox37.Location = new System.Drawing.Point(361, 42);
@@ -1180,7 +1196,7 @@
             this.guna2TextBox38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox38.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox38.FocusedState.Parent = this.guna2TextBox38;
-            this.guna2TextBox38.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox38.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox38.HoverState.Parent = this.guna2TextBox38;
             this.guna2TextBox38.Location = new System.Drawing.Point(5, 42);
@@ -1209,7 +1225,7 @@
             this.guna2TextBox39.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox39.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox39.FocusedState.Parent = this.guna2TextBox39;
-            this.guna2TextBox39.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox39.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox39.HoverState.Parent = this.guna2TextBox39;
             this.guna2TextBox39.Location = new System.Drawing.Point(5, 107);
@@ -1228,10 +1244,10 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(11, 7);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(132, 16);
+            this.label19.Size = new System.Drawing.Size(118, 13);
             this.label19.TabIndex = 9;
             this.label19.Text = "Contact Information";
             this.label19.Click += new System.EventHandler(this.label19_Click);
@@ -1262,7 +1278,7 @@
             this.guna2TextBox6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
             this.guna2TextBox6.Location = new System.Drawing.Point(361, 42);
@@ -1291,7 +1307,7 @@
             this.guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
             this.guna2TextBox5.Location = new System.Drawing.Point(5, 42);
@@ -1320,7 +1336,7 @@
             this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(5, 107);
@@ -1339,10 +1355,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(2, 2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 16);
+            this.label4.Size = new System.Drawing.Size(118, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Contact Information";
             // 
@@ -1383,7 +1399,7 @@
             this.guna2TextBox36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox36.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox36.FocusedState.Parent = this.guna2TextBox36;
-            this.guna2TextBox36.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox36.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox36.HoverState.Parent = this.guna2TextBox36;
             this.guna2TextBox36.Location = new System.Drawing.Point(4, 316);
@@ -1412,7 +1428,7 @@
             this.guna2TextBox35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox35.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox35.FocusedState.Parent = this.guna2TextBox35;
-            this.guna2TextBox35.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox35.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox35.HoverState.Parent = this.guna2TextBox35;
             this.guna2TextBox35.Location = new System.Drawing.Point(4, 263);
@@ -1441,7 +1457,7 @@
             this.guna2TextBox31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox31.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox31.FocusedState.Parent = this.guna2TextBox31;
-            this.guna2TextBox31.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox31.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox31.HoverState.Parent = this.guna2TextBox31;
             this.guna2TextBox31.Location = new System.Drawing.Point(4, 210);
@@ -1461,11 +1477,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(7, 3);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(182, 34);
+            this.label18.Size = new System.Drawing.Size(159, 20);
             this.label18.TabIndex = 8;
             this.label18.Text = "Details of Spouse";
             // 
@@ -1482,7 +1498,7 @@
             this.guna2TextBox32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox32.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox32.FocusedState.Parent = this.guna2TextBox32;
-            this.guna2TextBox32.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox32.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox32.HoverState.Parent = this.guna2TextBox32;
             this.guna2TextBox32.Location = new System.Drawing.Point(4, 157);
@@ -1511,7 +1527,7 @@
             this.guna2TextBox33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox33.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox33.FocusedState.Parent = this.guna2TextBox33;
-            this.guna2TextBox33.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox33.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox33.HoverState.Parent = this.guna2TextBox33;
             this.guna2TextBox33.Location = new System.Drawing.Point(4, 104);
@@ -1540,7 +1556,7 @@
             this.guna2TextBox34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox34.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox34.FocusedState.Parent = this.guna2TextBox34;
-            this.guna2TextBox34.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox34.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox34.HoverState.Parent = this.guna2TextBox34;
             this.guna2TextBox34.Location = new System.Drawing.Point(4, 51);
@@ -1569,7 +1585,7 @@
             this.guna2TextBox30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox30.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox30.FocusedState.Parent = this.guna2TextBox30;
-            this.guna2TextBox30.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox30.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox30.HoverState.Parent = this.guna2TextBox30;
             this.guna2TextBox30.Location = new System.Drawing.Point(282, 2614);
@@ -1598,7 +1614,7 @@
             this.guna2TextBox29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox29.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox29.FocusedState.Parent = this.guna2TextBox29;
-            this.guna2TextBox29.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox29.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox29.HoverState.Parent = this.guna2TextBox29;
             this.guna2TextBox29.Location = new System.Drawing.Point(282, 2669);
@@ -1626,7 +1642,7 @@
             this.guna2TextBox28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox28.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox28.FocusedState.Parent = this.guna2TextBox28;
-            this.guna2TextBox28.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox28.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox28.HoverState.Parent = this.guna2TextBox28;
             this.guna2TextBox28.Location = new System.Drawing.Point(282, 2558);
@@ -1644,41 +1660,41 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(56, 2679);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(156, 32);
+            this.label17.Size = new System.Drawing.Size(154, 26);
             this.label17.TabIndex = 38;
             this.label17.Text = "No. of Children\nbetween  10 and 18 years";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(56, 2624);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 32);
+            this.label16.Size = new System.Drawing.Size(96, 26);
             this.label16.TabIndex = 37;
             this.label16.Text = "No. of Children \nbelow  10 years";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(56, 2579);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 16);
+            this.label15.Size = new System.Drawing.Size(85, 13);
             this.label15.TabIndex = 36;
             this.label15.Text = "No. of  Adults";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(49, 2519);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(397, 34);
+            this.label14.Size = new System.Drawing.Size(339, 20);
             this.label14.TabIndex = 35;
             this.label14.Text = "No. of dependents including self/selves";
             // 
@@ -1708,7 +1724,7 @@
             this.guna2TextBox24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox24.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox24.FocusedState.Parent = this.guna2TextBox24;
-            this.guna2TextBox24.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox24.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox24.HoverState.Parent = this.guna2TextBox24;
             this.guna2TextBox24.Location = new System.Drawing.Point(4, 210);
@@ -1728,11 +1744,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(7, 3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(240, 34);
+            this.label13.Size = new System.Drawing.Size(196, 20);
             this.label13.TabIndex = 8;
             this.label13.Text = "Monthly Renumeration";
             // 
@@ -1749,7 +1765,7 @@
             this.guna2TextBox25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox25.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox25.FocusedState.Parent = this.guna2TextBox25;
-            this.guna2TextBox25.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox25.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox25.HoverState.Parent = this.guna2TextBox25;
             this.guna2TextBox25.Location = new System.Drawing.Point(4, 157);
@@ -1778,7 +1794,7 @@
             this.guna2TextBox26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox26.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox26.FocusedState.Parent = this.guna2TextBox26;
-            this.guna2TextBox26.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox26.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox26.HoverState.Parent = this.guna2TextBox26;
             this.guna2TextBox26.Location = new System.Drawing.Point(4, 104);
@@ -1807,7 +1823,7 @@
             this.guna2TextBox27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox27.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox27.FocusedState.Parent = this.guna2TextBox27;
-            this.guna2TextBox27.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox27.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox27.HoverState.Parent = this.guna2TextBox27;
             this.guna2TextBox27.Location = new System.Drawing.Point(4, 51);
@@ -1848,7 +1864,7 @@
             this.guna2TextBox22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox22.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox22.FocusedState.Parent = this.guna2TextBox22;
-            this.guna2TextBox22.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox22.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox22.HoverState.Parent = this.guna2TextBox22;
             this.guna2TextBox22.Location = new System.Drawing.Point(357, 49);
@@ -1877,7 +1893,7 @@
             this.guna2TextBox23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox23.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox23.FocusedState.Parent = this.guna2TextBox23;
-            this.guna2TextBox23.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox23.HoverState.Parent = this.guna2TextBox23;
             this.guna2TextBox23.Location = new System.Drawing.Point(1, 50);
@@ -1896,10 +1912,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(7, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(143, 16);
+            this.label12.Size = new System.Drawing.Size(129, 13);
             this.label12.TabIndex = 28;
             this.label12.Text = "Period of Employment";
             // 
@@ -1927,7 +1943,7 @@
             this.guna2TextBox17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox17.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox17.FocusedState.Parent = this.guna2TextBox17;
-            this.guna2TextBox17.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox17.HoverState.Parent = this.guna2TextBox17;
             this.guna2TextBox17.Location = new System.Drawing.Point(357, 49);
@@ -1956,7 +1972,7 @@
             this.guna2TextBox16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox16.FocusedState.Parent = this.guna2TextBox16;
-            this.guna2TextBox16.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox16.HoverState.Parent = this.guna2TextBox16;
             this.guna2TextBox16.Location = new System.Drawing.Point(1, 50);
@@ -1975,10 +1991,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(7, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 16);
+            this.label9.Size = new System.Drawing.Size(129, 13);
             this.label9.TabIndex = 28;
             this.label9.Text = "Period of Employment";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -2000,21 +2016,21 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(11, 48);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(269, 16);
+            this.label11.Size = new System.Drawing.Size(251, 13);
             this.label11.TabIndex = 29;
             this.label11.Text = "(If current employment is of less than 3 yrs)";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(8, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 34);
+            this.label10.Size = new System.Drawing.Size(190, 20);
             this.label10.TabIndex = 8;
             this.label10.Text = "Previous Employment";
             // 
@@ -2031,7 +2047,7 @@
             this.guna2TextBox18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox18.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox18.FocusedState.Parent = this.guna2TextBox18;
-            this.guna2TextBox18.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox18.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox18.HoverState.Parent = this.guna2TextBox18;
             this.guna2TextBox18.Location = new System.Drawing.Point(5, 250);
@@ -2060,7 +2076,7 @@
             this.guna2TextBox19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox19.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox19.FocusedState.Parent = this.guna2TextBox19;
-            this.guna2TextBox19.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox19.HoverState.Parent = this.guna2TextBox19;
             this.guna2TextBox19.Location = new System.Drawing.Point(5, 197);
@@ -2089,7 +2105,7 @@
             this.guna2TextBox20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox20.FocusedState.Parent = this.guna2TextBox20;
-            this.guna2TextBox20.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox20.HoverState.Parent = this.guna2TextBox20;
             this.guna2TextBox20.Location = new System.Drawing.Point(4, 144);
@@ -2119,7 +2135,7 @@
             this.guna2TextBox21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox21.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox21.FocusedState.Parent = this.guna2TextBox21;
-            this.guna2TextBox21.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox21.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox21.HoverState.Parent = this.guna2TextBox21;
             this.guna2TextBox21.Location = new System.Drawing.Point(4, 91);
@@ -2161,7 +2177,7 @@
             this.guna2TextBox15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox15.FocusedState.Parent = this.guna2TextBox15;
-            this.guna2TextBox15.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox15.HoverState.Parent = this.guna2TextBox15;
             this.guna2TextBox15.Location = new System.Drawing.Point(9, 210);
@@ -2180,11 +2196,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(7, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(220, 34);
+            this.label8.Size = new System.Drawing.Size(180, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "Current Employment";
             // 
@@ -2201,7 +2217,7 @@
             this.guna2TextBox11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.FocusedState.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.HoverState.Parent = this.guna2TextBox11;
             this.guna2TextBox11.Location = new System.Drawing.Point(4, 157);
@@ -2230,7 +2246,7 @@
             this.guna2TextBox13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox13.FocusedState.Parent = this.guna2TextBox13;
-            this.guna2TextBox13.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox13.HoverState.Parent = this.guna2TextBox13;
             this.guna2TextBox13.Location = new System.Drawing.Point(4, 104);
@@ -2259,10 +2275,10 @@
             this.guna2TextBox14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox14.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox14.FocusedState.Parent = this.guna2TextBox14;
-            this.guna2TextBox14.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox14.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox14.HoverState.Parent = this.guna2TextBox14;
-            this.guna2TextBox14.Location = new System.Drawing.Point(4, 51);
+            this.guna2TextBox14.Location = new System.Drawing.Point(9, 33);
             this.guna2TextBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox14.Name = "guna2TextBox14";
             this.guna2TextBox14.PasswordChar = '\0';
@@ -2299,10 +2315,10 @@
             this.guna2CheckBox25.CheckedState.BorderRadius = 2;
             this.guna2CheckBox25.CheckedState.BorderThickness = 0;
             this.guna2CheckBox25.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox25.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox25.Location = new System.Drawing.Point(98, 205);
             this.guna2CheckBox25.Name = "guna2CheckBox25";
-            this.guna2CheckBox25.Size = new System.Drawing.Size(68, 20);
+            this.guna2CheckBox25.Size = new System.Drawing.Size(63, 17);
             this.guna2CheckBox25.TabIndex = 27;
             this.guna2CheckBox25.Text = "Others";
             this.guna2CheckBox25.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2314,11 +2330,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(3, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 34);
+            this.label7.Size = new System.Drawing.Size(92, 20);
             this.label7.TabIndex = 26;
             this.label7.Text = "Education";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -2336,7 +2352,7 @@
             this.guna2TextBox12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox12.FocusedState.Parent = this.guna2TextBox12;
-            this.guna2TextBox12.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox12.HoverState.Parent = this.guna2TextBox12;
             this.guna2TextBox12.Location = new System.Drawing.Point(134, 233);
@@ -2360,10 +2376,10 @@
             this.guna2CheckBox19.CheckedState.BorderRadius = 2;
             this.guna2CheckBox19.CheckedState.BorderThickness = 0;
             this.guna2CheckBox19.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox19.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox19.Location = new System.Drawing.Point(98, 181);
             this.guna2CheckBox19.Name = "guna2CheckBox19";
-            this.guna2CheckBox19.Size = new System.Drawing.Size(100, 20);
+            this.guna2CheckBox19.Size = new System.Drawing.Size(95, 17);
             this.guna2CheckBox19.TabIndex = 22;
             this.guna2CheckBox19.Text = "Professional";
             this.guna2CheckBox19.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2379,10 +2395,10 @@
             this.guna2CheckBox20.CheckedState.BorderRadius = 2;
             this.guna2CheckBox20.CheckedState.BorderThickness = 0;
             this.guna2CheckBox20.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox20.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox20.Location = new System.Drawing.Point(98, 157);
             this.guna2CheckBox20.Name = "guna2CheckBox20";
-            this.guna2CheckBox20.Size = new System.Drawing.Size(117, 20);
+            this.guna2CheckBox20.Size = new System.Drawing.Size(107, 17);
             this.guna2CheckBox20.TabIndex = 21;
             this.guna2CheckBox20.Text = "Post-Graduate";
             this.guna2CheckBox20.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2398,10 +2414,10 @@
             this.guna2CheckBox21.CheckedState.BorderRadius = 2;
             this.guna2CheckBox21.CheckedState.BorderThickness = 0;
             this.guna2CheckBox21.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox21.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox21.Location = new System.Drawing.Point(98, 133);
             this.guna2CheckBox21.Name = "guna2CheckBox21";
-            this.guna2CheckBox21.Size = new System.Drawing.Size(84, 20);
+            this.guna2CheckBox21.Size = new System.Drawing.Size(78, 17);
             this.guna2CheckBox21.TabIndex = 20;
             this.guna2CheckBox21.Text = "Graduate";
             this.guna2CheckBox21.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2417,10 +2433,10 @@
             this.guna2CheckBox22.CheckedState.BorderRadius = 2;
             this.guna2CheckBox22.CheckedState.BorderThickness = 0;
             this.guna2CheckBox22.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox22.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox22.Location = new System.Drawing.Point(98, 109);
             this.guna2CheckBox22.Name = "guna2CheckBox22";
-            this.guna2CheckBox22.Size = new System.Drawing.Size(77, 20);
+            this.guna2CheckBox22.Size = new System.Drawing.Size(71, 17);
             this.guna2CheckBox22.TabIndex = 19;
             this.guna2CheckBox22.Text = "Diploma";
             this.guna2CheckBox22.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2436,10 +2452,10 @@
             this.guna2CheckBox23.CheckedState.BorderRadius = 2;
             this.guna2CheckBox23.CheckedState.BorderThickness = 0;
             this.guna2CheckBox23.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox23.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox23.Location = new System.Drawing.Point(98, 85);
             this.guna2CheckBox23.Name = "guna2CheckBox23";
-            this.guna2CheckBox23.Size = new System.Drawing.Size(92, 20);
+            this.guna2CheckBox23.Size = new System.Drawing.Size(86, 17);
             this.guna2CheckBox23.TabIndex = 18;
             this.guna2CheckBox23.Text = "Secondary";
             this.guna2CheckBox23.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2455,10 +2471,10 @@
             this.guna2CheckBox24.CheckedState.BorderRadius = 2;
             this.guna2CheckBox24.CheckedState.BorderThickness = 0;
             this.guna2CheckBox24.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox24.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox24.Location = new System.Drawing.Point(98, 61);
             this.guna2CheckBox24.Name = "guna2CheckBox24";
-            this.guna2CheckBox24.Size = new System.Drawing.Size(74, 20);
+            this.guna2CheckBox24.Size = new System.Drawing.Size(67, 17);
             this.guna2CheckBox24.TabIndex = 17;
             this.guna2CheckBox24.Text = "Primary";
             this.guna2CheckBox24.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2470,11 +2486,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(53, 750);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 34);
+            this.label6.Size = new System.Drawing.Size(97, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Residence";
             // 
@@ -2491,7 +2507,7 @@
             this.guna2TextBox8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.FocusedState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
             this.guna2TextBox8.Location = new System.Drawing.Point(415, 643);
@@ -2520,7 +2536,7 @@
             this.guna2TextBox7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Location = new System.Drawing.Point(59, 643);
@@ -2539,22 +2555,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(53, 589);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(279, 34);
+            this.label5.Size = new System.Drawing.Size(248, 20);
             this.label5.TabIndex = 13;
             this.label5.Text = "Date of Birth and Legal Info.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(63, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 34);
+            this.label3.Size = new System.Drawing.Size(183, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Personal Information";
             // 
@@ -2562,11 +2578,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Poppins", 19.69811F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.69811F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(0)))), ((int)(((byte)(198)))));
             this.label1.Location = new System.Drawing.Point(50, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(605, 51);
+            this.label1.Size = new System.Drawing.Size(514, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customer Information for Vehicle Loan";
             // 
@@ -2614,7 +2630,7 @@
             this.guna2TextBox10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox10.FocusedState.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox10.HoverState.Parent = this.guna2TextBox10;
             this.guna2TextBox10.Location = new System.Drawing.Point(134, 205);
@@ -2638,10 +2654,10 @@
             this.guna2CheckBox7.CheckedState.BorderRadius = 2;
             this.guna2CheckBox7.CheckedState.BorderThickness = 0;
             this.guna2CheckBox7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox7.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox7.Location = new System.Drawing.Point(98, 181);
             this.guna2CheckBox7.Name = "guna2CheckBox7";
-            this.guna2CheckBox7.Size = new System.Drawing.Size(94, 20);
+            this.guna2CheckBox7.Size = new System.Drawing.Size(86, 17);
             this.guna2CheckBox7.TabIndex = 22;
             this.guna2CheckBox7.Text = "Mortgaged";
             this.guna2CheckBox7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2657,10 +2673,10 @@
             this.guna2CheckBox8.CheckedState.BorderRadius = 2;
             this.guna2CheckBox8.CheckedState.BorderThickness = 0;
             this.guna2CheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox8.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox8.Location = new System.Drawing.Point(98, 157);
             this.guna2CheckBox8.Name = "guna2CheckBox8";
-            this.guna2CheckBox8.Size = new System.Drawing.Size(68, 20);
+            this.guna2CheckBox8.Size = new System.Drawing.Size(63, 17);
             this.guna2CheckBox8.TabIndex = 21;
             this.guna2CheckBox8.Text = "Others";
             this.guna2CheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2676,10 +2692,10 @@
             this.guna2CheckBox9.CheckedState.BorderRadius = 2;
             this.guna2CheckBox9.CheckedState.BorderThickness = 0;
             this.guna2CheckBox9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox9.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox9.Location = new System.Drawing.Point(98, 133);
             this.guna2CheckBox9.Name = "guna2CheckBox9";
-            this.guna2CheckBox9.Size = new System.Drawing.Size(68, 20);
+            this.guna2CheckBox9.Size = new System.Drawing.Size(65, 17);
             this.guna2CheckBox9.TabIndex = 20;
             this.guna2CheckBox9.Text = "Ofiicial";
             this.guna2CheckBox9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2695,10 +2711,10 @@
             this.guna2CheckBox10.CheckedState.BorderRadius = 2;
             this.guna2CheckBox10.CheckedState.BorderThickness = 0;
             this.guna2CheckBox10.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox10.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox10.Location = new System.Drawing.Point(98, 109);
             this.guna2CheckBox10.Name = "guna2CheckBox10";
-            this.guna2CheckBox10.Size = new System.Drawing.Size(72, 20);
+            this.guna2CheckBox10.Size = new System.Drawing.Size(69, 17);
             this.guna2CheckBox10.TabIndex = 19;
             this.guna2CheckBox10.Text = "Parents";
             this.guna2CheckBox10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2714,10 +2730,10 @@
             this.guna2CheckBox11.CheckedState.BorderRadius = 2;
             this.guna2CheckBox11.CheckedState.BorderThickness = 0;
             this.guna2CheckBox11.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox11.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox11.Location = new System.Drawing.Point(98, 85);
             this.guna2CheckBox11.Name = "guna2CheckBox11";
-            this.guna2CheckBox11.Size = new System.Drawing.Size(70, 20);
+            this.guna2CheckBox11.Size = new System.Drawing.Size(67, 17);
             this.guna2CheckBox11.TabIndex = 18;
             this.guna2CheckBox11.Text = "Rented";
             this.guna2CheckBox11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2733,10 +2749,10 @@
             this.guna2CheckBox12.CheckedState.BorderRadius = 2;
             this.guna2CheckBox12.CheckedState.BorderThickness = 0;
             this.guna2CheckBox12.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox12.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox12.Location = new System.Drawing.Point(98, 61);
             this.guna2CheckBox12.Name = "guna2CheckBox12";
-            this.guna2CheckBox12.Size = new System.Drawing.Size(70, 20);
+            this.guna2CheckBox12.Size = new System.Drawing.Size(65, 17);
             this.guna2CheckBox12.TabIndex = 17;
             this.guna2CheckBox12.Text = "Owned";
             this.guna2CheckBox12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2758,7 +2774,7 @@
             this.guna2TextBox9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
             this.guna2TextBox9.Location = new System.Drawing.Point(134, 205);
@@ -2782,10 +2798,10 @@
             this.guna2CheckBox6.CheckedState.BorderRadius = 2;
             this.guna2CheckBox6.CheckedState.BorderThickness = 0;
             this.guna2CheckBox6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox6.Location = new System.Drawing.Point(98, 181);
             this.guna2CheckBox6.Name = "guna2CheckBox6";
-            this.guna2CheckBox6.Size = new System.Drawing.Size(94, 20);
+            this.guna2CheckBox6.Size = new System.Drawing.Size(86, 17);
             this.guna2CheckBox6.TabIndex = 22;
             this.guna2CheckBox6.Text = "Mortgaged";
             this.guna2CheckBox6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2801,10 +2817,10 @@
             this.guna2CheckBox5.CheckedState.BorderRadius = 2;
             this.guna2CheckBox5.CheckedState.BorderThickness = 0;
             this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox5.Location = new System.Drawing.Point(98, 157);
             this.guna2CheckBox5.Name = "guna2CheckBox5";
-            this.guna2CheckBox5.Size = new System.Drawing.Size(68, 20);
+            this.guna2CheckBox5.Size = new System.Drawing.Size(63, 17);
             this.guna2CheckBox5.TabIndex = 21;
             this.guna2CheckBox5.Text = "Others";
             this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2820,10 +2836,10 @@
             this.guna2CheckBox4.CheckedState.BorderRadius = 2;
             this.guna2CheckBox4.CheckedState.BorderThickness = 0;
             this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox4.Location = new System.Drawing.Point(98, 133);
             this.guna2CheckBox4.Name = "guna2CheckBox4";
-            this.guna2CheckBox4.Size = new System.Drawing.Size(68, 20);
+            this.guna2CheckBox4.Size = new System.Drawing.Size(65, 17);
             this.guna2CheckBox4.TabIndex = 20;
             this.guna2CheckBox4.Text = "Ofiicial";
             this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2839,10 +2855,10 @@
             this.guna2CheckBox3.CheckedState.BorderRadius = 2;
             this.guna2CheckBox3.CheckedState.BorderThickness = 0;
             this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox3.Location = new System.Drawing.Point(98, 109);
             this.guna2CheckBox3.Name = "guna2CheckBox3";
-            this.guna2CheckBox3.Size = new System.Drawing.Size(72, 20);
+            this.guna2CheckBox3.Size = new System.Drawing.Size(69, 17);
             this.guna2CheckBox3.TabIndex = 19;
             this.guna2CheckBox3.Text = "Parents";
             this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2858,10 +2874,10 @@
             this.guna2CheckBox2.CheckedState.BorderRadius = 2;
             this.guna2CheckBox2.CheckedState.BorderThickness = 0;
             this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox2.Location = new System.Drawing.Point(98, 85);
             this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(70, 20);
+            this.guna2CheckBox2.Size = new System.Drawing.Size(67, 17);
             this.guna2CheckBox2.TabIndex = 18;
             this.guna2CheckBox2.Text = "Rented";
             this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2878,10 +2894,10 @@
             this.guna2CheckBox1.CheckedState.BorderRadius = 2;
             this.guna2CheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBox1.Location = new System.Drawing.Point(98, 61);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(70, 20);
+            this.guna2CheckBox1.Size = new System.Drawing.Size(65, 17);
             this.guna2CheckBox1.TabIndex = 17;
             this.guna2CheckBox1.Text = "Owned";
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -2914,7 +2930,7 @@
             this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Location = new System.Drawing.Point(4, 157);
@@ -2943,7 +2959,7 @@
             this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(4, 104);
@@ -2972,7 +2988,7 @@
             this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(4, 51);
@@ -2988,22 +3004,6 @@
             this.guna2TextBox1.TabIndex = 4;
             this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Submit
-            // 
-            this.Submit.BorderRadius = 20;
-            this.Submit.CheckedState.Parent = this.Submit;
-            this.Submit.CustomImages.Parent = this.Submit;
-            this.Submit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(93)))), ((int)(((byte)(243)))));
-            this.Submit.Font = new System.Drawing.Font("Kumbh Sans Medium", 8.150944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submit.ForeColor = System.Drawing.Color.White;
-            this.Submit.HoverState.Parent = this.Submit;
-            this.Submit.Location = new System.Drawing.Point(351, 5039);
-            this.Submit.Name = "Submit";
-            this.Submit.ShadowDecoration.Parent = this.Submit;
-            this.Submit.Size = new System.Drawing.Size(133, 39);
-            this.Submit.TabIndex = 59;
-            this.Submit.Text = "Submit";
-            // 
             // VehicleLoan
             // 
             this.AllowDrop = true;
@@ -3013,7 +3013,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "VehicleLoan";
-            this.Size = new System.Drawing.Size(716, 677);
+            this.Size = new System.Drawing.Size(887, 849);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel20.ResumeLayout(false);
