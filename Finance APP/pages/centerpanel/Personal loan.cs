@@ -41,5 +41,25 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
+
+        private void guna2TextBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox30_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
