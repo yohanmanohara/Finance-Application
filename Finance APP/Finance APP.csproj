@@ -175,6 +175,12 @@
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\Student loan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\Student loan.Designer.cs">
+      <DependentUpon>Student loan.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -328,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\Student loan.resx">
+      <DependentUpon>Student loan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\transfer.resx">
       <DependentUpon>transfer.cs</DependentUpon>
