@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.centerpanel
 {
-    public partial class deposit : UserControl
+    public partial class check_balance : UserControl
     {
-        public deposit()
+        public check_balance()
         {
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
