@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.centerpanel
 {
-    public partial class Student_loan : UserControl
+    public partial class Personal_loan_1 : UserControl
     {
-        public Student_loan()
+        public Personal_loan_1()
         {
             InitializeComponent();
         }
