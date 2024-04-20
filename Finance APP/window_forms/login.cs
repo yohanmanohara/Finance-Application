@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Finance_APP.window_forms
 {
-   
+
     public partial class login : Form
     {
-       
+
         public login()
         {
             InitializeComponent();
@@ -24,46 +24,33 @@ namespace Finance_APP.window_forms
 
         }
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-       private static extern IntPtr CreateRoundRectRgn
-          (
-        int nLeftRect,     // x-coordinate of upper-left corner
-        int nTopRect,      // y-coordinate of upper-left corner
-        int nRightRect,    // x-coordinate of lower-right corner
-        int nBottomRect,   // y-coordinate of lower-right corner
-        int nWidthEllipse, // width of ellipse
-        int nHeightEllipse // height of ellipse
-             );
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // width of ellipse
+            int nHeightEllipse // height of ellipse
+        );
 
         SqlConnection conn = new SqlConnection(@"Data Source=financensbm.database.windows.net;Initial Catalog=finance;Persist Security Info=True;User ID=financeadmin;Password=finance2024$;Encrypt=True");
-
-
-
-
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-
-            
-
-        }
+        private void timer3_Tick(object sender, EventArgs e) { }
 
         private void label7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MessageBox.Show("login succses " );
-          
+            MessageBox.Show("login succses ");
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -99,14 +86,12 @@ namespace Finance_APP.window_forms
                                 HRO.firstname = firstname;
                                 HRO.lastname = lastname;
                                 HRO.ShowDialog();
-                               
-
-                            }else if(empstatus== "Blocked")
+                            }
+                            else if (empstatus == "Blocked")
                             {
                                 this.Hide();
                                 jobrollerro erropop = new jobrollerro();
                                 erropop.ShowDialog();
-
                             }
 
                             break;
@@ -118,7 +103,7 @@ namespace Finance_APP.window_forms
 
                                 this.Hide();
                                 Maindashbord BRO = new Maindashbord();
-                               
+
                                 BRO.jobroll = jobroll;
                                 BRO.firstname = firstname;
                                 BRO.lastname = lastname;
@@ -140,7 +125,7 @@ namespace Finance_APP.window_forms
 
                                 this.Hide();
                                 Maindashbord CA = new Maindashbord();
-                            
+
                                 CA.jobroll = jobroll;
                                 CA.firstname = firstname;
                                 CA.lastname = lastname;
@@ -163,7 +148,7 @@ namespace Finance_APP.window_forms
 
                                 this.Hide();
                                 Maindashbord bm = new Maindashbord();
-                              
+
                                 bm.jobroll = jobroll;
                                 bm.firstname = firstname;
                                 bm.lastname = lastname;
@@ -188,7 +173,7 @@ namespace Finance_APP.window_forms
 
 
 
-                        
+
                     }
                 }
                 else
