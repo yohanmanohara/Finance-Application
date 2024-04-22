@@ -11,119 +11,181 @@ using System.Reflection;
 
 namespace Finance_APP.Core.Database.Models
 {
-    internal class BaseDataType
+    internal class BaseModel
     {
-        public int Id;
+        public string _table;
 
-        public BaseDataType(int id)
-        {
-            Id = id;
-        }
-    }
+        public int Id { get; set; }
 
-    internal class BaseModel<DataType> where DataType : BaseDataType
-    {
-        private string _table;
-        private SqlConnection _connection;
-
-        public DataType data;
-
-        public BaseModel(string Table, bool LoadDataOnInit = true) {
-            _table = Table;
-            _connection = new SqlConnection(Config.CONNECTION_STRING);
-
-            if (LoadDataOnInit) { Load(); };
+        public BaseModel() {
         }
 
-        public void Load()
+        public void Write()
         {
-            string query = "SELECT * FROM [@Table] WHERE Id=@Id;";
+            string query = "INSERT INTO " + _table + " (";
 
-            SqlCommand command = new SqlCommand(query, _connection);
+            PropertyInfo[] properties = this.GetType().GetProperties();
 
-            command.Parameters.AddWithValue("@Table", _table);
-            command.Parameters.AddWithValue("@Id", data.Id);
-
-            try
+            foreach (PropertyInfo property in properties)
             {
-                _connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
+                query += property.Name;
 
-                if (reader.Read())
-                {
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        string fieldName = reader.GetName(i);
-                        object value = reader[fieldName];
-                        typeof(DataType).GetProperty(fieldName)?.SetValue(data, value, null);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("No data found for the given primary key.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-            }
-            finally
-            {
-                _connection.Close();
-            }
-        }
-
-        public void Update()
-        {
-            string query = $"UPDATE {_table} SET ";
-
-            PropertyInfo[] properties = typeof(DataType).GetProperties();
-
-            for (int i = 0; i < properties.Length; i++)
-            {
-                PropertyInfo property = properties[i];
-                query += $"{property.Name}=@{property.Name}";
-
-                if (i < properties.Length - 1)
+                if (property != properties.Last())
                 {
                     query += ", ";
                 }
             }
 
-            query += $" WHERE Id=@Id;";
-
-            SqlCommand command = new SqlCommand(query, _connection);
+            query += ") VALUES (";
 
             foreach (PropertyInfo property in properties)
             {
-                command.Parameters.AddWithValue($"@{property.Name}", property.GetValue(data));
+                query += "@" + property.Name;
+
+                if (property != properties.Last())
+                {
+                    query += ", ";
+                }
             }
 
-            command.Parameters.AddWithValue("@Id", data.Id);
+            query += ")";
 
-            try
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            foreach (PropertyInfo property in properties)
             {
-                _connection.Open();
-                int rowsAffected = command.ExecuteNonQuery();
-                Console.WriteLine($"{rowsAffected} row(s) updated.");
+                command.Parameters.AddWithValue("@" + property.Name, property.GetValue(this));
             }
-            catch (Exception ex)
+
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        public void Delete()
+        {
+            string query = "DELETE FROM " + _table + " WHERE id = " + Id;
+
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        public void Update()
+        {
+            string query = "UPDATE " + _table + " SET ";
+
+            PropertyInfo[] properties = this.GetType().GetProperties();
+
+            foreach (PropertyInfo property in properties)
             {
-                Console.WriteLine($"An error occurred: {ex.Message}");
+                query += property.Name + " = @" + property.Name;
+
+                if (property != properties.Last())
+                {
+                    query += ", ";
+                }
             }
-            finally
+
+            query += " WHERE id = " + Id;
+
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            foreach (PropertyInfo property in properties)
             {
-                _connection.Close();
+                command.Parameters.AddWithValue("@" + property.Name, property.GetValue(this));
+            }
+
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        public void Save()
+        {
+            if (Id == 0)
+            {
+                Write();
+            }
+            else
+            {
+                Update();
             }
         }
 
-        public static BaseModel<DataType> Get(int Id)
+        public void Refresh()
         {
-            BaseModel<DataType> model = new BaseModel<DataType>("", false);
-            model.data.Id = Id;
-            model.Load();
+            BaseModel res = Get<BaseModel>(Id);
 
-            return model;
+            PropertyInfo[] properties = this.GetType().GetProperties();
+
+            foreach (PropertyInfo property in properties)
+            {
+                property.SetValue(this, property.GetValue(res));
+            }
+        }
+
+        public static BaseModel New<X>() where X : BaseModel, new()
+        {
+            string _table = typeof(X).Name;
+
+            string query = "SELECT MAX(id) FROM " + _table;
+
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+            int id = command.ExecuteScalar() as int? ?? 0;
+            connection.Close();
+
+            X res = new X
+            {
+                Id = id + 1
+            };
+
+            PropertyInfo[] properties = typeof(X).GetProperties();
+
+            foreach (PropertyInfo property in properties)
+            {
+                property.SetValue(res, null);
+            }
+
+            return res;
+        }
+    
+        public static BaseModel Get<X>(int id) where X : BaseModel, new()
+        {
+            string _table = typeof(X).Name;
+
+            string query = "SELECT * FROM " + _table + " WHERE id = " + id;
+
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            connection.Close();
+
+            if (reader.Read())
+            {
+                X res = new X();
+
+                PropertyInfo[] properties = typeof(X).GetProperties();
+
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(res, reader[property.Name]);
+                }
+
+                return res;
+            }
+
+            return null;
         }
     }
 }
