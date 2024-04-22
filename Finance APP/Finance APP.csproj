@@ -102,7 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Database\Config.cs" />
+    <Compile Include="Core\Database\Models\Account.cs" />
     <Compile Include="Core\Database\Models\BaseModel.cs" />
+    <Compile Include="Core\Database\Models\Customer.cs" />
+    <Compile Include="Core\Database\Models\PersonalLoan.cs" />
+    <Compile Include="Core\Database\Models\User.cs" />
+    <Compile Include="Core\Utility\UserInputParser.cs" />
     <Compile Include="financeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

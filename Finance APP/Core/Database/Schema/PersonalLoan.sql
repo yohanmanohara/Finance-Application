@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[PersonalLoan] (
     [Id]                          INT            NOT NULL,
 	[AccountId]					  INT            NOT NULL,
-    [FullName]                    NVARCHAR (200) NOT NULL,
+    [FullName]                    NVARCHAR (300) NOT NULL,
     [ResidentialAddress]          NCHAR (200)    NOT NULL,
     [Occupation]                  NCHAR (50)     NOT NULL,
     [DateOfBirth]                 DATE           NOT NULL,
@@ -18,7 +18,7 @@
     [EmployementServiceTimeStart] DATE           NOT NULL,
     [SpouseProfession]            NCHAR (10)     NOT NULL,
     [IncomeMethod]                NCHAR (10)     NOT NULL,
-    [IncomeAmount]                NCHAR (10)     NOT NULL,
+    [IncomeAmount]                REAL           NOT NULL,
     [LoanPurpose]                 NCHAR (10)     NOT NULL,
     [LoanAmount]                  REAL           NOT NULL,
     [RepaymentPeriodStart]        DATE           NOT NULL,
