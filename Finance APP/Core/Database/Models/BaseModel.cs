@@ -18,6 +18,7 @@ namespace Finance_APP.Core.Database.Models
         public int Id { get; set; }
 
         public BaseModel() {
+            _table = this.GetType().Name;
         }
 
         public void Write()
@@ -50,6 +51,8 @@ namespace Finance_APP.Core.Database.Models
 
             query += ")";
 
+            Console.WriteLine(query);
+
             SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
             SqlCommand command = new SqlCommand(query, connection);
 
@@ -61,6 +64,8 @@ namespace Finance_APP.Core.Database.Models
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
+
+            Refresh();
         }
 
         public void Delete()
