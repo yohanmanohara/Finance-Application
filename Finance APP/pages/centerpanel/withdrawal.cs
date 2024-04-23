@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finance_APP.Core.Database.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,6 +78,21 @@ namespace Finance_APP.pages.centerpanel
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+           Transaction newtransaction = (Transaction)BaseModel.New<Transaction>();
+            Account checkaccount = (Account)BaseModel.Get<Account>(int.Parse(guna2TextBox6.Text));
+
+            // check if the balance is less than the withdrawal amount
+
+            // If the account exist go on 
+
+            //reduce the withdrawal amount from the balance
+
+            //Update the modle in the database
 
         }
     }

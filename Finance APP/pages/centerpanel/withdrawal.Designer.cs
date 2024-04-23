@@ -216,7 +216,7 @@
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(7, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(-2, 3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(861, 1268);
@@ -260,6 +260,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(179, 54);
             this.guna2Button4.TabIndex = 65;
             this.guna2Button4.Text = "Withdraw";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2TextBox7
             // 
@@ -298,7 +299,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "withdrawal";
-            this.Size = new System.Drawing.Size(870, 777);
+            this.Size = new System.Drawing.Size(853, 777);
             this.Load += new System.EventHandler(this.withdrawal_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
