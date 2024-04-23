@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -83,16 +84,40 @@ namespace Finance_APP.pages.centerpanel
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-           Transaction newtransaction = (Transaction)BaseModel.New<Transaction>();
-            Account checkaccount = (Account)BaseModel.Get<Account>(int.Parse(guna2TextBox6.Text));
+           Transaction newtransaction = (Transaction)BaseModel.New<Transaction>
+                // If the account exist go on
+
+            try {
+
+                Account checkaccount = (Account)BaseModel.Get<Account>(int.Parse(guna2TextBox6.Text));
+                }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
             // check if the balance is less than the withdrawal amount
+            if (checkaccount.Balance >= withdrawalAmount))
+     
+             ProcessWithdrawal(checkaccount, withdrawalAmount, newtransaction);
+              } else {
+              MessageBox.Show("Insufficient funds. Your current balance is: " + checkaccount.Balance.ToString("C"));
 
-            // If the account exist go on 
-
-            //reduce the withdrawal amount from the balance
+      
+        //reduce the withdrawal amount from the balance
+        private void ProcessWithdrawal(Account checkaccount, decimal withdrawalAmount, Transaction newtransaction)
 
             //Update the modle in the database
+           
+
+
+
 
         }
     }
