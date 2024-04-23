@@ -1,5 +1,6 @@
 ﻿IF OBJECT_ID('dbo.PersonalLoan', 'U') IS NOT NULL DROP TABLE [dbo].[PersonalLoan];
 IF OBJECT_ID('dbo.User', 'U') IS NOT NULL DROP TABLE [dbo].[User];
+IF OBJECT_ID('dbo.Transaction', 'U') IS NOT NULL DROP TABLE [dbo].[Transaction];
 IF OBJECT_ID('dbo.Account', 'U') IS NOT NULL DROP TABLE [dbo].[Account];
 IF OBJECT_ID('dbo.Customer', 'U') IS NOT NULL DROP TABLE [dbo].[Customer];
 
@@ -34,6 +35,16 @@ CREATE TABLE [dbo].[Account]
     [Type]                        NCHAR(30)      NOT NULL, 
     [Balance]                     REAL           NOT NULL, 
     [Name]                        NCHAR(300)     NOT NULL
+);
+
+CREATE TABLE [dbo].[Transaction]
+(
+	[Id]                          INT            NOT NULL PRIMARY KEY, 
+	[AccountId]                   INT            NOT NULL FOREIGN KEY REFERENCES [dbo].[Account](Id),
+	[Amount]                      REAL           NOT NULL, 
+	[Type]                        NCHAR(30)      NOT NULL, 
+	[Date]                        TIMESTAMP      NOT NULL, 
+	[Notes]                       NCHAR(100)     NOT NULL
 );
 
 CREATE TABLE [dbo].[User]

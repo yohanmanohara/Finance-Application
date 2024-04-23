@@ -106,6 +106,7 @@
     <Compile Include="Core\Database\Models\BaseModel.cs" />
     <Compile Include="Core\Database\Models\Customer.cs" />
     <Compile Include="Core\Database\Models\PersonalLoan.cs" />
+    <Compile Include="Core\Database\Models\Transaction.cs" />
     <Compile Include="Core\Database\Models\User.cs" />
     <Compile Include="Core\Utility\UserInputParser.cs" />
     <Compile Include="financeDataSet.Designer.cs">
