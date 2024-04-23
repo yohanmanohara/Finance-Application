@@ -50,7 +50,7 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Create_customer_account fm = new Create_customer_account();
+            CreateCustomer fm = new CreateCustomer();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();

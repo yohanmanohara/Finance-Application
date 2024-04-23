@@ -82,43 +82,73 @@ namespace Finance_APP.pages.centerpanel
 
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-           Transaction newtransaction = (Transaction)BaseModel.New<Transaction>
-                // If the account exist go on
-
-            try {
-
-                Account checkaccount = (Account)BaseModel.Get<Account>(int.Parse(guna2TextBox6.Text));
-                }
-
-            catch (Exception ex)
+            int accountId;
+            try
             {
+                accountId = int.Parse(guna2TextBox6.Text);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Invalid account number. Please enter a valid account number.");
+
                 Console.WriteLine(ex.Message);
                 Console.WriteLine(ex.StackTrace);
-
-                MessageBox.Show(ex.Message);
+                return;
             }
-        }
 
+            double withdrawalAmount;
+            try
+            {
+                withdrawalAmount = double.Parse(guna2TextBox1.Text);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Invalid withdrawal amount. Please enter a valid withdrawal amount.");
 
-            // check if the balance is less than the withdrawal amount
-            if (checkaccount.Balance >= withdrawalAmount))
-     
-             ProcessWithdrawal(checkaccount, withdrawalAmount, newtransaction);
-              } else {
-              MessageBox.Show("Insufficient funds. Your current balance is: " + checkaccount.Balance.ToString("C"));
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                return;
+            }
 
-      
-        //reduce the withdrawal amount from the balance
-        private void ProcessWithdrawal(Account checkaccount, decimal withdrawalAmount, Transaction newtransaction)
+            if (withdrawalAmount <= 0)
+            {
+                MessageBox.Show("Invalid withdrawal amount. Please enter a valid withdrawal amount.");
+                return;
+            }
 
-            //Update the modle in the database
-           
+            string transactionNotes = guna2TextBox4.Text;
 
+            Account account;
+            try {
+                account = (Account)BaseModel.Get<Account>(accountId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Account not found. Please enter a valid account number.");
 
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                return;
+            }
 
+            if (account.Balance < withdrawalAmount)
+            {
+                MessageBox.Show("Insufficient funds. Please enter a valid withdrawal amount.");
+                return;
+            }
 
+            account.Balance -= withdrawalAmount;
+            account.Save();
+
+            Transaction transaction = new Transaction();
+
+            transaction.AccountId = accountId;
+            transaction.Amount = withdrawalAmount;
+            transaction.Type = "Withdrawal";
+            transaction.Date = DateTime.Now;
+            transaction.Notes = transactionNotes;
+
+            transaction.Save();
         }
     }
 }

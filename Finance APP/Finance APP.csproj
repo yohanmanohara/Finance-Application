@@ -147,11 +147,11 @@
     <Compile Include="pages\centerpanel\check balance.Designer.cs">
       <DependentUpon>check balance.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.cs">
+    <Compile Include="pages\centerpanel\CreateCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
-      <DependentUpon>Create_customer_account.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\CreateCustomer.Designer.cs">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\deposit.cs">
       <SubType>UserControl</SubType>
@@ -325,8 +325,8 @@
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
-      <DependentUpon>Create_customer_account.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\CreateCustomer.resx">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\deposit.resx">
       <DependentUpon>deposit.cs</DependentUpon>
