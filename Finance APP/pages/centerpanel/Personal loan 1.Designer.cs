@@ -603,7 +603,7 @@
             this.guna2TextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox19.HoverState.Parent = this.guna2TextBox19;
-            this.guna2TextBox19.Location = new System.Drawing.Point(56, 1524);
+            this.guna2TextBox19.Location = new System.Drawing.Point(56, 1523);
             this.guna2TextBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox19.Name = "guna2TextBox19";
             this.guna2TextBox19.PasswordChar = '\0';
