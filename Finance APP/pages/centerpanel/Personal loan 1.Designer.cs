@@ -69,10 +69,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             this.Submit.ForeColor = System.Drawing.Color.White;
             this.Submit.HoverState.Parent = this.Submit;
             this.Submit.Location = new System.Drawing.Point(56, 3245);
-            this.Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Submit.Margin = new System.Windows.Forms.Padding(4);
             this.Submit.Name = "Submit";
             this.Submit.ShadowDecoration.Parent = this.Submit;
             this.Submit.Size = new System.Drawing.Size(177, 48);
@@ -103,6 +103,7 @@
             this.label8.Size = new System.Drawing.Size(162, 25);
             this.label8.TabIndex = 30;
             this.label8.Text = "Enter Signature";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -113,6 +114,7 @@
             this.label7.Size = new System.Drawing.Size(181, 25);
             this.label7.TabIndex = 30;
             this.label7.Text = "Details of Assets:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -123,6 +125,7 @@
             this.label6.Size = new System.Drawing.Size(253, 25);
             this.label6.TabIndex = 30;
             this.label6.Text = "Monthly Financial Details";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2TextBox35
             // 
@@ -147,10 +150,12 @@
             this.guna2TextBox35.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
             this.guna2TextBox35.PlaceholderText = "";
             this.guna2TextBox35.SelectedText = "";
+            this.guna2TextBox35.SelectionStart = 6;
             this.guna2TextBox35.ShadowDecoration.Parent = this.guna2TextBox35;
             this.guna2TextBox35.Size = new System.Drawing.Size(217, 47);
             this.guna2TextBox35.TabIndex = 29;
             this.guna2TextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox35.TextChanged += new System.EventHandler(this.guna2TextBox35_TextChanged);
             // 
             // guna2TextBox34
             // 
@@ -180,6 +185,7 @@
             this.guna2TextBox34.Size = new System.Drawing.Size(915, 96);
             this.guna2TextBox34.TabIndex = 29;
             this.guna2TextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox34.TextChanged += new System.EventHandler(this.guna2TextBox34_TextChanged);
             // 
             // guna2TextBox33
             // 
@@ -209,6 +215,7 @@
             this.guna2TextBox33.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox33.TabIndex = 29;
             this.guna2TextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox33.TextChanged += new System.EventHandler(this.guna2TextBox33_TextChanged);
             // 
             // guna2TextBox29
             // 
@@ -238,6 +245,7 @@
             this.guna2TextBox29.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox29.TabIndex = 29;
             this.guna2TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox29.TextChanged += new System.EventHandler(this.guna2TextBox29_TextChanged);
             // 
             // guna2TextBox32
             // 
@@ -267,6 +275,7 @@
             this.guna2TextBox32.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox32.TabIndex = 29;
             this.guna2TextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox32.TextChanged += new System.EventHandler(this.guna2TextBox32_TextChanged);
             // 
             // guna2TextBox28
             // 
@@ -296,6 +305,7 @@
             this.guna2TextBox28.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox28.TabIndex = 29;
             this.guna2TextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox28.TextChanged += new System.EventHandler(this.guna2TextBox28_TextChanged);
             // 
             // guna2TextBox31
             // 
@@ -325,6 +335,7 @@
             this.guna2TextBox31.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox31.TabIndex = 29;
             this.guna2TextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox31.TextChanged += new System.EventHandler(this.guna2TextBox31_TextChanged);
             // 
             // guna2TextBox27
             // 
@@ -354,6 +365,7 @@
             this.guna2TextBox27.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox27.TabIndex = 29;
             this.guna2TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox27.TextChanged += new System.EventHandler(this.guna2TextBox27_TextChanged);
             // 
             // guna2TextBox26
             // 
@@ -383,6 +395,7 @@
             this.guna2TextBox26.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox26.TabIndex = 29;
             this.guna2TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox26.TextChanged += new System.EventHandler(this.guna2TextBox26_TextChanged);
             // 
             // guna2TextBox25
             // 
@@ -412,6 +425,7 @@
             this.guna2TextBox25.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox25.TabIndex = 29;
             this.guna2TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox25.TextChanged += new System.EventHandler(this.guna2TextBox25_TextChanged);
             // 
             // guna2TextBox23
             // 
@@ -441,6 +455,7 @@
             this.guna2TextBox23.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox23.TabIndex = 29;
             this.guna2TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox23.TextChanged += new System.EventHandler(this.guna2TextBox23_TextChanged);
             // 
             // guna2TextBox22
             // 
@@ -470,6 +485,7 @@
             this.guna2TextBox22.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox22.TabIndex = 29;
             this.guna2TextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox22.TextChanged += new System.EventHandler(this.guna2TextBox22_TextChanged);
             // 
             // guna2TextBox24
             // 
@@ -498,6 +514,7 @@
             this.guna2TextBox24.Size = new System.Drawing.Size(915, 158);
             this.guna2TextBox24.TabIndex = 28;
             this.guna2TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox24.TextChanged += new System.EventHandler(this.guna2TextBox24_TextChanged);
             // 
             // label5
             // 
@@ -508,6 +525,7 @@
             this.label5.Size = new System.Drawing.Size(241, 18);
             this.label5.TabIndex = 25;
             this.label5.Text = "Description of Security Offered";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // guna2TextBox21
             // 
@@ -537,6 +555,7 @@
             this.guna2TextBox21.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox21.TabIndex = 24;
             this.guna2TextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox21.TextChanged += new System.EventHandler(this.guna2TextBox21_TextChanged);
             // 
             // guna2TextBox20
             // 
@@ -566,6 +585,7 @@
             this.guna2TextBox20.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox20.TabIndex = 23;
             this.guna2TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox20.TextChanged += new System.EventHandler(this.guna2TextBox20_TextChanged);
             // 
             // guna2TextBox19
             // 
@@ -595,6 +615,7 @@
             this.guna2TextBox19.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox19.TabIndex = 22;
             this.guna2TextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox19.TextChanged += new System.EventHandler(this.guna2TextBox19_TextChanged);
             // 
             // label4
             // 
@@ -605,6 +626,7 @@
             this.label4.Size = new System.Drawing.Size(205, 25);
             this.label4.TabIndex = 21;
             this.label4.Text = "Details of the Loan :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2TextBox18
             // 
@@ -622,7 +644,7 @@
             this.guna2TextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox18.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox18.HoverState.Parent = this.guna2TextBox18;
-            this.guna2TextBox18.Location = new System.Drawing.Point(56, 1330);
+            this.guna2TextBox18.Location = new System.Drawing.Point(129, 1325);
             this.guna2TextBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox18.Name = "guna2TextBox18";
             this.guna2TextBox18.PasswordChar = '\0';
@@ -631,9 +653,10 @@
             this.guna2TextBox18.SelectedText = "";
             this.guna2TextBox18.SelectionStart = 38;
             this.guna2TextBox18.ShadowDecoration.Parent = this.guna2TextBox18;
-            this.guna2TextBox18.Size = new System.Drawing.Size(669, 50);
+            this.guna2TextBox18.Size = new System.Drawing.Size(763, 50);
             this.guna2TextBox18.TabIndex = 20;
             this.guna2TextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox18.TextChanged += new System.EventHandler(this.guna2TextBox18_TextChanged);
             // 
             // guna2TextBox17
             // 
@@ -651,7 +674,7 @@
             this.guna2TextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox17.HoverState.Parent = this.guna2TextBox17;
-            this.guna2TextBox17.Location = new System.Drawing.Point(56, 1260);
+            this.guna2TextBox17.Location = new System.Drawing.Point(129, 1255);
             this.guna2TextBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox17.Name = "guna2TextBox17";
             this.guna2TextBox17.PasswordChar = '\0';
@@ -660,9 +683,10 @@
             this.guna2TextBox17.SelectedText = "";
             this.guna2TextBox17.SelectionStart = 38;
             this.guna2TextBox17.ShadowDecoration.Parent = this.guna2TextBox17;
-            this.guna2TextBox17.Size = new System.Drawing.Size(669, 50);
+            this.guna2TextBox17.Size = new System.Drawing.Size(763, 50);
             this.guna2TextBox17.TabIndex = 20;
             this.guna2TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox17.TextChanged += new System.EventHandler(this.guna2TextBox17_TextChanged);
             // 
             // guna2TextBox16
             // 
@@ -692,6 +716,7 @@
             this.guna2TextBox16.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox16.TabIndex = 19;
             this.guna2TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox16.TextChanged += new System.EventHandler(this.guna2TextBox16_TextChanged);
             // 
             // guna2TextBox15
             // 
@@ -721,6 +746,7 @@
             this.guna2TextBox15.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox15.TabIndex = 18;
             this.guna2TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox15.TextChanged += new System.EventHandler(this.guna2TextBox15_TextChanged);
             // 
             // guna2TextBox14
             // 
@@ -750,6 +776,7 @@
             this.guna2TextBox14.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox14.TabIndex = 17;
             this.guna2TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox14.TextChanged += new System.EventHandler(this.guna2TextBox14_TextChanged);
             // 
             // guna2TextBox11
             // 
@@ -774,10 +801,12 @@
             this.guna2TextBox11.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
             this.guna2TextBox11.PlaceholderText = "";
             this.guna2TextBox11.SelectedText = "";
+            this.guna2TextBox11.SelectionStart = 17;
             this.guna2TextBox11.ShadowDecoration.Parent = this.guna2TextBox11;
             this.guna2TextBox11.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox11.TabIndex = 14;
             this.guna2TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox11.TextChanged += new System.EventHandler(this.guna2TextBox11_TextChanged);
             // 
             // guna2TextBox10
             // 
@@ -802,10 +831,12 @@
             this.guna2TextBox10.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
             this.guna2TextBox10.PlaceholderText = "";
             this.guna2TextBox10.SelectedText = "";
+            this.guna2TextBox10.SelectionStart = 10;
             this.guna2TextBox10.ShadowDecoration.Parent = this.guna2TextBox10;
             this.guna2TextBox10.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox10.TabIndex = 13;
             this.guna2TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox10.TextChanged += new System.EventHandler(this.guna2TextBox10_TextChanged);
             // 
             // label2
             // 
@@ -817,6 +848,7 @@
             this.label2.Size = new System.Drawing.Size(216, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Professional Details :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // guna2TextBox9
             // 
@@ -835,7 +867,7 @@
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
             this.guna2TextBox9.Location = new System.Drawing.Point(56, 615);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
             this.guna2TextBox9.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -846,6 +878,7 @@
             this.guna2TextBox9.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox9.TabIndex = 11;
             this.guna2TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox9.TextChanged += new System.EventHandler(this.guna2TextBox9_TextChanged);
             // 
             // guna2TextBox8
             // 
@@ -864,16 +897,18 @@
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
             this.guna2TextBox8.Location = new System.Drawing.Point(56, 555);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
             this.guna2TextBox8.PlaceholderText = "";
             this.guna2TextBox8.SelectedText = "";
+            this.guna2TextBox8.SelectionStart = 11;
             this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
             this.guna2TextBox8.Size = new System.Drawing.Size(445, 50);
             this.guna2TextBox8.TabIndex = 10;
             this.guna2TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox8.TextChanged += new System.EventHandler(this.guna2TextBox8_TextChanged);
             // 
             // guna2TextBox7
             // 
@@ -892,7 +927,7 @@
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Location = new System.Drawing.Point(525, 484);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
             this.guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -903,6 +938,7 @@
             this.guna2TextBox7.Size = new System.Drawing.Size(445, 50);
             this.guna2TextBox7.TabIndex = 9;
             this.guna2TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox7.TextChanged += new System.EventHandler(this.guna2TextBox7_TextChanged);
             // 
             // guna2TextBox6
             // 
@@ -921,7 +957,7 @@
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
             this.guna2TextBox6.Location = new System.Drawing.Point(56, 484);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -932,6 +968,7 @@
             this.guna2TextBox6.Size = new System.Drawing.Size(445, 50);
             this.guna2TextBox6.TabIndex = 8;
             this.guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
             // 
             // guna2TextBox5
             // 
@@ -950,7 +987,7 @@
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
             this.guna2TextBox5.Location = new System.Drawing.Point(525, 412);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -961,6 +998,7 @@
             this.guna2TextBox5.Size = new System.Drawing.Size(445, 50);
             this.guna2TextBox5.TabIndex = 7;
             this.guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
             // 
             // guna2TextBox4
             // 
@@ -979,7 +1017,7 @@
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(56, 412);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -990,6 +1028,7 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(445, 50);
             this.guna2TextBox4.TabIndex = 6;
             this.guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // guna2TextBox2
             // 
@@ -1008,7 +1047,7 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(56, 338);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
@@ -1019,6 +1058,7 @@
             this.guna2TextBox2.Size = new System.Drawing.Size(915, 50);
             this.guna2TextBox2.TabIndex = 4;
             this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // guna2TextBox1
             // 
@@ -1061,6 +1101,7 @@
             this.label3.Size = new System.Drawing.Size(199, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Personal Details :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -1075,6 +1116,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Achieve your Dreams with us\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Panel1
             // 
@@ -1135,51 +1177,6 @@
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Single",
-            "Married",
-            "Devorced"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(665, 566);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(167, 36);
-            this.guna2ComboBox1.TabIndex = 38;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label9.Location = new System.Drawing.Point(536, 571);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 20);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Civil status";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label10.Location = new System.Drawing.Point(52, 801);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(171, 20);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "Employment Status";
-            // 
             // guna2ComboBox2
             // 
             this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
@@ -1203,6 +1200,55 @@
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(191, 36);
             this.guna2ComboBox2.TabIndex = 40;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label10.Location = new System.Drawing.Point(52, 801);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Employment Status";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Devorced"});
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(665, 566);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(167, 36);
+            this.guna2ComboBox1.TabIndex = 38;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged_1);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label9.Location = new System.Drawing.Point(536, 571);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 20);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Civil status";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Personal_loan_1
             // 
