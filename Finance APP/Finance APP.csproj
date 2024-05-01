@@ -141,6 +141,12 @@
     <Compile Include="pages\centerpanel\addemployee.Designer.cs">
       <DependentUpon>addemployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\analytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\analytics.Designer.cs">
+      <DependentUpon>analytics.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\analytics.resx">
+      <DependentUpon>analytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
