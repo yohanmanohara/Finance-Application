@@ -92,5 +92,235 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox35_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox34_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox33_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox29_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox32_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox28_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox31_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox27_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox26_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox25_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox21_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox20_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox19_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
