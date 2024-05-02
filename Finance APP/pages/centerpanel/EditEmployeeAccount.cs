@@ -35,7 +35,7 @@ namespace Finance_APP.pages.centerpanel
             string jobtitle = jobtitleBox1.Text;
             string location = locationTextBox.Text;
             string empstatus = empstatustxt.Text;
-            string empid = EmployeeIDtxt.Text;
+            string empid = Usernametxt.Text;
 
 
 
@@ -80,7 +80,7 @@ namespace Finance_APP.pages.centerpanel
                 connectionString.Open();
 
 
-                string insertQuery = "UPDATE userdb SET  fullname = @FullName, firstname =@FirstName, lastname =@LastName, birthday = @DateOfBirth, gender =@Gender, phone_number =@PhoneNumber, address =@Address, tin = @TIN, email =@Email, jobtitle = @JobTitle, workinglocation = @Location,empstatus = @Empstatus WHERE Id =@Emp_ID";
+                string insertQuery = "UPDATE userdb SET  fullname = @FullName, firstname =@FirstName, lastname =@LastName, birthdate = @DateOfBirth, gender =@Gender, phonenumber =@PhoneNumber, adress =@Address, tin = @TIN, email =@Email, jobtitle = @JobTitle, workinglocation = @Location,empstatus = @Empstatus WHERE Id =@Emp_ID";
 
 
                 using (SqlCommand command = new SqlCommand(insertQuery, connectionString))
@@ -160,15 +160,15 @@ namespace Finance_APP.pages.centerpanel
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string emp_id = EmployeeIDtxt.Text;
-            string query = "SELECT * FROM userdb WHERE Id = @Emp_ID";
+            string Username= Usernametxt.Text;
+            string query = "SELECT * FROM userdb WHERE username = @Username";
 
             try
             {
                 connectionString.Open();
                 using (SqlCommand command = new SqlCommand(query, connectionString))
                 {
-                    command.Parameters.AddWithValue("@Customer_ID", emp_id);
+                    command.Parameters.AddWithValue("Username", Username);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                     {
@@ -176,10 +176,10 @@ namespace Finance_APP.pages.centerpanel
                         firstnametxt.Text = reader["firstname"].ToString();
                         lastnametxt.Text = reader["lastname"].ToString();
                         genderComboBox.Text = reader["gender"].ToString();
-                        phoneNumberTextBox.Text = reader["phone_number"].ToString();
-                        dateOfBirthDateTimePicker.Value = (DateTime)reader["birthday"];
+                        phoneNumberTextBox.Text = reader["phonenumber"].ToString();
+                        dateOfBirthDateTimePicker.Value = (DateTime)reader["birthdate"];
                         emailTextBox.Text = reader["email"].ToString();
-                        addressTextBox.Text = reader["address"].ToString();
+                        addressTextBox.Text = reader["adress"].ToString();
                         tinTextBox.Text = reader["tin"].ToString();
                         jobtitleBox1.Text = reader["jobtitle"].ToString();
                         locationTextBox.Text = reader["workinglocation"].ToString();
@@ -190,7 +190,7 @@ namespace Finance_APP.pages.centerpanel
                     }
                     else
                     {
-                        MessageBox.Show("No records found for the entered employee id.");
+                        MessageBox.Show("No records found for the entered username.");
                         // Clear all input fields
                         ClearFormInputs();
                     }

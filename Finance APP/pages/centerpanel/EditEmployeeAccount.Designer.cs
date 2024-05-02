@@ -60,7 +60,7 @@
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.EmployeeIDtxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Usernametxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -604,7 +604,7 @@
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.EmployeeIDtxt);
+            this.panel1.Controls.Add(this.Usernametxt);
             this.panel1.Controls.Add(this.lastnametxt);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.firstnametxt);
@@ -682,38 +682,38 @@
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label14.Location = new System.Drawing.Point(208, 223);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 20);
+            this.label14.Size = new System.Drawing.Size(82, 20);
             this.label14.TabIndex = 43;
-            this.label14.Text = "Employee ID";
+            this.label14.Text = "Username";
             // 
-            // EmployeeIDtxt
+            // Usernametxt
             // 
-            this.EmployeeIDtxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.EmployeeIDtxt.Animated = true;
-            this.EmployeeIDtxt.BorderRadius = 18;
-            this.EmployeeIDtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmployeeIDtxt.DefaultText = "";
-            this.EmployeeIDtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.EmployeeIDtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.EmployeeIDtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmployeeIDtxt.DisabledState.Parent = this.EmployeeIDtxt;
-            this.EmployeeIDtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmployeeIDtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EmployeeIDtxt.FocusedState.Parent = this.EmployeeIDtxt;
-            this.EmployeeIDtxt.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeIDtxt.ForeColor = System.Drawing.Color.Empty;
-            this.EmployeeIDtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EmployeeIDtxt.HoverState.Parent = this.EmployeeIDtxt;
-            this.EmployeeIDtxt.Location = new System.Drawing.Point(326, 209);
-            this.EmployeeIDtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EmployeeIDtxt.Name = "EmployeeIDtxt";
-            this.EmployeeIDtxt.Padding = new System.Windows.Forms.Padding(10);
-            this.EmployeeIDtxt.PasswordChar = '\0';
-            this.EmployeeIDtxt.PlaceholderText = "0000";
-            this.EmployeeIDtxt.SelectedText = "";
-            this.EmployeeIDtxt.ShadowDecoration.Parent = this.EmployeeIDtxt;
-            this.EmployeeIDtxt.Size = new System.Drawing.Size(243, 45);
-            this.EmployeeIDtxt.TabIndex = 42;
+            this.Usernametxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Usernametxt.Animated = true;
+            this.Usernametxt.BorderRadius = 18;
+            this.Usernametxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Usernametxt.DefaultText = "";
+            this.Usernametxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Usernametxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Usernametxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Usernametxt.DisabledState.Parent = this.Usernametxt;
+            this.Usernametxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Usernametxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Usernametxt.FocusedState.Parent = this.Usernametxt;
+            this.Usernametxt.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernametxt.ForeColor = System.Drawing.Color.Empty;
+            this.Usernametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Usernametxt.HoverState.Parent = this.Usernametxt;
+            this.Usernametxt.Location = new System.Drawing.Point(326, 209);
+            this.Usernametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Usernametxt.Name = "Usernametxt";
+            this.Usernametxt.Padding = new System.Windows.Forms.Padding(10);
+            this.Usernametxt.PasswordChar = '\0';
+            this.Usernametxt.PlaceholderText = "";
+            this.Usernametxt.SelectedText = "";
+            this.Usernametxt.ShadowDecoration.Parent = this.Usernametxt;
+            this.Usernametxt.Size = new System.Drawing.Size(243, 45);
+            this.Usernametxt.TabIndex = 42;
             // 
             // imageList1
             // 
@@ -767,7 +767,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2TextBox EmployeeIDtxt;
+        private Guna.UI2.WinForms.Guna2TextBox Usernametxt;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
     }
