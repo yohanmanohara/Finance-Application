@@ -190,7 +190,37 @@ namespace Finance_APP.Core.Database.Models
                 return res;
             }
 
-            return null;
+            throw new Exception("No data found");
+        }
+
+        public static BaseModel Find<X, Y>(string attribute, Y value) where X : BaseModel, new()
+        {
+            string _table = typeof(X).Name;
+
+            string query = "SELECT * FROM " + _table + " WHERE " + attribute + " = '" + value + "'";
+
+            SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            connection.Close();
+
+            if (reader.Read())
+            {
+                X res = new X();
+
+                PropertyInfo[] properties = typeof(X).GetProperties();
+
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(res, reader[property.Name]);
+                }
+
+                return res;
+            }
+
+            throw new Exception("No data found");
         }
     }
 }
