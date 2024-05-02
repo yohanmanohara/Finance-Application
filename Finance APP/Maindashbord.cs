@@ -118,15 +118,9 @@ namespace Finance_APP
                     this.guna2Panel2.Tag = ca;
                     ca.Show();
                     break;
-                case "acc":
-                    Accounthadle acc = new Accounthadle();
-                    acc.Dock = DockStyle.Fill;
-                    this.guna2Panel2.Controls.Add(acc);
-                    this.guna2Panel2.Tag = acc;
-                    acc.Show();
-                    break;
+               
 
-                case "Branch Manager":
+                case "Branch Maneger":
                     branchmaneger bm = new branchmaneger();
                     bm.Dock = DockStyle.Fill;
                     this.guna2Panel2.Controls.Add(bm);
