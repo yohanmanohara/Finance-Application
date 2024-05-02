@@ -58,8 +58,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.txtempoyeeID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.EmployeeIDtxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -599,8 +601,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.AutoScroll = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.txtempoyeeID);
+            this.panel1.Controls.Add(this.EmployeeIDtxt);
             this.panel1.Controls.Add(this.lastnametxt);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.firstnametxt);
@@ -639,34 +643,34 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // txtempoyeeID
+            // EmployeeIDtxt
             // 
-            this.txtempoyeeID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtempoyeeID.Animated = true;
-            this.txtempoyeeID.BorderRadius = 18;
-            this.txtempoyeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtempoyeeID.DefaultText = "";
-            this.txtempoyeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtempoyeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtempoyeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtempoyeeID.DisabledState.Parent = this.txtempoyeeID;
-            this.txtempoyeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtempoyeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtempoyeeID.FocusedState.Parent = this.txtempoyeeID;
-            this.txtempoyeeID.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtempoyeeID.ForeColor = System.Drawing.Color.Empty;
-            this.txtempoyeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtempoyeeID.HoverState.Parent = this.txtempoyeeID;
-            this.txtempoyeeID.Location = new System.Drawing.Point(326, 209);
-            this.txtempoyeeID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtempoyeeID.Name = "txtempoyeeID";
-            this.txtempoyeeID.Padding = new System.Windows.Forms.Padding(10);
-            this.txtempoyeeID.PasswordChar = '\0';
-            this.txtempoyeeID.PlaceholderText = "0000";
-            this.txtempoyeeID.SelectedText = "";
-            this.txtempoyeeID.ShadowDecoration.Parent = this.txtempoyeeID;
-            this.txtempoyeeID.Size = new System.Drawing.Size(243, 45);
-            this.txtempoyeeID.TabIndex = 42;
+            this.EmployeeIDtxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.EmployeeIDtxt.Animated = true;
+            this.EmployeeIDtxt.BorderRadius = 18;
+            this.EmployeeIDtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmployeeIDtxt.DefaultText = "";
+            this.EmployeeIDtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmployeeIDtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmployeeIDtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmployeeIDtxt.DisabledState.Parent = this.EmployeeIDtxt;
+            this.EmployeeIDtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmployeeIDtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmployeeIDtxt.FocusedState.Parent = this.EmployeeIDtxt;
+            this.EmployeeIDtxt.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeIDtxt.ForeColor = System.Drawing.Color.Empty;
+            this.EmployeeIDtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmployeeIDtxt.HoverState.Parent = this.EmployeeIDtxt;
+            this.EmployeeIDtxt.Location = new System.Drawing.Point(326, 209);
+            this.EmployeeIDtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmployeeIDtxt.Name = "EmployeeIDtxt";
+            this.EmployeeIDtxt.Padding = new System.Windows.Forms.Padding(10);
+            this.EmployeeIDtxt.PasswordChar = '\0';
+            this.EmployeeIDtxt.PlaceholderText = "0000";
+            this.EmployeeIDtxt.SelectedText = "";
+            this.EmployeeIDtxt.ShadowDecoration.Parent = this.EmployeeIDtxt;
+            this.EmployeeIDtxt.Size = new System.Drawing.Size(243, 45);
+            this.EmployeeIDtxt.TabIndex = 42;
             // 
             // label14
             // 
@@ -679,6 +683,42 @@
             this.label14.Size = new System.Drawing.Size(100, 20);
             this.label14.TabIndex = 43;
             this.label14.Text = "Employee ID";
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BorderRadius = 20;
+            this.btnSubmit.CheckedState.Parent = this.btnSubmit;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.CustomImages.Parent = this.btnSubmit;
+            this.btnSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.HoverState.Parent = this.btnSubmit;
+            this.btnSubmit.Location = new System.Drawing.Point(378, 1417);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
+            this.btnSubmit.Size = new System.Drawing.Size(125, 48);
+            this.btnSubmit.TabIndex = 64;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BorderRadius = 20;
+            this.btnSearch.CheckedState.Parent = this.btnSearch;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.CustomImages.Parent = this.btnSearch;
+            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.HoverState.Parent = this.btnSearch;
+            this.btnSearch.Location = new System.Drawing.Point(611, 209);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
+            this.btnSearch.Size = new System.Drawing.Size(125, 48);
+            this.btnSearch.TabIndex = 65;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // EditEmployeeAccount
             // 
@@ -726,6 +766,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2TextBox txtempoyeeID;
+        private Guna.UI2.WinForms.Guna2TextBox EmployeeIDtxt;
+        private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private Guna.UI2.WinForms.Guna2Button btnSearch;
     }
 }
