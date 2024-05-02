@@ -32,9 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.financeDataSet = new Finance_APP.financeDataSet();
             this.userdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userdbTableAdapter = new Finance_APP.financeDataSetTableAdapters.userdbTableAdapter();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,24 +49,19 @@
             this.workinglocationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthcertficateDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.financeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userdbBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // financeDataSet
             // 
-            this.financeDataSet.DataSetName = "financeDataSet";
-            this.financeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // userdbBindingSource
             // 
             this.userdbBindingSource.DataMember = "userdb";
-            this.userdbBindingSource.DataSource = this.financeDataSet;
             // 
             // userdbTableAdapter
             // 
-            this.userdbTableAdapter.ClearBeforeFill = true;
             // 
             // guna2DataGridView1
             // 
@@ -287,7 +280,6 @@
             this.Name = "EmployeDatabase";
             this.Size = new System.Drawing.Size(901, 614);
             this.Load += new System.EventHandler(this.EmployeDatabase_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.financeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userdbBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -296,8 +288,6 @@
 
         #endregion
         private System.Windows.Forms.BindingSource userdbBindingSource;
-        private financeDataSet financeDataSet;
-        private financeDataSetTableAdapters.userdbTableAdapter userdbTableAdapter;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;

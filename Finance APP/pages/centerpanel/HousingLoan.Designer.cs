@@ -94,7 +94,6 @@
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tableAdapterManager1 = new Finance_APP.financeDataSetTableAdapters.TableAdapterManager();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1764,10 +1763,6 @@
             // 
             // tableAdapterManager1
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Finance_APP.financeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager1.userdbTableAdapter = null;
             // 
             // label1
             // 
@@ -1828,7 +1823,6 @@
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button Submit;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private financeDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
