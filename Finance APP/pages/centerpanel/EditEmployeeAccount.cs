@@ -80,7 +80,7 @@ namespace Finance_APP.pages.centerpanel
                 connectionString.Open();
 
 
-                string insertQuery = "UPDATE userdb SET  fullname = @FullName, firstname =@FirstName, lastname =@LastName, birthdate = @DateOfBirth, gender =@Gender, phonenumber =@PhoneNumber, adress =@Address, tin = @TIN, email =@Email, jobtitle = @JobTitle, workinglocation = @Location,empstatus = @Empstatus WHERE Id =@Emp_ID";
+                string insertQuery = "UPDATE userdb SET  fullname = @FullName, firstname =@FirstName, lastname =@LastName, birthdate = @DateOfBirth, gender =@Gender, phonenumber =@PhoneNumber, adress =@Address, tin = @TIN, email =@Email, jobtitle = @JobTitle, workinglocation = @Location,empstatus = @Empstatus WHERE username =@Emp_ID";
 
 
                 using (SqlCommand command = new SqlCommand(insertQuery, connectionString))
@@ -207,6 +207,11 @@ namespace Finance_APP.pages.centerpanel
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Usernametxt_TextChanged(object sender, EventArgs e)
         {
 
         }

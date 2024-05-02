@@ -714,6 +714,7 @@
             this.Usernametxt.ShadowDecoration.Parent = this.Usernametxt;
             this.Usernametxt.Size = new System.Drawing.Size(243, 45);
             this.Usernametxt.TabIndex = 42;
+            this.Usernametxt.TextChanged += new System.EventHandler(this.Usernametxt_TextChanged);
             // 
             // imageList1
             // 
