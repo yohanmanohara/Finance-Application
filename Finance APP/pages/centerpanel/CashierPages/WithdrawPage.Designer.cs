@@ -1,6 +1,6 @@
 ﻿namespace Finance_APP.pages.centerpanel
 {
-    partial class withdrawal
+    partial class WithdrawPage
     {
         /// <summary> 
         /// Required designer variable.

@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.centerpanel
 {
-    public partial class withdrawal : UserControl
+    public partial class WithdrawPage : UserControl
     {
         public bool TopLevel { get; internal set; }
-        public withdrawal()
+        public WithdrawPage()
         {
             InitializeComponent();
         }

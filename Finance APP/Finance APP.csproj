@@ -219,11 +219,11 @@
     <Compile Include="pages\centerpanel\VehicleLoan.Designer.cs">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.cs">
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.Designer.cs">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\Accounthadle.cs">
       <SubType>UserControl</SubType>
@@ -373,8 +373,8 @@
     <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\WithdrawPage.resx">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
       <DependentUpon>Accounthadle.cs</DependentUpon>
