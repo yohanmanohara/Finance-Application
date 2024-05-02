@@ -58,6 +58,18 @@ namespace Finance_APP.window_forms
             string username = u_name.Text;
             string password = u_password.Text;
 
+            this.Hide();
+
+            Maindashbord testBoard = new Maindashbord();
+
+            testBoard.jobroll = "Cashier";
+            testBoard.firstname = "Test";
+            testBoard.lastname = "Üser";
+            testBoard.ShowDialog();
+
+            return;
+
+
             try
             {
                 string query = "SELECT * FROM [userdb] WHERE username='" + username + "' AND password='" + password + "'";

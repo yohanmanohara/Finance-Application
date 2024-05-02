@@ -147,6 +147,12 @@
     <Compile Include="pages\centerpanel\analytics.Designer.cs">
       <DependentUpon>analytics.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.Designer.cs">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,12 +194,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\Personal loan 1.Designer.cs">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
-      <DependentUpon>search account cashier.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
@@ -337,6 +337,9 @@
     <EmbeddedResource Include="pages\centerpanel\analytics.resx">
       <DependentUpon>analytics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\SearchAccountPage.resx">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,9 +360,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
-      <DependentUpon>search account cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
