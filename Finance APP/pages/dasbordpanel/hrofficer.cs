@@ -20,6 +20,7 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
+            
             addemployee fm = new addemployee();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;

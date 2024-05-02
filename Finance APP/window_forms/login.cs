@@ -141,7 +141,7 @@ namespace Finance_APP.window_forms
                             break;
 
 
-                        case "Branch Manager":
+                        case "Branch Maneger":
 
                             if (empstatus == "Active")
                             {
@@ -159,6 +159,8 @@ namespace Finance_APP.window_forms
                                 this.Hide();
                                 jobrollerro erropop = new jobrollerro();
                                 erropop.ShowDialog();
+
+                           
                             }
                             break;
 

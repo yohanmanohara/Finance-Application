@@ -94,7 +94,6 @@
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tableAdapterManager1 = new Finance_APP.financeDataSetTableAdapters.TableAdapterManager();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -180,7 +179,7 @@
             this.label6.Location = new System.Drawing.Point(31, 2146);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-
+            this.label6.Size = new System.Drawing.Size(794, 75);
             this.label6.TabIndex = 6;
             this.label6.Text = "Enter relevant images of the following requirements. (The images must be \r\nclear " +
     "and visible).\r\n\r\n";
@@ -304,7 +303,7 @@
             this.Submit.ForeColor = System.Drawing.Color.White;
             this.Submit.HoverState.Parent = this.Submit;
             this.Submit.Location = new System.Drawing.Point(492, 5984);
-            this.Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Submit.Margin = new System.Windows.Forms.Padding(4);
             this.Submit.Name = "Submit";
             this.Submit.ShadowDecoration.Parent = this.Submit;
             this.Submit.Size = new System.Drawing.Size(177, 48);
@@ -365,7 +364,7 @@
             this.guna2Panel1.Controls.Add(this.guna2TextBox3);
             this.guna2Panel1.Controls.Add(this.guna2TextBox2);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 41);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1180, 6160);
@@ -495,7 +494,7 @@
             this.panel5.Controls.Add(this.guna2TextBox42);
             this.panel5.Controls.Add(this.guna2TextBox43);
             this.panel5.Location = new System.Drawing.Point(71, 4791);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1009, 304);
             this.panel5.TabIndex = 54;
@@ -594,7 +593,7 @@
             this.panel4.Controls.Add(this.guna2TextBox40);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Location = new System.Drawing.Point(76, 4431);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1009, 304);
             this.panel4.TabIndex = 53;
@@ -693,7 +692,7 @@
             this.panel3.Controls.Add(this.guna2TextBox37);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Location = new System.Drawing.Point(77, 4075);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1009, 304);
             this.panel3.TabIndex = 52;
@@ -792,7 +791,7 @@
             this.panel2.Controls.Add(this.guna2TextBox32);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(76, 3721);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1009, 304);
             this.panel2.TabIndex = 51;
@@ -1764,10 +1763,6 @@
             // 
             // tableAdapterManager1
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Finance_APP.financeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager1.userdbTableAdapter = null;
             // 
             // label1
             // 
@@ -1792,8 +1787,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HousingLoan";
+            this.Size = new System.Drawing.Size(759, 331);
             this.Load += new System.EventHandler(this.HousingLoan_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -1827,7 +1823,6 @@
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button Submit;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private financeDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
