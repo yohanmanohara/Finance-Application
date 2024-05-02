@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.firstnametxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.usernameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -37,48 +35,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // firstnametxt
-            // 
-            this.firstnametxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.firstnametxt.Animated = true;
-            this.firstnametxt.BorderRadius = 18;
-            this.firstnametxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.firstnametxt.DefaultText = "";
-            this.firstnametxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.firstnametxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.firstnametxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.firstnametxt.DisabledState.Parent = this.firstnametxt;
-            this.firstnametxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.firstnametxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.firstnametxt.FocusedState.Parent = this.firstnametxt;
-            this.firstnametxt.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnametxt.ForeColor = System.Drawing.Color.Empty;
-            this.firstnametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.firstnametxt.HoverState.Parent = this.firstnametxt;
-            this.firstnametxt.Location = new System.Drawing.Point(140, 125);
-            this.firstnametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.firstnametxt.Name = "firstnametxt";
-            this.firstnametxt.Padding = new System.Windows.Forms.Padding(10);
-            this.firstnametxt.PasswordChar = '\0';
-            this.firstnametxt.PlaceholderText = "Ravidu";
-            this.firstnametxt.SelectedText = "";
-            this.firstnametxt.ShadowDecoration.Parent = this.firstnametxt;
-            this.firstnametxt.Size = new System.Drawing.Size(670, 45);
-            this.firstnametxt.TabIndex = 43;
-            this.firstnametxt.TextChanged += new System.EventHandler(this.firstnametxt_TextChanged);
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(90, 85);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 20);
-            this.label13.TabIndex = 42;
-            this.label13.Text = "Firstname";
             // 
             // usernameTxt
             // 
@@ -98,7 +54,7 @@
             this.usernameTxt.ForeColor = System.Drawing.Color.Empty;
             this.usernameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTxt.HoverState.Parent = this.usernameTxt;
-            this.usernameTxt.Location = new System.Drawing.Point(140, 264);
+            this.usernameTxt.Location = new System.Drawing.Point(140, 215);
             this.usernameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameTxt.Name = "usernameTxt";
             this.usernameTxt.Padding = new System.Windows.Forms.Padding(10);
@@ -115,7 +71,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(90, 230);
+            this.label15.Location = new System.Drawing.Point(90, 181);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 20);
             this.label15.TabIndex = 46;
@@ -132,7 +88,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(382, 400);
+            this.guna2Button4.Location = new System.Drawing.Point(382, 351);
             this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
@@ -164,7 +120,7 @@
             "Blocked",
             "Delete"});
             this.empstatustxt.ItemsAppearance.Parent = this.empstatustxt;
-            this.empstatustxt.Location = new System.Drawing.Point(624, 272);
+            this.empstatustxt.Location = new System.Drawing.Point(624, 223);
             this.empstatustxt.Margin = new System.Windows.Forms.Padding(40);
             this.empstatustxt.MaximumSize = new System.Drawing.Size(700, 0);
             this.empstatustxt.Name = "empstatustxt";
@@ -179,7 +135,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(537, 239);
+            this.label12.Location = new System.Drawing.Point(537, 190);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(124, 20);
             this.label12.TabIndex = 49;
@@ -190,7 +146,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(89, 21);
+            this.label9.Location = new System.Drawing.Point(40, 76);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(194, 28);
             this.label9.TabIndex = 51;
@@ -206,8 +162,6 @@
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.usernameTxt);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.firstnametxt);
-            this.Controls.Add(this.label13);
             this.Name = "DisableAccount";
             this.Size = new System.Drawing.Size(901, 552);
             this.Load += new System.EventHandler(this.DisableAccount_Load);
@@ -217,8 +171,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox firstnametxt;
-        private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2TextBox usernameTxt;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;

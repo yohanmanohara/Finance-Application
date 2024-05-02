@@ -51,18 +51,19 @@ namespace Finance_APP.panel_import
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             string username = usernameTxt.Text;
-            string firstname = firstnametxt.Text;
+            
             
             string newEmpStatus = empstatustxt.Text;
 
-            string query = "IF EXISTS (SELECT 1 FROM userdb WHERE username = @Username AND firstname = @Firstname) " +
-                           "BEGIN " +
-                           "   UPDATE userdb SET empstatus = @EmpStatus WHERE username = @Username AND firstname = @Firstname " +
-                           "END ";
+            string query = "IF EXISTS (SELECT 1 FROM userdb WHERE username = @Username) " +
+               "BEGIN " +
+               "   UPDATE userdb SET empstatus = @EmpStatus WHERE username = @Username; " +
+               "END";
 
-            if(newEmpStatus=="Delete")
+
+            if (newEmpStatus=="Delete")
             {
-                string query1 = "DELETE FROM userdb WHERE username = @Username OR firstname = @Firstname";
+                string query1 = "DELETE FROM userdb WHERE username = @Username ";
                 try
                 {
                    
@@ -74,7 +75,6 @@ namespace Finance_APP.panel_import
                          
 
                             command.Parameters.AddWithValue("@Username", username);
-                            command.Parameters.AddWithValue("@Firstname", firstname);
 
                             int rowsAffected = command.ExecuteNonQuery();
 
@@ -111,7 +111,6 @@ namespace Finance_APP.panel_import
                     using (SqlCommand command = new SqlCommand(query, connectionString))
                     {
                         command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@Firstname", firstname);
                         command.Parameters.AddWithValue("@EmpStatus", newEmpStatus);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -143,7 +142,6 @@ namespace Finance_APP.panel_import
         private void ClearFormInputs()
         {
             usernameTxt.Text = "";
-            firstnametxt.Text = "";
             empstatustxt.Text = "";
            
         }

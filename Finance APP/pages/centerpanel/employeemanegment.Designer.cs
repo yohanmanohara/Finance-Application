@@ -51,6 +51,7 @@
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(901, 611);
             this.guna2Panel4.TabIndex = 15;
+            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
             // guna2PictureBox4
             // 
@@ -74,7 +75,7 @@
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Location = new System.Drawing.Point(-9, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(-17, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(904, 780);
@@ -163,7 +164,7 @@
             this.AutoScroll = true;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "employeemanegment";
-            this.Size = new System.Drawing.Size(887, 777);
+            this.Size = new System.Drawing.Size(870, 777);
             this.Load += new System.EventHandler(this.employeemanegment_Load);
             this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
