@@ -29,6 +29,28 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.incomeAmountTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.incomeMethodTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.spouseProfessionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.employmentStartDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.employmentStatusText = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.employerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.designationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.professionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.nationalityTextBoc = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.civilStatusComboBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.occupationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.nicTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
@@ -53,28 +75,6 @@
             this.fullnameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.occupationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.civilStatusComboBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.nationalityTextBoc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.professionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.designationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.employerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.employmentStatusText = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.employmentStartDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label21 = new System.Windows.Forms.Label();
-            this.spouseProfessionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.incomeMethodTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.incomeAmountTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,11 +128,454 @@
             this.guna2Panel1.Controls.Add(this.fullnameTextBox);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(-8, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(904, 1609);
             this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label23.Location = new System.Drawing.Point(94, 1440);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(126, 20);
+            this.label23.TabIndex = 90;
+            this.label23.Text = "Income Amount";
+            // 
+            // incomeAmountTextBox
+            // 
+            this.incomeAmountTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.incomeAmountTextBox.Animated = true;
+            this.incomeAmountTextBox.BorderRadius = 18;
+            this.incomeAmountTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.incomeAmountTextBox.DefaultText = "";
+            this.incomeAmountTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.incomeAmountTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.incomeAmountTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.incomeAmountTextBox.DisabledState.Parent = this.incomeAmountTextBox;
+            this.incomeAmountTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.incomeAmountTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.incomeAmountTextBox.FocusedState.Parent = this.incomeAmountTextBox;
+            this.incomeAmountTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeAmountTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.incomeAmountTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.incomeAmountTextBox.HoverState.Parent = this.incomeAmountTextBox;
+            this.incomeAmountTextBox.Location = new System.Drawing.Point(254, 1430);
+            this.incomeAmountTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.incomeAmountTextBox.Name = "incomeAmountTextBox";
+            this.incomeAmountTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.incomeAmountTextBox.PasswordChar = '\0';
+            this.incomeAmountTextBox.PlaceholderText = "1000000";
+            this.incomeAmountTextBox.SelectedText = "";
+            this.incomeAmountTextBox.ShadowDecoration.Parent = this.incomeAmountTextBox;
+            this.incomeAmountTextBox.Size = new System.Drawing.Size(331, 45);
+            this.incomeAmountTextBox.TabIndex = 89;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label22.Location = new System.Drawing.Point(93, 1387);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(126, 20);
+            this.label22.TabIndex = 88;
+            this.label22.Text = "Income Method";
+            // 
+            // incomeMethodTextBox
+            // 
+            this.incomeMethodTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.incomeMethodTextBox.Animated = true;
+            this.incomeMethodTextBox.BorderRadius = 18;
+            this.incomeMethodTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.incomeMethodTextBox.DefaultText = "";
+            this.incomeMethodTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.incomeMethodTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.incomeMethodTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.incomeMethodTextBox.DisabledState.Parent = this.incomeMethodTextBox;
+            this.incomeMethodTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.incomeMethodTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.incomeMethodTextBox.FocusedState.Parent = this.incomeMethodTextBox;
+            this.incomeMethodTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeMethodTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.incomeMethodTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.incomeMethodTextBox.HoverState.Parent = this.incomeMethodTextBox;
+            this.incomeMethodTextBox.Location = new System.Drawing.Point(253, 1377);
+            this.incomeMethodTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.incomeMethodTextBox.Name = "incomeMethodTextBox";
+            this.incomeMethodTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.incomeMethodTextBox.PasswordChar = '\0';
+            this.incomeMethodTextBox.PlaceholderText = "Contract";
+            this.incomeMethodTextBox.SelectedText = "";
+            this.incomeMethodTextBox.ShadowDecoration.Parent = this.incomeMethodTextBox;
+            this.incomeMethodTextBox.Size = new System.Drawing.Size(331, 45);
+            this.incomeMethodTextBox.TabIndex = 87;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label21.Location = new System.Drawing.Point(94, 974);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(144, 20);
+            this.label21.TabIndex = 86;
+            this.label21.Text = "Spouce Profession";
+            // 
+            // spouseProfessionTextBox
+            // 
+            this.spouseProfessionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.spouseProfessionTextBox.Animated = true;
+            this.spouseProfessionTextBox.BorderRadius = 18;
+            this.spouseProfessionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.spouseProfessionTextBox.DefaultText = "";
+            this.spouseProfessionTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.spouseProfessionTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.spouseProfessionTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.spouseProfessionTextBox.DisabledState.Parent = this.spouseProfessionTextBox;
+            this.spouseProfessionTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.spouseProfessionTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.spouseProfessionTextBox.FocusedState.Parent = this.spouseProfessionTextBox;
+            this.spouseProfessionTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spouseProfessionTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.spouseProfessionTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.spouseProfessionTextBox.HoverState.Parent = this.spouseProfessionTextBox;
+            this.spouseProfessionTextBox.Location = new System.Drawing.Point(254, 964);
+            this.spouseProfessionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.spouseProfessionTextBox.Name = "spouseProfessionTextBox";
+            this.spouseProfessionTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.spouseProfessionTextBox.PasswordChar = '\0';
+            this.spouseProfessionTextBox.PlaceholderText = "Kitchen";
+            this.spouseProfessionTextBox.SelectedText = "";
+            this.spouseProfessionTextBox.ShadowDecoration.Parent = this.spouseProfessionTextBox;
+            this.spouseProfessionTextBox.Size = new System.Drawing.Size(209, 45);
+            this.spouseProfessionTextBox.TabIndex = 85;
+            // 
+            // employmentStartDateTimePicker
+            // 
+            this.employmentStartDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.employmentStartDateTimePicker.BorderRadius = 19;
+            this.employmentStartDateTimePicker.CheckedState.Parent = this.employmentStartDateTimePicker;
+            this.employmentStartDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
+            this.employmentStartDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employmentStartDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.employmentStartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.employmentStartDateTimePicker.HoverState.Parent = this.employmentStartDateTimePicker;
+            this.employmentStartDateTimePicker.Location = new System.Drawing.Point(255, 1300);
+            this.employmentStartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.employmentStartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.employmentStartDateTimePicker.Name = "employmentStartDateTimePicker";
+            this.employmentStartDateTimePicker.ShadowDecoration.Parent = this.employmentStartDateTimePicker;
+            this.employmentStartDateTimePicker.Size = new System.Drawing.Size(329, 48);
+            this.employmentStartDateTimePicker.TabIndex = 84;
+            this.employmentStartDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label20.Location = new System.Drawing.Point(93, 1312);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(139, 20);
+            this.label20.TabIndex = 83;
+            this.label20.Text = "Employment Date";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label17.Location = new System.Drawing.Point(93, 1251);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(150, 20);
+            this.label17.TabIndex = 81;
+            this.label17.Text = "Employment Status";
+            // 
+            // employmentStatusText
+            // 
+            this.employmentStatusText.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.employmentStatusText.Animated = true;
+            this.employmentStatusText.BorderRadius = 18;
+            this.employmentStatusText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.employmentStatusText.DefaultText = "";
+            this.employmentStatusText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.employmentStatusText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.employmentStatusText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.employmentStatusText.DisabledState.Parent = this.employmentStatusText;
+            this.employmentStatusText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.employmentStatusText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.employmentStatusText.FocusedState.Parent = this.employmentStatusText;
+            this.employmentStatusText.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employmentStatusText.ForeColor = System.Drawing.Color.Empty;
+            this.employmentStatusText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.employmentStatusText.HoverState.Parent = this.employmentStatusText;
+            this.employmentStatusText.Location = new System.Drawing.Point(253, 1241);
+            this.employmentStatusText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.employmentStatusText.Name = "employmentStatusText";
+            this.employmentStatusText.Padding = new System.Windows.Forms.Padding(10);
+            this.employmentStatusText.PasswordChar = '\0';
+            this.employmentStatusText.PlaceholderText = "Employed";
+            this.employmentStatusText.SelectedText = "";
+            this.employmentStatusText.ShadowDecoration.Parent = this.employmentStatusText;
+            this.employmentStatusText.Size = new System.Drawing.Size(331, 45);
+            this.employmentStatusText.TabIndex = 80;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label19.Location = new System.Drawing.Point(93, 1189);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 20);
+            this.label19.TabIndex = 79;
+            this.label19.Text = "Employer";
+            // 
+            // employerTextBox
+            // 
+            this.employerTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.employerTextBox.Animated = true;
+            this.employerTextBox.BorderRadius = 18;
+            this.employerTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.employerTextBox.DefaultText = "";
+            this.employerTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.employerTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.employerTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.employerTextBox.DisabledState.Parent = this.employerTextBox;
+            this.employerTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.employerTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.employerTextBox.FocusedState.Parent = this.employerTextBox;
+            this.employerTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employerTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.employerTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.employerTextBox.HoverState.Parent = this.employerTextBox;
+            this.employerTextBox.Location = new System.Drawing.Point(200, 1178);
+            this.employerTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.employerTextBox.Name = "employerTextBox";
+            this.employerTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.employerTextBox.PasswordChar = '\0';
+            this.employerTextBox.PlaceholderText = "Microsoft Binblows";
+            this.employerTextBox.SelectedText = "";
+            this.employerTextBox.ShadowDecoration.Parent = this.employerTextBox;
+            this.employerTextBox.Size = new System.Drawing.Size(331, 45);
+            this.employerTextBox.TabIndex = 77;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Location = new System.Drawing.Point(90, 1108);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(96, 20);
+            this.label16.TabIndex = 76;
+            this.label16.Text = "Designation";
+            // 
+            // designationTextBox
+            // 
+            this.designationTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.designationTextBox.Animated = true;
+            this.designationTextBox.BorderRadius = 18;
+            this.designationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.designationTextBox.DefaultText = "";
+            this.designationTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.designationTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.designationTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.designationTextBox.DisabledState.Parent = this.designationTextBox;
+            this.designationTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.designationTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.designationTextBox.FocusedState.Parent = this.designationTextBox;
+            this.designationTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.designationTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.designationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.designationTextBox.HoverState.Parent = this.designationTextBox;
+            this.designationTextBox.Location = new System.Drawing.Point(190, 1097);
+            this.designationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.designationTextBox.Name = "designationTextBox";
+            this.designationTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.designationTextBox.PasswordChar = '\0';
+            this.designationTextBox.PlaceholderText = "Senior Marketting Manager";
+            this.designationTextBox.SelectedText = "";
+            this.designationTextBox.ShadowDecoration.Parent = this.designationTextBox;
+            this.designationTextBox.Size = new System.Drawing.Size(272, 45);
+            this.designationTextBox.TabIndex = 75;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(499, 1058);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 20);
+            this.label15.TabIndex = 74;
+            this.label15.Text = "Profession";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // professionTextBox
+            // 
+            this.professionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.professionTextBox.Animated = true;
+            this.professionTextBox.BorderRadius = 18;
+            this.professionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.professionTextBox.DefaultText = "";
+            this.professionTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.professionTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.professionTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.professionTextBox.DisabledState.Parent = this.professionTextBox;
+            this.professionTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.professionTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.professionTextBox.FocusedState.Parent = this.professionTextBox;
+            this.professionTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.professionTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.professionTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.professionTextBox.HoverState.Parent = this.professionTextBox;
+            this.professionTextBox.Location = new System.Drawing.Point(491, 1099);
+            this.professionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.professionTextBox.Name = "professionTextBox";
+            this.professionTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.professionTextBox.PasswordChar = '\0';
+            this.professionTextBox.PlaceholderText = "Marketting";
+            this.professionTextBox.SelectedText = "";
+            this.professionTextBox.ShadowDecoration.Parent = this.professionTextBox;
+            this.professionTextBox.Size = new System.Drawing.Size(331, 45);
+            this.professionTextBox.TabIndex = 73;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(497, 877);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(88, 20);
+            this.label14.TabIndex = 72;
+            this.label14.Text = "Nationality";
+            // 
+            // nationalityTextBoc
+            // 
+            this.nationalityTextBoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nationalityTextBoc.Animated = true;
+            this.nationalityTextBoc.BorderRadius = 18;
+            this.nationalityTextBoc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nationalityTextBoc.DefaultText = "";
+            this.nationalityTextBoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nationalityTextBoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nationalityTextBoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nationalityTextBoc.DisabledState.Parent = this.nationalityTextBoc;
+            this.nationalityTextBoc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nationalityTextBoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nationalityTextBoc.FocusedState.Parent = this.nationalityTextBoc;
+            this.nationalityTextBoc.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nationalityTextBoc.ForeColor = System.Drawing.Color.Empty;
+            this.nationalityTextBoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nationalityTextBoc.HoverState.Parent = this.nationalityTextBoc;
+            this.nationalityTextBoc.Location = new System.Drawing.Point(515, 911);
+            this.nationalityTextBoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nationalityTextBoc.Name = "nationalityTextBoc";
+            this.nationalityTextBoc.Padding = new System.Windows.Forms.Padding(10);
+            this.nationalityTextBoc.PasswordChar = '\0';
+            this.nationalityTextBoc.PlaceholderText = "Sri Lankan";
+            this.nationalityTextBoc.SelectedText = "";
+            this.nationalityTextBoc.ShadowDecoration.Parent = this.nationalityTextBoc;
+            this.nationalityTextBoc.Size = new System.Drawing.Size(308, 45);
+            this.nationalityTextBoc.TabIndex = 71;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(94, 917);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 20);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "Civil Status";
+            // 
+            // civilStatusComboBox
+            // 
+            this.civilStatusComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.civilStatusComboBox.Animated = true;
+            this.civilStatusComboBox.BorderRadius = 18;
+            this.civilStatusComboBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.civilStatusComboBox.DefaultText = "";
+            this.civilStatusComboBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.civilStatusComboBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.civilStatusComboBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.civilStatusComboBox.DisabledState.Parent = this.civilStatusComboBox;
+            this.civilStatusComboBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.civilStatusComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.civilStatusComboBox.FocusedState.Parent = this.civilStatusComboBox;
+            this.civilStatusComboBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.civilStatusComboBox.ForeColor = System.Drawing.Color.Empty;
+            this.civilStatusComboBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.civilStatusComboBox.HoverState.Parent = this.civilStatusComboBox;
+            this.civilStatusComboBox.Location = new System.Drawing.Point(201, 906);
+            this.civilStatusComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.civilStatusComboBox.Name = "civilStatusComboBox";
+            this.civilStatusComboBox.Padding = new System.Windows.Forms.Padding(10);
+            this.civilStatusComboBox.PasswordChar = '\0';
+            this.civilStatusComboBox.PlaceholderText = "Married / Single";
+            this.civilStatusComboBox.SelectedText = "";
+            this.civilStatusComboBox.ShadowDecoration.Parent = this.civilStatusComboBox;
+            this.civilStatusComboBox.Size = new System.Drawing.Size(261, 45);
+            this.civilStatusComboBox.TabIndex = 69;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label12.Location = new System.Drawing.Point(90, 1046);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 20);
+            this.label12.TabIndex = 68;
+            this.label12.Text = "Occupation";
+            // 
+            // occupationTextBox
+            // 
+            this.occupationTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.occupationTextBox.Animated = true;
+            this.occupationTextBox.BorderRadius = 18;
+            this.occupationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.occupationTextBox.DefaultText = "";
+            this.occupationTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.occupationTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.occupationTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.occupationTextBox.DisabledState.Parent = this.occupationTextBox;
+            this.occupationTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.occupationTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.occupationTextBox.FocusedState.Parent = this.occupationTextBox;
+            this.occupationTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.occupationTextBox.ForeColor = System.Drawing.Color.Empty;
+            this.occupationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.occupationTextBox.HoverState.Parent = this.occupationTextBox;
+            this.occupationTextBox.Location = new System.Drawing.Point(190, 1035);
+            this.occupationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.occupationTextBox.Name = "occupationTextBox";
+            this.occupationTextBox.Padding = new System.Windows.Forms.Padding(10);
+            this.occupationTextBox.PasswordChar = '\0';
+            this.occupationTextBox.PlaceholderText = "Marketting Manager";
+            this.occupationTextBox.SelectedText = "";
+            this.occupationTextBox.ShadowDecoration.Parent = this.occupationTextBox;
+            this.occupationTextBox.Size = new System.Drawing.Size(272, 45);
+            this.occupationTextBox.TabIndex = 67;
             // 
             // label11
             // 
@@ -607,448 +1050,6 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Personal Information";
             // 
-            // occupationTextBox
-            // 
-            this.occupationTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.occupationTextBox.Animated = true;
-            this.occupationTextBox.BorderRadius = 18;
-            this.occupationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.occupationTextBox.DefaultText = "";
-            this.occupationTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.occupationTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.occupationTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.occupationTextBox.DisabledState.Parent = this.occupationTextBox;
-            this.occupationTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.occupationTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.occupationTextBox.FocusedState.Parent = this.occupationTextBox;
-            this.occupationTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.occupationTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.occupationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.occupationTextBox.HoverState.Parent = this.occupationTextBox;
-            this.occupationTextBox.Location = new System.Drawing.Point(190, 1035);
-            this.occupationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.occupationTextBox.Name = "occupationTextBox";
-            this.occupationTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.occupationTextBox.PasswordChar = '\0';
-            this.occupationTextBox.PlaceholderText = "Marketting Manager";
-            this.occupationTextBox.SelectedText = "";
-            this.occupationTextBox.ShadowDecoration.Parent = this.occupationTextBox;
-            this.occupationTextBox.Size = new System.Drawing.Size(272, 45);
-            this.occupationTextBox.TabIndex = 67;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(90, 1046);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 20);
-            this.label12.TabIndex = 68;
-            this.label12.Text = "Occupation";
-            // 
-            // civilStatusComboBox
-            // 
-            this.civilStatusComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.civilStatusComboBox.Animated = true;
-            this.civilStatusComboBox.BorderRadius = 18;
-            this.civilStatusComboBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.civilStatusComboBox.DefaultText = "";
-            this.civilStatusComboBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.civilStatusComboBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.civilStatusComboBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.civilStatusComboBox.DisabledState.Parent = this.civilStatusComboBox;
-            this.civilStatusComboBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.civilStatusComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.civilStatusComboBox.FocusedState.Parent = this.civilStatusComboBox;
-            this.civilStatusComboBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.civilStatusComboBox.ForeColor = System.Drawing.Color.Empty;
-            this.civilStatusComboBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.civilStatusComboBox.HoverState.Parent = this.civilStatusComboBox;
-            this.civilStatusComboBox.Location = new System.Drawing.Point(201, 906);
-            this.civilStatusComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.civilStatusComboBox.Name = "civilStatusComboBox";
-            this.civilStatusComboBox.Padding = new System.Windows.Forms.Padding(10);
-            this.civilStatusComboBox.PasswordChar = '\0';
-            this.civilStatusComboBox.PlaceholderText = "Married / Single";
-            this.civilStatusComboBox.SelectedText = "";
-            this.civilStatusComboBox.ShadowDecoration.Parent = this.civilStatusComboBox;
-            this.civilStatusComboBox.Size = new System.Drawing.Size(261, 45);
-            this.civilStatusComboBox.TabIndex = 69;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(94, 917);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 20);
-            this.label10.TabIndex = 70;
-            this.label10.Text = "Civil Status";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(497, 877);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 20);
-            this.label14.TabIndex = 72;
-            this.label14.Text = "Nationality";
-            // 
-            // nationalityTextBoc
-            // 
-            this.nationalityTextBoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nationalityTextBoc.Animated = true;
-            this.nationalityTextBoc.BorderRadius = 18;
-            this.nationalityTextBoc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nationalityTextBoc.DefaultText = "";
-            this.nationalityTextBoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.nationalityTextBoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.nationalityTextBoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nationalityTextBoc.DisabledState.Parent = this.nationalityTextBoc;
-            this.nationalityTextBoc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nationalityTextBoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nationalityTextBoc.FocusedState.Parent = this.nationalityTextBoc;
-            this.nationalityTextBoc.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nationalityTextBoc.ForeColor = System.Drawing.Color.Empty;
-            this.nationalityTextBoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nationalityTextBoc.HoverState.Parent = this.nationalityTextBoc;
-            this.nationalityTextBoc.Location = new System.Drawing.Point(515, 911);
-            this.nationalityTextBoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.nationalityTextBoc.Name = "nationalityTextBoc";
-            this.nationalityTextBoc.Padding = new System.Windows.Forms.Padding(10);
-            this.nationalityTextBoc.PasswordChar = '\0';
-            this.nationalityTextBoc.PlaceholderText = "Sri Lankan";
-            this.nationalityTextBoc.SelectedText = "";
-            this.nationalityTextBoc.ShadowDecoration.Parent = this.nationalityTextBoc;
-            this.nationalityTextBoc.Size = new System.Drawing.Size(308, 45);
-            this.nationalityTextBoc.TabIndex = 71;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(499, 1058);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 20);
-            this.label15.TabIndex = 74;
-            this.label15.Text = "Profession";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // professionTextBox
-            // 
-            this.professionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.professionTextBox.Animated = true;
-            this.professionTextBox.BorderRadius = 18;
-            this.professionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.professionTextBox.DefaultText = "";
-            this.professionTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.professionTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.professionTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.professionTextBox.DisabledState.Parent = this.professionTextBox;
-            this.professionTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.professionTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.professionTextBox.FocusedState.Parent = this.professionTextBox;
-            this.professionTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.professionTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.professionTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.professionTextBox.HoverState.Parent = this.professionTextBox;
-            this.professionTextBox.Location = new System.Drawing.Point(491, 1099);
-            this.professionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.professionTextBox.Name = "professionTextBox";
-            this.professionTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.professionTextBox.PasswordChar = '\0';
-            this.professionTextBox.PlaceholderText = "Marketting";
-            this.professionTextBox.SelectedText = "";
-            this.professionTextBox.ShadowDecoration.Parent = this.professionTextBox;
-            this.professionTextBox.Size = new System.Drawing.Size(331, 45);
-            this.professionTextBox.TabIndex = 73;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(90, 1108);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 20);
-            this.label16.TabIndex = 76;
-            this.label16.Text = "Designation";
-            // 
-            // designationTextBox
-            // 
-            this.designationTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.designationTextBox.Animated = true;
-            this.designationTextBox.BorderRadius = 18;
-            this.designationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.designationTextBox.DefaultText = "";
-            this.designationTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.designationTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.designationTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.designationTextBox.DisabledState.Parent = this.designationTextBox;
-            this.designationTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.designationTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.designationTextBox.FocusedState.Parent = this.designationTextBox;
-            this.designationTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.designationTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.designationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.designationTextBox.HoverState.Parent = this.designationTextBox;
-            this.designationTextBox.Location = new System.Drawing.Point(190, 1097);
-            this.designationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.designationTextBox.Name = "designationTextBox";
-            this.designationTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.designationTextBox.PasswordChar = '\0';
-            this.designationTextBox.PlaceholderText = "Senior Marketting Manager";
-            this.designationTextBox.SelectedText = "";
-            this.designationTextBox.ShadowDecoration.Parent = this.designationTextBox;
-            this.designationTextBox.Size = new System.Drawing.Size(272, 45);
-            this.designationTextBox.TabIndex = 75;
-            // 
-            // employerTextBox
-            // 
-            this.employerTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.employerTextBox.Animated = true;
-            this.employerTextBox.BorderRadius = 18;
-            this.employerTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.employerTextBox.DefaultText = "";
-            this.employerTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.employerTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.employerTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.employerTextBox.DisabledState.Parent = this.employerTextBox;
-            this.employerTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.employerTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.employerTextBox.FocusedState.Parent = this.employerTextBox;
-            this.employerTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employerTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.employerTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.employerTextBox.HoverState.Parent = this.employerTextBox;
-            this.employerTextBox.Location = new System.Drawing.Point(200, 1178);
-            this.employerTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.employerTextBox.Name = "employerTextBox";
-            this.employerTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.employerTextBox.PasswordChar = '\0';
-            this.employerTextBox.PlaceholderText = "Microsoft Binblows";
-            this.employerTextBox.SelectedText = "";
-            this.employerTextBox.ShadowDecoration.Parent = this.employerTextBox;
-            this.employerTextBox.Size = new System.Drawing.Size(331, 45);
-            this.employerTextBox.TabIndex = 77;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(93, 1189);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 20);
-            this.label19.TabIndex = 79;
-            this.label19.Text = "Employer";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(93, 1251);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(150, 20);
-            this.label17.TabIndex = 81;
-            this.label17.Text = "Employment Status";
-            // 
-            // employmentStatusText
-            // 
-            this.employmentStatusText.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.employmentStatusText.Animated = true;
-            this.employmentStatusText.BorderRadius = 18;
-            this.employmentStatusText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.employmentStatusText.DefaultText = "";
-            this.employmentStatusText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.employmentStatusText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.employmentStatusText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.employmentStatusText.DisabledState.Parent = this.employmentStatusText;
-            this.employmentStatusText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.employmentStatusText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.employmentStatusText.FocusedState.Parent = this.employmentStatusText;
-            this.employmentStatusText.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employmentStatusText.ForeColor = System.Drawing.Color.Empty;
-            this.employmentStatusText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.employmentStatusText.HoverState.Parent = this.employmentStatusText;
-            this.employmentStatusText.Location = new System.Drawing.Point(253, 1241);
-            this.employmentStatusText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.employmentStatusText.Name = "employmentStatusText";
-            this.employmentStatusText.Padding = new System.Windows.Forms.Padding(10);
-            this.employmentStatusText.PasswordChar = '\0';
-            this.employmentStatusText.PlaceholderText = "Employed";
-            this.employmentStatusText.SelectedText = "";
-            this.employmentStatusText.ShadowDecoration.Parent = this.employmentStatusText;
-            this.employmentStatusText.Size = new System.Drawing.Size(331, 45);
-            this.employmentStatusText.TabIndex = 80;
-            // 
-            // label20
-            // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label20.Location = new System.Drawing.Point(93, 1312);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(139, 20);
-            this.label20.TabIndex = 83;
-            this.label20.Text = "Employment Date";
-            // 
-            // employmentStartDateTimePicker
-            // 
-            this.employmentStartDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.employmentStartDateTimePicker.BorderRadius = 19;
-            this.employmentStartDateTimePicker.CheckedState.Parent = this.employmentStartDateTimePicker;
-            this.employmentStartDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.employmentStartDateTimePicker.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employmentStartDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.employmentStartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.employmentStartDateTimePicker.HoverState.Parent = this.employmentStartDateTimePicker;
-            this.employmentStartDateTimePicker.Location = new System.Drawing.Point(255, 1300);
-            this.employmentStartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.employmentStartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.employmentStartDateTimePicker.Name = "employmentStartDateTimePicker";
-            this.employmentStartDateTimePicker.ShadowDecoration.Parent = this.employmentStartDateTimePicker;
-            this.employmentStartDateTimePicker.Size = new System.Drawing.Size(329, 48);
-            this.employmentStartDateTimePicker.TabIndex = 84;
-            this.employmentStartDateTimePicker.Value = new System.DateTime(2024, 4, 2, 13, 10, 50, 963);
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label21.Location = new System.Drawing.Point(94, 974);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(144, 20);
-            this.label21.TabIndex = 86;
-            this.label21.Text = "Spouce Profession";
-            // 
-            // spouseProfessionTextBox
-            // 
-            this.spouseProfessionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.spouseProfessionTextBox.Animated = true;
-            this.spouseProfessionTextBox.BorderRadius = 18;
-            this.spouseProfessionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.spouseProfessionTextBox.DefaultText = "";
-            this.spouseProfessionTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.spouseProfessionTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.spouseProfessionTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.spouseProfessionTextBox.DisabledState.Parent = this.spouseProfessionTextBox;
-            this.spouseProfessionTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.spouseProfessionTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.spouseProfessionTextBox.FocusedState.Parent = this.spouseProfessionTextBox;
-            this.spouseProfessionTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spouseProfessionTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.spouseProfessionTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.spouseProfessionTextBox.HoverState.Parent = this.spouseProfessionTextBox;
-            this.spouseProfessionTextBox.Location = new System.Drawing.Point(254, 964);
-            this.spouseProfessionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.spouseProfessionTextBox.Name = "spouseProfessionTextBox";
-            this.spouseProfessionTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.spouseProfessionTextBox.PasswordChar = '\0';
-            this.spouseProfessionTextBox.PlaceholderText = "Kitchen";
-            this.spouseProfessionTextBox.SelectedText = "";
-            this.spouseProfessionTextBox.ShadowDecoration.Parent = this.spouseProfessionTextBox;
-            this.spouseProfessionTextBox.Size = new System.Drawing.Size(209, 45);
-            this.spouseProfessionTextBox.TabIndex = 85;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(93, 1387);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(126, 20);
-            this.label22.TabIndex = 88;
-            this.label22.Text = "Income Method";
-            // 
-            // incomeMethodTextBox
-            // 
-            this.incomeMethodTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.incomeMethodTextBox.Animated = true;
-            this.incomeMethodTextBox.BorderRadius = 18;
-            this.incomeMethodTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.incomeMethodTextBox.DefaultText = "";
-            this.incomeMethodTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.incomeMethodTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.incomeMethodTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.incomeMethodTextBox.DisabledState.Parent = this.incomeMethodTextBox;
-            this.incomeMethodTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.incomeMethodTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.incomeMethodTextBox.FocusedState.Parent = this.incomeMethodTextBox;
-            this.incomeMethodTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incomeMethodTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.incomeMethodTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.incomeMethodTextBox.HoverState.Parent = this.incomeMethodTextBox;
-            this.incomeMethodTextBox.Location = new System.Drawing.Point(253, 1377);
-            this.incomeMethodTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.incomeMethodTextBox.Name = "incomeMethodTextBox";
-            this.incomeMethodTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.incomeMethodTextBox.PasswordChar = '\0';
-            this.incomeMethodTextBox.PlaceholderText = "Contract";
-            this.incomeMethodTextBox.SelectedText = "";
-            this.incomeMethodTextBox.ShadowDecoration.Parent = this.incomeMethodTextBox;
-            this.incomeMethodTextBox.Size = new System.Drawing.Size(331, 45);
-            this.incomeMethodTextBox.TabIndex = 87;
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label23.Location = new System.Drawing.Point(94, 1440);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 20);
-            this.label23.TabIndex = 90;
-            this.label23.Text = "Income Amount";
-            // 
-            // incomeAmountTextBox
-            // 
-            this.incomeAmountTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.incomeAmountTextBox.Animated = true;
-            this.incomeAmountTextBox.BorderRadius = 18;
-            this.incomeAmountTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.incomeAmountTextBox.DefaultText = "";
-            this.incomeAmountTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.incomeAmountTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.incomeAmountTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.incomeAmountTextBox.DisabledState.Parent = this.incomeAmountTextBox;
-            this.incomeAmountTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.incomeAmountTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.incomeAmountTextBox.FocusedState.Parent = this.incomeAmountTextBox;
-            this.incomeAmountTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incomeAmountTextBox.ForeColor = System.Drawing.Color.Empty;
-            this.incomeAmountTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.incomeAmountTextBox.HoverState.Parent = this.incomeAmountTextBox;
-            this.incomeAmountTextBox.Location = new System.Drawing.Point(254, 1430);
-            this.incomeAmountTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.incomeAmountTextBox.Name = "incomeAmountTextBox";
-            this.incomeAmountTextBox.Padding = new System.Windows.Forms.Padding(10);
-            this.incomeAmountTextBox.PasswordChar = '\0';
-            this.incomeAmountTextBox.PlaceholderText = "1000000";
-            this.incomeAmountTextBox.SelectedText = "";
-            this.incomeAmountTextBox.ShadowDecoration.Parent = this.incomeAmountTextBox;
-            this.incomeAmountTextBox.Size = new System.Drawing.Size(331, 45);
-            this.incomeAmountTextBox.TabIndex = 89;
-            // 
             // CreateCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1056,7 +1057,7 @@
             this.AutoScroll = true;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "CreateCustomer";
-            this.Size = new System.Drawing.Size(887, 957);
+            this.Size = new System.Drawing.Size(870, 957);
             this.Load += new System.EventHandler(this.Create_customer_account_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
