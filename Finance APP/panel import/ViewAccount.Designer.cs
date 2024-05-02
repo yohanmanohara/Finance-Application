@@ -45,9 +45,6 @@
             this.locationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tinTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -73,7 +70,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.label9.Location = new System.Drawing.Point(304, 20);
+            this.label9.Location = new System.Drawing.Point(296, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(212, 28);
             this.label9.TabIndex = 52;
@@ -96,7 +93,7 @@
             this.usernametxt.FocusedState.Parent = this.usernametxt;
             this.usernametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernametxt.HoverState.Parent = this.usernametxt;
-            this.usernametxt.Location = new System.Drawing.Point(104, 100);
+            this.usernametxt.Location = new System.Drawing.Point(96, 100);
             this.usernametxt.Margin = new System.Windows.Forms.Padding(4);
             this.usernametxt.Name = "usernametxt";
             this.usernametxt.PasswordChar = '\0';
@@ -117,7 +114,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(674, 102);
+            this.guna2Button1.Location = new System.Drawing.Point(666, 102);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(107, 45);
@@ -143,9 +140,6 @@
             this.guna2Panel1.Controls.Add(this.locationTextBox);
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Controls.Add(this.label10);
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.tinTextBox);
             this.guna2Panel1.Controls.Add(this.label8);
@@ -161,7 +155,7 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label19);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(-34, 200);
+            this.guna2Panel1.Location = new System.Drawing.Point(-42, 200);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(867, 1429);
@@ -223,7 +217,7 @@
             this.empstatustxt.ForeColor = System.Drawing.Color.Empty;
             this.empstatustxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.empstatustxt.HoverState.Parent = this.empstatustxt;
-            this.empstatustxt.Location = new System.Drawing.Point(136, 1345);
+            this.empstatustxt.Location = new System.Drawing.Point(136, 1199);
             this.empstatustxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.empstatustxt.Name = "empstatustxt";
             this.empstatustxt.Padding = new System.Windows.Forms.Padding(10);
@@ -254,7 +248,7 @@
             this.jobtitleBox1.ForeColor = System.Drawing.Color.Empty;
             this.jobtitleBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.jobtitleBox1.HoverState.Parent = this.jobtitleBox1;
-            this.jobtitleBox1.Location = new System.Drawing.Point(606, 1345);
+            this.jobtitleBox1.Location = new System.Drawing.Point(606, 1199);
             this.jobtitleBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jobtitleBox1.Name = "jobtitleBox1";
             this.jobtitleBox1.Padding = new System.Windows.Forms.Padding(10);
@@ -387,7 +381,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(100, 1314);
+            this.label12.Location = new System.Drawing.Point(100, 1168);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(124, 20);
             this.label12.TabIndex = 64;
@@ -411,7 +405,7 @@
             this.locationTextBox.ForeColor = System.Drawing.Color.Empty;
             this.locationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.locationTextBox.HoverState.Parent = this.locationTextBox;
-            this.locationTextBox.Location = new System.Drawing.Point(148, 1249);
+            this.locationTextBox.Location = new System.Drawing.Point(148, 1103);
             this.locationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.locationTextBox.Name = "locationTextBox";
             this.locationTextBox.Padding = new System.Windows.Forms.Padding(10);
@@ -429,7 +423,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(98, 1212);
+            this.label11.Location = new System.Drawing.Point(98, 1066);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 62;
@@ -441,62 +435,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(541, 1314);
+            this.label10.Location = new System.Drawing.Point(541, 1168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 20);
             this.label10.TabIndex = 61;
             this.label10.Text = "JobTitle";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(393, 1081);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(192, 85);
-            this.guna2Button3.TabIndex = 60;
-            this.guna2Button3.Text = "guna2Button3";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(626, 1081);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(192, 85);
-            this.guna2Button2.TabIndex = 59;
-            this.guna2Button2.Text = "guna2Button2";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button5.BorderRadius = 20;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(148, 1081);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(192, 85);
-            this.guna2Button5.TabIndex = 58;
-            this.guna2Button5.Text = "guna2Button5";
             // 
             // label1
             // 
@@ -777,7 +720,7 @@
             this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.label9);
             this.Name = "ViewAccount";
-            this.Size = new System.Drawing.Size(833, 836);
+            this.Size = new System.Drawing.Size(816, 836);
             this.Load += new System.EventHandler(this.ViewAccount_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -802,9 +745,6 @@
         private Guna.UI2.WinForms.Guna2TextBox locationTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox tinTextBox;
         private System.Windows.Forms.Label label8;
