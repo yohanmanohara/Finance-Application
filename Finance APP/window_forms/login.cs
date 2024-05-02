@@ -141,7 +141,7 @@ namespace Finance_APP.window_forms
                             break;
 
 
-                        case "Branch Manager":
+                        case "Branch Maneger":
 
                             if (empstatus == "Active")
                             {
