@@ -57,11 +57,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.EmployeeIDtxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.EmployeeIDtxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -636,12 +636,55 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(910, 1065);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // imageList1
+            // btnSearch
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BorderRadius = 20;
+            this.btnSearch.CheckedState.Parent = this.btnSearch;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.CustomImages.Parent = this.btnSearch;
+            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.HoverState.Parent = this.btnSearch;
+            this.btnSearch.Location = new System.Drawing.Point(611, 209);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
+            this.btnSearch.Size = new System.Drawing.Size(125, 48);
+            this.btnSearch.TabIndex = 65;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BorderRadius = 20;
+            this.btnSubmit.CheckedState.Parent = this.btnSubmit;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.CustomImages.Parent = this.btnSubmit;
+            this.btnSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.HoverState.Parent = this.btnSubmit;
+            this.btnSubmit.Location = new System.Drawing.Point(378, 1417);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
+            this.btnSubmit.Size = new System.Drawing.Size(125, 48);
+            this.btnSubmit.TabIndex = 64;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(208, 223);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 20);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Employee ID";
             // 
             // EmployeeIDtxt
             // 
@@ -672,53 +715,11 @@
             this.EmployeeIDtxt.Size = new System.Drawing.Size(243, 45);
             this.EmployeeIDtxt.TabIndex = 42;
             // 
-            // label14
+            // imageList1
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(208, 223);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 20);
-            this.label14.TabIndex = 43;
-            this.label14.Text = "Employee ID";
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BorderRadius = 20;
-            this.btnSubmit.CheckedState.Parent = this.btnSubmit;
-            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSubmit.CustomImages.Parent = this.btnSubmit;
-            this.btnSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(378, 1417);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
-            this.btnSubmit.Size = new System.Drawing.Size(125, 48);
-            this.btnSubmit.TabIndex = 64;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BorderRadius = 20;
-            this.btnSearch.CheckedState.Parent = this.btnSearch;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.CustomImages.Parent = this.btnSearch;
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(37)))), ((int)(((byte)(218)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Location = new System.Drawing.Point(611, 209);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(125, 48);
-            this.btnSearch.TabIndex = 65;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // EditEmployeeAccount
             // 

@@ -14,6 +14,10 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class EditEmployeeAccount : UserControl
     {
+        public bool TopLevel { get; internal set; }
+        internal FormBorderStyle FormBorderStyle;
+
+
         public EditEmployeeAccount()
         {
             InitializeComponent();
@@ -202,7 +206,10 @@ namespace Finance_APP.pages.centerpanel
             }
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }
 
