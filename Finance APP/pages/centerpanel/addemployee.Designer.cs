@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lastnametxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -67,6 +68,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -138,8 +140,8 @@
             this.lastnametxt.ForeColor = System.Drawing.Color.Empty;
             this.lastnametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastnametxt.HoverState.Parent = this.lastnametxt;
-            this.lastnametxt.Location = new System.Drawing.Point(169, 330);
-            this.lastnametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lastnametxt.Location = new System.Drawing.Point(169, 1120);
+            this.lastnametxt.Margin = new System.Windows.Forms.Padding(4);
             this.lastnametxt.Name = "lastnametxt";
             this.lastnametxt.Padding = new System.Windows.Forms.Padding(10);
             this.lastnametxt.PasswordChar = '\0';
@@ -155,9 +157,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(119, 293);
+            this.label18.Location = new System.Drawing.Point(119, 1083);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(78, 20);
+            this.label18.Size = new System.Drawing.Size(101, 25);
             this.label18.TabIndex = 40;
             this.label18.Text = "Lastname";
             // 
@@ -179,8 +181,8 @@
             this.firstnametxt.ForeColor = System.Drawing.Color.Empty;
             this.firstnametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstnametxt.HoverState.Parent = this.firstnametxt;
-            this.firstnametxt.Location = new System.Drawing.Point(169, 231);
-            this.firstnametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstnametxt.Location = new System.Drawing.Point(169, 1021);
+            this.firstnametxt.Margin = new System.Windows.Forms.Padding(4);
             this.firstnametxt.Name = "firstnametxt";
             this.firstnametxt.Padding = new System.Windows.Forms.Padding(10);
             this.firstnametxt.PasswordChar = '\0';
@@ -196,9 +198,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(119, 194);
+            this.label13.Location = new System.Drawing.Point(119, 984);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 20);
+            this.label13.Size = new System.Drawing.Size(102, 25);
             this.label13.TabIndex = 38;
             this.label13.Text = "Firstname";
             // 
@@ -227,7 +229,7 @@
             "Branch Maneger",
             "Select Here"});
             this.jobtitleBox1.ItemsAppearance.Parent = this.jobtitleBox1;
-            this.jobtitleBox1.Location = new System.Drawing.Point(612, 1293);
+            this.jobtitleBox1.Location = new System.Drawing.Point(612, 2083);
             this.jobtitleBox1.Margin = new System.Windows.Forms.Padding(40);
             this.jobtitleBox1.MaximumSize = new System.Drawing.Size(700, 0);
             this.jobtitleBox1.Name = "jobtitleBox1";
@@ -248,7 +250,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(570, 1801);
+            this.guna2Button4.Location = new System.Drawing.Point(570, 2591);
             this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
@@ -275,8 +277,8 @@
             this.conpassTextbox.ForeColor = System.Drawing.Color.Empty;
             this.conpassTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.conpassTextbox.HoverState.Parent = this.conpassTextbox;
-            this.conpassTextbox.Location = new System.Drawing.Point(471, 1721);
-            this.conpassTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.conpassTextbox.Location = new System.Drawing.Point(471, 2511);
+            this.conpassTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.conpassTextbox.Name = "conpassTextbox";
             this.conpassTextbox.Padding = new System.Windows.Forms.Padding(10);
             this.conpassTextbox.PasswordChar = '\0';
@@ -293,9 +295,9 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(421, 1687);
+            this.label17.Location = new System.Drawing.Point(421, 2477);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(140, 20);
+            this.label17.Size = new System.Drawing.Size(179, 25);
             this.label17.TabIndex = 33;
             this.label17.Text = "Confirm Password";
             this.label17.Click += new System.EventHandler(this.label17_Click);
@@ -318,8 +320,8 @@
             this.passwordTextBox.ForeColor = System.Drawing.Color.Empty;
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
-            this.passwordTextBox.Location = new System.Drawing.Point(471, 1629);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTextBox.Location = new System.Drawing.Point(471, 2419);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.passwordTextBox.PasswordChar = '\0';
@@ -336,9 +338,9 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(421, 1595);
+            this.label16.Location = new System.Drawing.Point(421, 2385);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(78, 20);
+            this.label16.Size = new System.Drawing.Size(99, 25);
             this.label16.TabIndex = 31;
             this.label16.Text = "Password";
             this.label16.Click += new System.EventHandler(this.label16_Click);
@@ -361,8 +363,8 @@
             this.usernameTxt.ForeColor = System.Drawing.Color.Empty;
             this.usernameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTxt.HoverState.Parent = this.usernameTxt;
-            this.usernameTxt.Location = new System.Drawing.Point(471, 1519);
-            this.usernameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTxt.Location = new System.Drawing.Point(471, 2309);
+            this.usernameTxt.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTxt.Name = "usernameTxt";
             this.usernameTxt.Padding = new System.Windows.Forms.Padding(10);
             this.usernameTxt.PasswordChar = '\0';
@@ -379,9 +381,9 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(421, 1485);
+            this.label15.Location = new System.Drawing.Point(421, 2275);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 20);
+            this.label15.Size = new System.Drawing.Size(105, 25);
             this.label15.TabIndex = 29;
             this.label15.Text = "Username";
             this.label15.Click += new System.EventHandler(this.label15_Click);
@@ -390,9 +392,9 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(76, 1432);
+            this.label14.Location = new System.Drawing.Point(76, 2222);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(237, 28);
+            this.label14.Size = new System.Drawing.Size(306, 36);
             this.label14.TabIndex = 28;
             this.label14.Text = "Employmevnt Details";
             this.label14.Click += new System.EventHandler(this.label14_Click);
@@ -419,7 +421,7 @@
             "Active",
             "Blocked"});
             this.empstatustxt.ItemsAppearance.Parent = this.empstatustxt;
-            this.empstatustxt.Location = new System.Drawing.Point(169, 1293);
+            this.empstatustxt.Location = new System.Drawing.Point(169, 2083);
             this.empstatustxt.Margin = new System.Windows.Forms.Padding(40);
             this.empstatustxt.MaximumSize = new System.Drawing.Size(700, 0);
             this.empstatustxt.Name = "empstatustxt";
@@ -435,9 +437,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(119, 1264);
+            this.label12.Location = new System.Drawing.Point(119, 2054);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 20);
+            this.label12.Size = new System.Drawing.Size(158, 25);
             this.label12.TabIndex = 25;
             this.label12.Text = "Account stastus";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -460,8 +462,8 @@
             this.locationTextBox.ForeColor = System.Drawing.Color.Empty;
             this.locationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.locationTextBox.HoverState.Parent = this.locationTextBox;
-            this.locationTextBox.Location = new System.Drawing.Point(169, 1182);
-            this.locationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.locationTextBox.Location = new System.Drawing.Point(169, 1972);
+            this.locationTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.locationTextBox.Name = "locationTextBox";
             this.locationTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.locationTextBox.PasswordChar = '\0';
@@ -478,9 +480,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(119, 1145);
+            this.label11.Location = new System.Drawing.Point(119, 1935);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.Size = new System.Drawing.Size(91, 25);
             this.label11.TabIndex = 23;
             this.label11.Text = "Location";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -491,9 +493,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(576, 1264);
+            this.label10.Location = new System.Drawing.Point(576, 2054);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.Size = new System.Drawing.Size(83, 25);
             this.label10.TabIndex = 21;
             this.label10.Text = "JobTitle";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -508,7 +510,7 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(414, 1014);
+            this.guna2Button3.Location = new System.Drawing.Point(414, 1804);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(192, 85);
@@ -526,7 +528,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(647, 1014);
+            this.guna2Button2.Location = new System.Drawing.Point(647, 1804);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(192, 85);
@@ -544,7 +546,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(169, 1014);
+            this.guna2Button1.Location = new System.Drawing.Point(169, 1804);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(192, 85);
@@ -556,9 +558,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(76, 947);
+            this.label9.Location = new System.Drawing.Point(76, 1737);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(237, 28);
+            this.label9.Size = new System.Drawing.Size(306, 36);
             this.label9.TabIndex = 17;
             this.label9.Text = "Employmevnt Details";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -581,8 +583,8 @@
             this.tinTextBox.ForeColor = System.Drawing.Color.Empty;
             this.tinTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tinTextBox.HoverState.Parent = this.tinTextBox;
-            this.tinTextBox.Location = new System.Drawing.Point(169, 870);
-            this.tinTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tinTextBox.Location = new System.Drawing.Point(169, 1660);
+            this.tinTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.tinTextBox.Name = "tinTextBox";
             this.tinTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.tinTextBox.PasswordChar = '\0';
@@ -599,9 +601,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(119, 839);
+            this.label8.Location = new System.Drawing.Point(119, 1629);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 20);
+            this.label8.Size = new System.Drawing.Size(40, 25);
             this.label8.TabIndex = 15;
             this.label8.Text = "Tin";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -624,8 +626,8 @@
             this.addressTextBox.ForeColor = System.Drawing.Color.Empty;
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.HoverState.Parent = this.addressTextBox;
-            this.addressTextBox.Location = new System.Drawing.Point(169, 772);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressTextBox.Location = new System.Drawing.Point(169, 1562);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.addressTextBox.PasswordChar = '\0';
@@ -642,9 +644,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(119, 735);
+            this.label7.Location = new System.Drawing.Point(119, 1525);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 20);
+            this.label7.Size = new System.Drawing.Size(174, 25);
             this.label7.TabIndex = 13;
             this.label7.Text = "Residental Adress";
             this.label7.Click += new System.EventHandler(this.label7_Click_1);
@@ -667,8 +669,8 @@
             this.emailTextBox.ForeColor = System.Drawing.Color.Empty;
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.HoverState.Parent = this.emailTextBox;
-            this.emailTextBox.Location = new System.Drawing.Point(169, 667);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTextBox.Location = new System.Drawing.Point(169, 1457);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.emailTextBox.PasswordChar = '\0';
@@ -685,9 +687,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(119, 630);
+            this.label6.Location = new System.Drawing.Point(119, 1420);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 20);
+            this.label6.Size = new System.Drawing.Size(130, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Email Adrees";
             this.label6.Click += new System.EventHandler(this.label6_Click_1);
@@ -710,8 +712,8 @@
             this.phoneNumberTextBox.ForeColor = System.Drawing.Color.Empty;
             this.phoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneNumberTextBox.HoverState.Parent = this.phoneNumberTextBox;
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(517, 557);
-            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(517, 1347);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.phoneNumberTextBox.PasswordChar = '\0';
@@ -728,9 +730,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(475, 524);
+            this.label5.Location = new System.Drawing.Point(475, 1314);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 20);
+            this.label5.Size = new System.Drawing.Size(170, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Phone Number   ";
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
@@ -758,7 +760,7 @@
             "Female",
             "other"});
             this.genderComboBox.ItemsAppearance.Parent = this.genderComboBox;
-            this.genderComboBox.Location = new System.Drawing.Point(169, 566);
+            this.genderComboBox.Location = new System.Drawing.Point(169, 1356);
             this.genderComboBox.Margin = new System.Windows.Forms.Padding(40);
             this.genderComboBox.MaximumSize = new System.Drawing.Size(700, 0);
             this.genderComboBox.Name = "genderComboBox";
@@ -774,9 +776,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(119, 524);
+            this.label4.Location = new System.Drawing.Point(119, 1314);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.Size = new System.Drawing.Size(79, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Gender";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
@@ -791,7 +793,7 @@
             this.dateOfBirthDateTimePicker.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dateOfBirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dateOfBirthDateTimePicker.HoverState.Parent = this.dateOfBirthDateTimePicker;
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(169, 461);
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(169, 1251);
             this.dateOfBirthDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateOfBirthDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
@@ -807,9 +809,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(119, 416);
+            this.label3.Location = new System.Drawing.Point(119, 1206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 20);
+            this.label3.Size = new System.Drawing.Size(147, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Date of Birth   ";
             this.label3.Click += new System.EventHandler(this.label3_Click_1);
@@ -832,8 +834,8 @@
             this.fullnameTextBox.ForeColor = System.Drawing.Color.Empty;
             this.fullnameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fullnameTextBox.HoverState.Parent = this.fullnameTextBox;
-            this.fullnameTextBox.Location = new System.Drawing.Point(169, 138);
-            this.fullnameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fullnameTextBox.Location = new System.Drawing.Point(169, 928);
+            this.fullnameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.fullnameTextBox.Name = "fullnameTextBox";
             this.fullnameTextBox.Padding = new System.Windows.Forms.Padding(10);
             this.fullnameTextBox.PasswordChar = '\0';
@@ -850,9 +852,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(119, 101);
+            this.label2.Location = new System.Drawing.Point(119, 891);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Full Name";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -861,9 +863,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 34);
+            this.label1.Location = new System.Drawing.Point(75, 824);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 28);
+            this.label1.Size = new System.Drawing.Size(306, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Personal Information";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -872,7 +874,7 @@
             // 
             this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2PictureBox1.Image = global::Finance_APP.Properties.Resources.Screenshot_2024_02_25_211554_removebg_preview_1;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(123, 1502);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(123, 2292);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(257, 291);
@@ -880,6 +882,12 @@
             this.guna2PictureBox1.TabIndex = 35;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // addemployee
             // 
@@ -941,5 +949,6 @@
         private System.Windows.Forms.Label label18;
         private Guna.UI2.WinForms.Guna2TextBox firstnametxt;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
