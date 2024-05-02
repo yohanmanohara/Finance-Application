@@ -32,7 +32,7 @@ namespace Finance_APP.pages.centerpanel
 
                 customer.FullName = guna2TextBox1.Text;
                 customer.ResidentialAddress = guna2TextBox2.Text;
-                customer.Occupation = guna2TextBox3.Text;
+                //customer.Occupation = guna2TextBox3.Text;
 
                 Console.WriteLine(guna2TextBox4.Text);
                 customer.DateOfBirth = DateTime.Parse(guna2TextBox4.Text);
@@ -50,8 +50,8 @@ namespace Finance_APP.pages.centerpanel
 
                 customer.Profession = guna2TextBox10.Text;
                 customer.Designation = guna2TextBox11.Text;
-                customer.Employer = guna2TextBox12.Text;
-                customer.EmplyementStatus = guna2TextBox13.Text;
+                //customer.Employer = guna2TextBox12.Text;
+                //customer.EmplyementStatus = guna2TextBox13.Text;
 
                 customer.EmployementServiceTimeStart = DateTime.Parse(guna2TextBox14.Text);
 
