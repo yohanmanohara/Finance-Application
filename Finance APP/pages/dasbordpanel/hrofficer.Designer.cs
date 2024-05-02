@@ -100,6 +100,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(331, 60);
             this.guna2Button6.TabIndex = 12;
             this.guna2Button6.Text = "Analytics";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // hrofficer
             // 
