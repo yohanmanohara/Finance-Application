@@ -71,7 +71,7 @@
       <HintPath>..\packages\FluentValidation.11.9.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 3.5\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\Videos\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\kgwyo\OneDrive\softwares usable\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
@@ -101,31 +101,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="financeDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>financeDataSet.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="Core\Database\Config.cs" />
+    <Compile Include="Core\Database\Models\Account.cs" />
+    <Compile Include="Core\Database\Models\BaseModel.cs" />
+    <Compile Include="Core\Database\Models\Customer.cs" />
+    <Compile Include="Core\Database\Models\PersonalLoan.cs" />
+    <Compile Include="Core\Database\Models\Transaction.cs" />
+    <Compile Include="Core\Database\Models\User.cs" />
+    <Compile Include="Core\Utility\UserInputParser.cs" />
     <Compile Include="Maindashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Maindashbord.Designer.cs">
       <DependentUpon>Maindashbord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\addemployee.cs">
       <SubType>UserControl</SubType>
@@ -133,23 +121,35 @@
     <Compile Include="pages\centerpanel\addemployee.Designer.cs">
       <DependentUpon>addemployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\analytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\analytics.Designer.cs">
+      <DependentUpon>analytics.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\check balance.Designer.cs">
       <DependentUpon>check balance.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.cs">
+    <Compile Include="pages\centerpanel\CreateCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\Create_customer_account.Designer.cs">
-      <DependentUpon>Create_customer_account.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\CreateCustomer.Designer.cs">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\deposit.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\deposit.Designer.cs">
       <DependentUpon>deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\EditEmployeeAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\EditEmployeeAccount.Designer.cs">
+      <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\employeemanegment.cs">
       <SubType>UserControl</SubType>
@@ -163,6 +163,24 @@
     <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\manager-financial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager-financial.Designer.cs">
+      <DependentUpon>manager-financial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\Personal loan 1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\Personal loan 1.Designer.cs">
+      <DependentUpon>Personal loan 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\search account cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,12 +192,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\Student loan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\Student loan.Designer.cs">
-      <DependentUpon>Student loan.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\transfer.cs">
       <SubType>UserControl</SubType>
@@ -204,12 +216,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
       <DependentUpon>withdrawal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\dasbordpanel\Accounthadle.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\dasbordpanel\Accounthadle.Designer.cs">
-      <DependentUpon>Accounthadle.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\branchmaneger.cs">
       <SubType>UserControl</SubType>
@@ -314,14 +320,20 @@
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\analytics.resx">
+      <DependentUpon>analytics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Create_customer_account.resx">
-      <DependentUpon>Create_customer_account.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\CreateCustomer.resx">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\deposit.resx">
       <DependentUpon>deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\EditEmployeeAccount.resx">
+      <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
@@ -329,14 +341,20 @@
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager-financial.resx">
+      <DependentUpon>manager-financial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
+      <DependentUpon>Personal loan 1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
       <DependentUpon>search account cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\Student loan.resx">
-      <DependentUpon>Student loan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\transfer.resx">
       <DependentUpon>transfer.cs</DependentUpon>
@@ -349,9 +367,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
       <DependentUpon>withdrawal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\dasbordpanel\Accounthadle.resx">
-      <DependentUpon>Accounthadle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\branchmaneger.resx">
       <DependentUpon>branchmaneger.cs</DependentUpon>
@@ -404,25 +419,7 @@
       <DependentUpon>sucess1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Finance APP_TemporaryKey.pfx" />
-    <None Include="financeDataSet.xsc">
-      <DependentUpon>financeDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="financeDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>financeDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="financeDataSet.xss">
-      <DependentUpon>financeDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Keygen.exe.config" />
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -502,16 +499,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guna.UI2.dll" />
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\editdddd.png" />
     <None Include="Resources\dummy-profile-icon.png" />
     <None Include="Resources\Group_51_2.png" />
@@ -539,6 +526,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Database\Schema\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

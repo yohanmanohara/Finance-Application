@@ -50,7 +50,7 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Create_customer_account fm = new Create_customer_account();
+            CreateCustomer fm = new CreateCustomer();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();
@@ -91,7 +91,19 @@ namespace Finance_APP.pages.dasbordpanel
             Maindashbord maindashbord = (Maindashbord)this.ParentForm;
             maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
             maindashbord.Guna2Panel4.Controls.Add(fm);
+        }
 
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Personal_loan_1 fm = new Personal_loan_1();
+            fm.TopLevel = false;
+            fm.Dock = DockStyle.Fill;
+            fm.Show();
+
+            // Access guna2Panel4 directly from the parent form (Maindashbord)
+            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
+            maindashbord.Guna2Panel4.Controls.Add(fm);
         }
     }
 }

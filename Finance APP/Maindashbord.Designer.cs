@@ -177,6 +177,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.AutoScroll = true;
             this.guna2Panel4.BackColor = System.Drawing.SystemColors.Control;
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel4.Location = new System.Drawing.Point(334, 0);
@@ -190,6 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1238, 777);
             this.Controls.Add(this.panel2);
