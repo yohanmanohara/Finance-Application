@@ -157,11 +157,18 @@
     <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="pages\centerpanel\manager-stsff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager-stsff.Designer.cs">
+      <DependentUpon>manager-stsff.cs</DependentUpon>
+
     <Compile Include="pages\centerpanel\manager-financial.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\manager-financial.Designer.cs">
-      <DependentUpon>manager-financial.cs</DependentUpon>
+      <DependentUpon>manager-financial.cs</Dep
     </Compile>
     <Compile Include="pages\centerpanel\manager.cs">
       <SubType>UserControl</SubType>
@@ -332,8 +339,13 @@
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="pages\centerpanel\manager-stsff.resx">
+      <DependentUpon>manager-stsff.cs</DependentUpon>
+
     <EmbeddedResource Include="pages\centerpanel\manager-financial.resx">
       <DependentUpon>manager-financial.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\manager.resx">
       <DependentUpon>manager.cs</DependentUpon>
