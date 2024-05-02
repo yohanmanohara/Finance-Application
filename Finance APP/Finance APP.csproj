@@ -145,6 +145,12 @@
     <Compile Include="pages\centerpanel\deposit.Designer.cs">
       <DependentUpon>deposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\EditEmployeeAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\EditEmployeeAccount.Designer.cs">
+      <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\employeemanegment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\deposit.resx">
       <DependentUpon>deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\EditEmployeeAccount.resx">
+      <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
