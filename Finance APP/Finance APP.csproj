@@ -498,7 +498,6 @@
     <None Include="Resources\Lock_Icon-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Guna.UI.dll" />
     <Content Include="Guna.UI2.dll" />
     <None Include="Resources\editdddd.png" />
     <None Include="Resources\dummy-profile-icon.png" />
