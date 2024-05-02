@@ -71,7 +71,7 @@
       <HintPath>..\packages\FluentValidation.11.9.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 3.5\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\Videos\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\kgwyo\OneDrive\softwares usable\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
@@ -176,6 +176,12 @@
     </Compile>
     <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
       <DependentUpon>HousingLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\Personal loan 1.cs">
       <SubType>UserControl</SubType>
@@ -345,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
