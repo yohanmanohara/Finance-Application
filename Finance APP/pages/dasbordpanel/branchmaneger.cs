@@ -21,7 +21,7 @@ namespace Finance_APP.pages.dasbordpanel
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             
-            manager fm = new manager();
+            manager_financial fm = new manager_financial();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();

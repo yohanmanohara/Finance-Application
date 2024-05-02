@@ -12,6 +12,7 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class manager_financial : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public manager_financial()
         {
             InitializeComponent();
@@ -38,6 +39,11 @@ namespace Finance_APP.pages.centerpanel
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manager_financial_Load(object sender, EventArgs e)
         {
 
         }

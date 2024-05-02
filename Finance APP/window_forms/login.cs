@@ -159,6 +159,8 @@ namespace Finance_APP.window_forms
                                 this.Hide();
                                 jobrollerro erropop = new jobrollerro();
                                 erropop.ShowDialog();
+
+                           
                             }
                             break;
 
