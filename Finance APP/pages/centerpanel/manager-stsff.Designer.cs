@@ -49,13 +49,13 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Finance_APP.Properties.Resources.wrong2;
-            this.guna2Button1.Location = new System.Drawing.Point(682, 209);
+            this.guna2Button1.Location = new System.Drawing.Point(63, 334);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(240, 73);
             this.guna2Button1.TabIndex = 17;
-            this.guna2Button1.Text = "Disable Account";
+            this.guna2Button1.Text = "Off Days";
             // 
             // guna2Button2
             // 
@@ -74,7 +74,7 @@
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(240, 73);
             this.guna2Button2.TabIndex = 18;
-            this.guna2Button2.Text = "View Acoount";
+            this.guna2Button2.Text = "Notices";
             // 
             // guna2Button3
             // 
@@ -93,7 +93,7 @@
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(245, 73);
             this.guna2Button3.TabIndex = 19;
-            this.guna2Button3.Text = "edit Account";
+            this.guna2Button3.Text = "Sign Out";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button4
@@ -176,7 +176,7 @@
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(240, 73);
             this.guna2Button5.TabIndex = 72;
-            this.guna2Button5.Text = "View Acoount";
+            this.guna2Button5.Text = "Requests";
             // 
             // guna2Button6
             // 
@@ -189,13 +189,13 @@
             this.guna2Button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
             this.guna2Button6.Image = global::Finance_APP.Properties.Resources.success1;
-            this.guna2Button6.Location = new System.Drawing.Point(63, 334);
+            this.guna2Button6.Location = new System.Drawing.Point(682, 209);
             this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(240, 73);
             this.guna2Button6.TabIndex = 73;
-            this.guna2Button6.Text = "View Acoount";
+            this.guna2Button6.Text = "History";
             // 
             // manager_stsff
             // 
@@ -210,7 +210,7 @@
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Name = "manager_stsff";
-            this.Size = new System.Drawing.Size(1001, 700);
+            this.Size = new System.Drawing.Size(1001, 570);
             this.ResumeLayout(false);
             this.PerformLayout();
 
