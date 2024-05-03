@@ -32,50 +32,140 @@ namespace Finance_APP.pages.centerpanel
         {
 
         }
-
+        SqlConnection connectionString = new SqlConnection(@"Data Source=financensbm.database.windows.net;Initial Catalog=finance;Persist Security Info=True;User ID=financeadmin;Password=finance2024$;Encrypt=True");
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            try
+            string fullName = fullnameTextBox.Text;
+            DateTime dateOfBirth = dateOfBirthDateTimePicker.Value;
+            string gender = genderComboBox.Text;
+            string phoneNumberStr = phoneNumberTextBox.Text;
+           
+            string email = emailTextBox.Text;
+            string address = addressTextBox.Text;
+            string tinStr = tinTextBox.Text;
+            string nicStr = nicTextBox.Text;
+            string civilStatus = civilStatusComboBox.Text;
+            string spouseProfession = spouseProfessionTextBox.Text;
+            string firstname = firstnametxt.Text;
+            string lastname = lastnametxt.Text;
+            string nationality = nationalityTextBoc.Text;
+            string occupation = occupationTextBox.Text;
+            string designation = designationTextBox.Text;
+            string profession = professionTextBox.Text;
+            string employer = employerTextBox.Text;
+            string employmentStatus = employmentStatusText.Text;
+            DateTime employmentStart = employmentStartDateTimePicker.Value;
+            string incomeMethod = incomeMethodTextBox.Text;
+            string incomeAmountStr = incomeAmountTextBox.Text;
+            string deposit = Deposittxt.Text;
+
+            if (string.IsNullOrEmpty(fullName) || 
+                string.IsNullOrEmpty(phoneNumberStr) || 
+                string.IsNullOrEmpty(deposit) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(address) || 
+                string.IsNullOrEmpty(tinStr) || string.IsNullOrEmpty(nicStr) || string.IsNullOrEmpty(civilStatus) || 
+                string.IsNullOrEmpty(spouseProfession) || string.IsNullOrEmpty(firstname) || string.IsNullOrEmpty(lastname) || 
+                string.IsNullOrEmpty(nationality) || string.IsNullOrEmpty(occupation) || string.IsNullOrEmpty(designation) || 
+                string.IsNullOrEmpty(profession) || string.IsNullOrEmpty(employer) || string.IsNullOrEmpty(employmentStatus) || 
+                string.IsNullOrEmpty(incomeMethod) || string.IsNullOrEmpty(incomeAmountStr))
             {
-                Customer customer = (Customer)BaseModel.New<Customer>();
+                MessageBox.Show("Please fill all the fields");
+                return;
+            }       
 
-                customer.FullName = fullnameTextBox.Text;
-                customer.FirstName = firstnametxt.Text;
-                customer.LastName = lastnametxt.Text;
+            if (!int.TryParse(phoneNumberStr, out int phoneNumber))
+            {
+                MessageBox.Show("Please enter a valid phone number");
+                return;
+            }
 
-                customer.DateOfBirth = dateOfBirthDateTimePicker.Value;
-                customer.CivilStatus = civilStatusComboBox.Text;
-                customer.SpouseProfession = spouseProfessionTextBox.Text;
-                customer.Nationality = nationalityTextBoc.Text;
+            if (!int.TryParse(deposit, out int Deposit))
+            {
+                MessageBox.Show("Please enter a valid deposit amount");
+                return;
+            }
 
-                customer.ResidentialAddress = addressTextBox.Text;
-                customer.Mobile = phoneNumberTextBox.Text;
-                customer.Email = emailTextBox.Text;
-                customer.NICNumber = nicTextBox.Text;
-                customer.TINNumber = tinTextBox.Text;
+            if (!int.TryParse(tinStr, out int tin))
+            {
+                MessageBox.Show("Please enter a valid TIN number");
+                return;
+            }
 
-                customer.Occupation = occupationTextBox.Text;
-                customer.Designation = designationTextBox.Text;
-                customer.Profession = professionTextBox.Text;
+            if (!int.TryParse(nicStr, out int nic))
+            {
+                MessageBox.Show("Please enter a valid NIC number");
+                return;
+            }
 
-                customer.Employer = employerTextBox.Text;
-                customer.EmplyementStatus = employmentStatusText.Text;
-                customer.EmployementServiceTimeStart = employmentStartDateTimePicker.Value;
+            if (!int.TryParse(incomeAmountStr, out int incomeAmount))
+            {
+                MessageBox.Show("Please enter a valid income amount");
+                return;
+            }
 
-                customer.IncomeMethod = incomeMethodTextBox.Text;
-                customer.IncomeAmount = int.Parse(incomeAmountTextBox.Text);
+            try { 
+                // Open the connection
+                connectionString.Open();
+                //sql query to insert data
+                string query = "INSERT INTO Customer (FullName, FirstName, LastName,Gender, NICNumber, TINNUmber, ResidentialAddress, Mobile, Email, DateOfBirth, CivilStatus, SpouseProfession, Nationality, Occupation, Designation, Profession, Employer, EmplyementStatus, EmployementServiceTimeStart,IncomeMethod, IncomeAmount, DepositAmount) " +
+                    "VALUES (@fullName, @firstName, @lastName, @gender, @nICNumber, @tINNUmber, @residentialAddress, @mobile, @email, @dateOfBirth, @civilStatus, @spouseProfession, @nationality, @occupation, @designation, @profession, @employer, @emplyementStatus, @employmentServiceTimeStart, @incomeMethod, @incomeAmount, @depositAmount)"; 
 
-                customer.Write();
+                using (SqlCommand command = new SqlCommand(query, connectionString))
+                {
+                    command.Parameters.AddWithValue("@fullName", fullName);
+                    command.Parameters.AddWithValue("@firstName", firstname);
+                    command.Parameters.AddWithValue("@lastName", lastname);
+                    command.Parameters.AddWithValue ("@gender", gender);
+                    command.Parameters.AddWithValue("@nICNumber", nic);
+                    command.Parameters.AddWithValue("@tINNUmber", tin); 
+                    command.Parameters.AddWithValue("@residentialAddress", address);
+                    command.Parameters.AddWithValue("@mobile", phoneNumber);
+                    command.Parameters.AddWithValue("@email", email);
+                    command.Parameters.AddWithValue("@dateOfBirth", dateOfBirth);
+                    command.Parameters.AddWithValue("@civilStatus", civilStatus);
+                    command.Parameters.AddWithValue("@spouseProfession", spouseProfession);
+                    command.Parameters.AddWithValue("@nationality", nationality);
+                    command.Parameters.AddWithValue("@occupation", occupation);
+                    command.Parameters.AddWithValue("@designation", designation);
+                    command.Parameters.AddWithValue("@profession", profession);
+                    command.Parameters.AddWithValue("@employer", employer);
+                    command.Parameters.AddWithValue("@emplyementStatus", employmentStatus);
+                    command.Parameters.AddWithValue("@employmentServiceTimeStart", employmentStart);
+                    command.Parameters.AddWithValue("@incomeMethod", incomeMethod);
+                    command.Parameters.AddWithValue("@incomeAmount", incomeAmount);
+                    command.Parameters.AddWithValue("@depositAmount", deposit);
 
-                ClearFormInputs();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+
+
+                    {
+
+                        ClearFormInputs();
+                        success success = new success();
+                        success.ShowDialog();
+
+                    }
+                    else
+                    {
+                        ClearFormInputs();
+                        errocreateaccount errocreateaccount = new errocreateaccount();
+                        errocreateaccount.ShowDialog();
+                    }
+
+                }
+            
+            
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
-                Console.WriteLine(ex.Message);
-                Console.WriteLine(ex.StackTrace);
             }
+            finally
+            {
+                connectionString.Close();
+            }
+
         }
 
         private void ClearFormInputs()
