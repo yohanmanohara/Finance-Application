@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Finance_APP.Core.Database.Models;
 using Guna.UI2.HtmlRenderer.Core;
+
+using Finance_APP.Core.Database.Models;
 
 namespace Finance_APP.pages.centerpanel.CashierPages
 {

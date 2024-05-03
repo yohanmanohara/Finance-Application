@@ -51,7 +51,20 @@ namespace Finance_APP.pages.dasbordpanel
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            transfer fm = new transfer();
+            TransferPage fm = new TransferPage();
+            fm.TopLevel = false;
+            fm.Dock = DockStyle.Fill;
+            fm.Show();
+
+            // Access guna2Panel4 directly from the parent form (Maindashbord)
+            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
+            maindashbord.Guna2Panel4.Controls.Add(fm);
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            DepositPage fm = new DepositPage();
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;
             fm.Show();

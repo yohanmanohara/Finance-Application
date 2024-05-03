@@ -55,9 +55,6 @@ namespace Finance_APP.window_forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string username = u_name.Text;
-            string password = u_password.Text;
-
             this.Hide();
 
             Maindashbord testBoard = new Maindashbord();
@@ -69,6 +66,8 @@ namespace Finance_APP.window_forms
 
             return;
 
+            string username = u_name.Text;
+            string password = u_password.Text;
 
             try
             {
@@ -88,7 +87,6 @@ namespace Finance_APP.window_forms
                     switch (jobroll)
                     {
                         case "HR Manager":
-
                             if (empstatus == "Active")
                             {
                                 this.Hide();
@@ -107,7 +105,6 @@ namespace Finance_APP.window_forms
                             }
 
                             break;
-
 
                         case "Branch Officer":
                             if (empstatus == "Active")

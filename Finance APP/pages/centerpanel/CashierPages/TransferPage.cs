@@ -8,24 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finance_APP.pages.centerpanel
+namespace Finance_APP.pages.centerpanel.CashierPages
 {
-    public partial class transfer : UserControl
+    public partial class TransferPage : UserControl
     {
         public bool TopLevel { get; internal set; }
-        public transfer()
+        public TransferPage()
         {
             InitializeComponent();
-        }
-
-        private void transfer_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

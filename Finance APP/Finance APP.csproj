@@ -147,11 +147,23 @@
     <Compile Include="pages\centerpanel\analytics.Designer.cs">
       <DependentUpon>analytics.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.Designer.cs">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.Designer.cs">
       <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.Designer.cs">
+      <DependentUpon>TransferPage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
@@ -164,12 +176,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\CreateCustomer.Designer.cs">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\deposit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\deposit.Designer.cs">
-      <DependentUpon>deposit.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\employeemanegment.cs">
       <SubType>UserControl</SubType>
@@ -200,12 +206,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.Designer.cs">
-      <DependentUpon>transfer.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
@@ -337,17 +337,20 @@
     <EmbeddedResource Include="pages\centerpanel\analytics.resx">
       <DependentUpon>analytics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\DepositPage.resx">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\CashierPages\SearchAccountPage.resx">
       <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\TransferPage.resx">
+      <DependentUpon>TransferPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\deposit.resx">
-      <DependentUpon>deposit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
@@ -363,9 +366,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\transfer.resx">
-      <DependentUpon>transfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>

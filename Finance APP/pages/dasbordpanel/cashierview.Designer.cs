@@ -84,6 +84,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(331, 69);
             this.guna2Button3.TabIndex = 8;
             this.guna2Button3.Text = "Deposit";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button4
             // 
