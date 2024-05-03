@@ -13,6 +13,7 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class addaccount : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public addaccount()
         {
             InitializeComponent();
