@@ -162,7 +162,7 @@ namespace Finance_APP.Core.Database.Models
 
             return res;
         }
-    
+
         public static BaseModel Get<X>(int id) where X : BaseModel, new()
         {
             string _table = typeof(X).Name;
