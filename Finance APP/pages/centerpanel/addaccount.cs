@@ -69,6 +69,7 @@ namespace Finance_APP.pages.centerpanel
             catch (Exception ex) 
             {
                 MessageBox.Show("Customer for the account was not found");
+
                 Console.WriteLine(ex.Message);
                 Console.WriteLine(ex.StackTrace);
                 return;
@@ -77,57 +78,3 @@ namespace Finance_APP.pages.centerpanel
         }
     }
 }
-/*private void guna2Button1_Click(object sender, EventArgs e)
-{
-    string searchQuery = this.searchQueryInput.Text;
-
-    if (searchQuery == "")
-    {
-        MessageBox.Show("Please enter an account number");
-        return;
-    }
-
-    try
-    {
-        int accountId;
-        try
-        {
-            accountId = int.Parse(searchQuery);
-        }
-        catch (Exception)
-        {
-            MessageBox.Show("Please enter a valid account number");
-            return;
-        }
-
-        Account account = (Account)BaseModel.Find<Account, int>("ïd", accountId);
-
-        if (account == null)
-        {
-            MessageBox.Show("Account not found");
-            return;
-        }
-
-        Customer customer;
-        try
-        {
-            customer = (Customer)BaseModel.Find<Customer, int>("id", account.CustomerId);
-        }
-        catch (Exception)
-        {
-            MessageBox.Show("Customer for the account was not found");
-            return;
-        }
-
-        customerNameInput.Text = customer.Id.ToString();
-        accountBalanceInput.Text = account.Balance.ToString();
-
-        searchQueryInput.Text = "";
-    }
-    catch (Exception)
-    {
-        MessageBox.Show("Account not found");
-        return;
-    }
-}
-    }*/
