@@ -40,7 +40,7 @@
             // 
             // amountGuna2TextBox3
             // 
-            this.amountGuna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.amountGuna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.amountGuna2TextBox3.Animated = true;
             this.amountGuna2TextBox3.BorderRadius = 10;
             this.amountGuna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -70,6 +70,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -82,7 +83,7 @@
             // 
             // receiverAccountIdGuna2TextBox2
             // 
-            this.receiverAccountIdGuna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.receiverAccountIdGuna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.receiverAccountIdGuna2TextBox2.Animated = true;
             this.receiverAccountIdGuna2TextBox2.BorderRadius = 10;
             this.receiverAccountIdGuna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -112,6 +113,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -123,6 +125,7 @@
             // 
             // searchButton
             // 
+            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchButton.BorderRadius = 10;
             this.searchButton.CheckedState.Parent = this.searchButton;
             this.searchButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -140,7 +143,7 @@
             // 
             // senderAccountIdGuna2TextBox1
             // 
-            this.senderAccountIdGuna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.senderAccountIdGuna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.senderAccountIdGuna2TextBox1.Animated = true;
             this.senderAccountIdGuna2TextBox1.BorderRadius = 10;
             this.senderAccountIdGuna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -170,6 +173,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -181,7 +185,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;

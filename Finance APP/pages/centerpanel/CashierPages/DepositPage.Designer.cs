@@ -40,6 +40,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -58,7 +59,7 @@
             // 
             // accountNumberGuna2TextBox6
             // 
-            this.accountNumberGuna2TextBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accountNumberGuna2TextBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accountNumberGuna2TextBox6.Animated = true;
             this.accountNumberGuna2TextBox6.BorderRadius = 10;
             this.accountNumberGuna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -88,7 +89,7 @@
             // 
             // noteGuna2TextBox4
             // 
-            this.noteGuna2TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.noteGuna2TextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.noteGuna2TextBox4.Animated = true;
             this.noteGuna2TextBox4.BorderRadius = 10;
             this.noteGuna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -118,7 +119,7 @@
             // 
             // depositAmountTextBox1
             // 
-            this.depositAmountTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.depositAmountTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.depositAmountTextBox1.Animated = true;
             this.depositAmountTextBox1.BorderRadius = 10;
             this.depositAmountTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -148,6 +149,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -159,6 +161,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -170,6 +173,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -181,7 +185,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
