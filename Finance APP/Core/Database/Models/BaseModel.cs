@@ -155,10 +155,10 @@ namespace Finance_APP.Core.Database.Models
 
             PropertyInfo[] properties = typeof(X).GetProperties();
 
-            foreach (PropertyInfo property in properties)
-            {
+                foreach (PropertyInfo property in properties)
+                {
                 property.SetValue(res, null);
-            }
+                }
 
             return res;
         }
@@ -174,7 +174,6 @@ namespace Finance_APP.Core.Database.Models
 
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
-            connection.Close();
 
             if (reader.Read())
             {
@@ -184,11 +183,28 @@ namespace Finance_APP.Core.Database.Models
 
                 foreach (PropertyInfo property in properties)
                 {
-                    property.SetValue(res, reader[property.Name]);
+                    if (property.PropertyType == typeof(int))
+                    {
+                        property.SetValue(res, reader[property.Name] as int? ?? 0);
+                    }
+                    else if (property.PropertyType == typeof(string))
+                    {
+                        property.SetValue(res, reader[property.Name] as string);
+                    }
+                    else if (property.PropertyType == typeof(double))
+                    {
+                        property.SetValue(res, reader[property.Name] as double? ?? 0);
+                    }
+                    else if (property.PropertyType == typeof(DateTime))
+                    {
+                        property.SetValue(res, reader[property.Name] as DateTime? ?? DateTime.Now);
+                    }
                 }
 
                 return res;
             }
+
+            connection.Close();
 
             throw new Exception("No data found");
         }
@@ -197,14 +213,13 @@ namespace Finance_APP.Core.Database.Models
         {
             string _table = typeof(X).Name;
 
-            string query = "SELECT * FROM " + _table + " WHERE " + attribute + " = '" + value + "'";
+            string query = "SELECT * FROM " + _table + " WHERE " + attribute + " = '" + value.ToString() + "'";
 
             SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
             SqlCommand command = new SqlCommand(query, connection);
 
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
-            connection.Close();
 
             if (reader.Read())
             {
@@ -214,11 +229,28 @@ namespace Finance_APP.Core.Database.Models
 
                 foreach (PropertyInfo property in properties)
                 {
-                    property.SetValue(res, reader[property.Name]);
+                    if (property.PropertyType == typeof(int))
+                    {
+                        property.SetValue(res, reader[property.Name] as int? ?? 0);
+                    }
+                    else if (property.PropertyType == typeof(string))
+                    {
+                        property.SetValue(res, reader[property.Name] as string);
+                    }
+                    else if (property.PropertyType == typeof(double))
+                    {
+                        property.SetValue(res, reader[property.Name] as double? ?? 0);
+                    }
+                    else if (property.PropertyType == typeof(DateTime))
+                    {
+                        property.SetValue(res, reader[property.Name] as DateTime? ?? DateTime.Now);
+                    }   
                 }
 
                 return res;
             }
+
+            connection.Close();
 
             throw new Exception("No data found");
         }
