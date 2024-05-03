@@ -172,6 +172,12 @@
     <Compile Include="pages\centerpanel\manager-financial.Designer.cs">
       <DependentUpon>manager-financial.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\manager-inventery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager-inventery.Designer.cs">
+      <DependentUpon>manager-inventery.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\manager-request.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\manager-financial.resx">
       <DependentUpon>manager-financial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager-inventery.resx">
+      <DependentUpon>manager-inventery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\manager-request.resx">
       <DependentUpon>manager-request.cs</DependentUpon>
