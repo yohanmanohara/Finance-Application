@@ -37,13 +37,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.accountNameTextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.createAccountButton2 = new Guna.UI2.WinForms.Guna2Button();
             this.validateButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // customerIdTextBox
             // 
-            this.customerIdTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.customerIdTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.customerIdTextBox.Animated = true;
             this.customerIdTextBox.BorderRadius = 10;
             this.customerIdTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -59,8 +59,8 @@
             this.customerIdTextBox.ForeColor = System.Drawing.Color.Empty;
             this.customerIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.customerIdTextBox.HoverState.Parent = this.customerIdTextBox;
-            this.customerIdTextBox.Location = new System.Drawing.Point(262, 121);
-            this.customerIdTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerIdTextBox.Location = new System.Drawing.Point(267, 219);
+            this.customerIdTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerIdTextBox.Name = "customerIdTextBox";
             this.customerIdTextBox.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.customerIdTextBox.PasswordChar = '\0';
@@ -73,11 +73,11 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(124, 132);
+            this.label2.Location = new System.Drawing.Point(129, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 25);
             this.label2.TabIndex = 41;
@@ -86,9 +86,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 62);
+            this.label1.Location = new System.Drawing.Point(128, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 32);
             this.label1.TabIndex = 40;
@@ -97,7 +98,7 @@
             // 
             // accountTypeTextBox2
             // 
-            this.accountTypeTextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accountTypeTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accountTypeTextBox2.Animated = true;
             this.accountTypeTextBox2.BorderRadius = 10;
             this.accountTypeTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -113,7 +114,7 @@
             this.accountTypeTextBox2.ForeColor = System.Drawing.Color.Empty;
             this.accountTypeTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.accountTypeTextBox2.HoverState.Parent = this.accountTypeTextBox2;
-            this.accountTypeTextBox2.Location = new System.Drawing.Point(262, 188);
+            this.accountTypeTextBox2.Location = new System.Drawing.Point(267, 286);
             this.accountTypeTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.accountTypeTextBox2.Name = "accountTypeTextBox2";
             this.accountTypeTextBox2.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -127,11 +128,11 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(124, 199);
+            this.label5.Location = new System.Drawing.Point(129, 297);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 25);
             this.label5.TabIndex = 47;
@@ -139,7 +140,7 @@
             // 
             // balanceTextBox4
             // 
-            this.balanceTextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.balanceTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.balanceTextBox4.Animated = true;
             this.balanceTextBox4.BorderRadius = 10;
             this.balanceTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -155,7 +156,7 @@
             this.balanceTextBox4.ForeColor = System.Drawing.Color.Empty;
             this.balanceTextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.balanceTextBox4.HoverState.Parent = this.balanceTextBox4;
-            this.balanceTextBox4.Location = new System.Drawing.Point(262, 331);
+            this.balanceTextBox4.Location = new System.Drawing.Point(267, 429);
             this.balanceTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.balanceTextBox4.Name = "balanceTextBox4";
             this.balanceTextBox4.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -169,11 +170,11 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(124, 342);
+            this.label3.Location = new System.Drawing.Point(129, 440);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 25);
             this.label3.TabIndex = 51;
@@ -181,7 +182,7 @@
             // 
             // accountNameTextBox3
             // 
-            this.accountNameTextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accountNameTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accountNameTextBox3.Animated = true;
             this.accountNameTextBox3.BorderRadius = 10;
             this.accountNameTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -197,7 +198,7 @@
             this.accountNameTextBox3.ForeColor = System.Drawing.Color.Empty;
             this.accountNameTextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.accountNameTextBox3.HoverState.Parent = this.accountNameTextBox3;
-            this.accountNameTextBox3.Location = new System.Drawing.Point(262, 257);
+            this.accountNameTextBox3.Location = new System.Drawing.Point(267, 355);
             this.accountNameTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.accountNameTextBox3.Name = "accountNameTextBox3";
             this.accountNameTextBox3.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -211,39 +212,39 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(124, 268);
+            this.label4.Location = new System.Drawing.Point(129, 366);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 25);
             this.label4.TabIndex = 49;
             this.label4.Text = "Account Name";
             // 
-            // guna2Button4
+            // createAccountButton2
             // 
-            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(361, 449);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(179, 54);
-            this.guna2Button4.TabIndex = 53;
-            this.guna2Button4.Text = "Create Account";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.createAccountButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.createAccountButton2.Animated = true;
+            this.createAccountButton2.BorderRadius = 10;
+            this.createAccountButton2.CheckedState.Parent = this.createAccountButton2;
+            this.createAccountButton2.CustomImages.Parent = this.createAccountButton2;
+            this.createAccountButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
+            this.createAccountButton2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
+            this.createAccountButton2.ForeColor = System.Drawing.Color.White;
+            this.createAccountButton2.HoverState.Parent = this.createAccountButton2;
+            this.createAccountButton2.Location = new System.Drawing.Point(393, 510);
+            this.createAccountButton2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+            this.createAccountButton2.Name = "createAccountButton2";
+            this.createAccountButton2.ShadowDecoration.Parent = this.createAccountButton2;
+            this.createAccountButton2.Size = new System.Drawing.Size(163, 42);
+            this.createAccountButton2.TabIndex = 53;
+            this.createAccountButton2.Text = "Create Account";
+            this.createAccountButton2.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // validateButton1
             // 
-            this.validateButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.validateButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.validateButton1.Animated = true;
             this.validateButton1.BorderRadius = 10;
             this.validateButton1.CheckedState.Parent = this.validateButton1;
@@ -252,7 +253,7 @@
             this.validateButton1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
             this.validateButton1.ForeColor = System.Drawing.Color.White;
             this.validateButton1.HoverState.Parent = this.validateButton1;
-            this.validateButton1.Location = new System.Drawing.Point(642, 121);
+            this.validateButton1.Location = new System.Drawing.Point(647, 219);
             this.validateButton1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.validateButton1.Name = "validateButton1";
             this.validateButton1.ShadowDecoration.Parent = this.validateButton1;
@@ -266,7 +267,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.validateButton1);
-            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.createAccountButton2);
             this.Controls.Add(this.balanceTextBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.accountNameTextBox3);
@@ -277,7 +278,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "addaccount";
-            this.Size = new System.Drawing.Size(904, 1071);
+            this.Size = new System.Drawing.Size(904, 691);
             this.Load += new System.EventHandler(this.addaccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -295,7 +296,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox accountNameTextBox3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button createAccountButton2;
         private Guna.UI2.WinForms.Guna2Button validateButton1;
     }
 }

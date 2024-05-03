@@ -36,7 +36,13 @@ namespace Finance_APP.pages.centerpanel
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
+            Account createAccount = (Account)BaseModel.New<Account>();
 
+            createAccount.CustomerId = senderAccount.Id;
+            createAccount.AccountType = transferAmount;
+            createAccount.AccountName = "Transfer";
+            createAccount.Balance = DateTime.Now;
+            createAccount.Save();
         }
 
         private void validateButton1_Click(object sender, EventArgs e)
