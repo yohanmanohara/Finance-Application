@@ -34,6 +34,8 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -47,11 +49,11 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Finance_APP.Properties.Resources.wrong2;
-            this.guna2Button1.Location = new System.Drawing.Point(539, 500);
+            this.guna2Button1.Location = new System.Drawing.Point(682, 209);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(240, 107);
+            this.guna2Button1.Size = new System.Drawing.Size(240, 73);
             this.guna2Button1.TabIndex = 17;
             this.guna2Button1.Text = "Disable Account";
             // 
@@ -66,11 +68,11 @@
             this.guna2Button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = global::Finance_APP.Properties.Resources.success1;
-            this.guna2Button2.Location = new System.Drawing.Point(787, 485);
+            this.guna2Button2.Location = new System.Drawing.Point(365, 334);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(240, 107);
+            this.guna2Button2.Size = new System.Drawing.Size(240, 73);
             this.guna2Button2.TabIndex = 18;
             this.guna2Button2.Text = "View Acoount";
             // 
@@ -85,13 +87,14 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.DimGray;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::Finance_APP.Properties.Resources.editdddd;
-            this.guna2Button3.Location = new System.Drawing.Point(257, 500);
+            this.guna2Button3.Location = new System.Drawing.Point(360, 209);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(245, 107);
+            this.guna2Button3.Size = new System.Drawing.Size(245, 73);
             this.guna2Button3.TabIndex = 19;
             this.guna2Button3.Text = "edit Account";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button4
             // 
@@ -156,10 +159,50 @@
             this.guna2TextBox5.TabIndex = 71;
             this.guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Button5.BorderRadius = 20;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = global::Finance_APP.Properties.Resources.success1;
+            this.guna2Button5.Location = new System.Drawing.Point(682, 334);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(240, 73);
+            this.guna2Button5.TabIndex = 72;
+            this.guna2Button5.Text = "View Acoount";
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Button6.BorderRadius = 20;
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = global::Finance_APP.Properties.Resources.success1;
+            this.guna2Button6.Location = new System.Drawing.Point(63, 334);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(240, 73);
+            this.guna2Button6.TabIndex = 73;
+            this.guna2Button6.Text = "View Acoount";
+            // 
             // manager_stsff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2Button6);
+            this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2TextBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button4);
@@ -181,5 +224,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
     }
 }
