@@ -220,6 +220,12 @@
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\UpdateCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\VehicleLoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -382,6 +388,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
