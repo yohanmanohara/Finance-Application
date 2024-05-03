@@ -55,17 +55,6 @@ namespace Finance_APP.window_forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            Maindashbord testBoard = new Maindashbord();
-
-            testBoard.jobroll = "Cashier";
-            testBoard.firstname = "Test";
-            testBoard.lastname = "Üser";
-            testBoard.ShowDialog();
-
-            return;
-
             string username = u_name.Text;
             string password = u_password.Text;
 
