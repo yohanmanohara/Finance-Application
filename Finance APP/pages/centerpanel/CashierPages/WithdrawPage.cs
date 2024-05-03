@@ -140,7 +140,7 @@ namespace Finance_APP.pages.centerpanel
             account.Balance -= withdrawalAmount;
             account.Save();
 
-            Transaction transaction = new Transaction();
+            Transaction transaction = (Transaction)BaseModel.New<Transaction>();
 
             transaction.AccountId = accountId;
             transaction.Amount = withdrawalAmount;
