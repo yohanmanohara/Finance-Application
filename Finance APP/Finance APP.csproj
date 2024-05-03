@@ -118,6 +118,12 @@
     <Compile Include="Maindashbord.Designer.cs">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\addaccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\addaccount.Designer.cs">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\addemployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +136,24 @@
     <Compile Include="pages\centerpanel\analytics.Designer.cs">
       <DependentUpon>analytics.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.Designer.cs">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.Designer.cs">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.Designer.cs">
+      <DependentUpon>TransferPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,12 +165,6 @@
     </Compile>
     <Compile Include="pages\centerpanel\CreateCustomer.Designer.cs">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\deposit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\deposit.Designer.cs">
-      <DependentUpon>deposit.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\EditEmployeeAccount.cs">
       <SubType>UserControl</SubType>
@@ -196,23 +214,11 @@
     <Compile Include="pages\centerpanel\Personal loan 1.Designer.cs">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
-      <DependentUpon>search account cashier.cs</DependentUpon>
-    </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.Designer.cs">
-      <DependentUpon>transfer.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
@@ -232,11 +238,11 @@
     <Compile Include="pages\centerpanel\VehicleLoan.Designer.cs">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.cs">
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.Designer.cs">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\branchmaneger.cs">
       <SubType>UserControl</SubType>
@@ -338,20 +344,29 @@
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\addaccount.resx">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\analytics.resx">
       <DependentUpon>analytics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\DepositPage.resx">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\SearchAccountPage.resx">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\TransferPage.resx">
+      <DependentUpon>TransferPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\deposit.resx">
-      <DependentUpon>deposit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\EditEmployeeAccount.resx">
       <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
@@ -377,14 +392,8 @@
     <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
-      <DependentUpon>search account cashier.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\transfer.resx">
-      <DependentUpon>transfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
@@ -395,8 +404,8 @@
     <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\WithdrawPage.resx">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\branchmaneger.resx">
       <DependentUpon>branchmaneger.cs</DependentUpon>
