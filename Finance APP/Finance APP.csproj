@@ -177,6 +177,12 @@
     <Compile Include="pages\centerpanel\HousingLoan.Designer.cs">
       <DependentUpon>HousingLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\manager-inventry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager-inventry.Designer.cs">
+      <DependentUpon>manager-inventry.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\manager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager-inventry.resx">
+      <DependentUpon>manager-inventry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\manager.resx">
       <DependentUpon>manager.cs</DependentUpon>
