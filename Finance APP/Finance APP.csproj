@@ -118,6 +118,12 @@
     <Compile Include="Maindashbord.Designer.cs">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\addaccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\addaccount.Designer.cs">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\addemployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -331,6 +337,9 @@
     </Compile>
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\addaccount.resx">
+      <DependentUpon>addaccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
