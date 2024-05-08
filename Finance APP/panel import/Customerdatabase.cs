@@ -35,23 +35,13 @@ namespace Finance_APP.panel_import
         {
             try
             {
-                // Create a connection to the database
 
                 {
-                    // Open the connection
                     connectionString.Open();
-
-                    // SQL query to select data from a table
                     string query = "SELECT * FROM customer";
-
-                    // Create a data adapter and a data table
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connectionString);
                     DataTable dataTable = new DataTable();
-
-                    // Fill the data table with the data from the adapter
                     adapter.Fill(dataTable);
-
-                    // Bind the data table to the DataGridView
                     guna2DataGridView1.DataSource = dataTable;
                 }
             }
@@ -59,6 +49,11 @@ namespace Finance_APP.panel_import
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
