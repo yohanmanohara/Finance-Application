@@ -44,5 +44,45 @@ namespace Finance_APP.pages.dasbordpanel
             maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
             maindashbord.Guna2Panel4.Controls.Add(fm);
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+             manager_request fm = new manager_request();
+            fm.TopLevel = false;
+            fm.Dock = DockStyle.Fill;
+            fm.Show();
+
+            // Access guna2Panel4 directly from the parent form (Maindashbord)
+            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
+            maindashbord.Guna2Panel4.Controls.Add(fm);
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            final_staff fm = new final_staff();
+            fm.TopLevel = false;
+            fm.Dock = DockStyle.Fill;
+            fm.Show();
+
+            // Access guna2Panel4 directly from the parent form (Maindashbord)
+            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
+            maindashbord.Guna2Panel4.Controls.Add(fm);
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            manager fm = new manager();
+            fm.TopLevel = false;
+            fm.Dock = DockStyle.Fill;
+            fm.Show();
+
+            // Access guna2Panel4 directly from the parent form (Maindashbord)
+            Maindashbord maindashbord = (Maindashbord)this.ParentForm;
+            maindashbord.Guna2Panel4.Controls.Clear(); // Clear existing controls in the panel
+            maindashbord.Guna2Panel4.Controls.Add(fm);
+        }
     }
 }

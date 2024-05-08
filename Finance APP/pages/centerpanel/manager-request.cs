@@ -12,6 +12,7 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class manager_request : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public manager_request()
         {
             InitializeComponent();

@@ -12,6 +12,7 @@ namespace Finance_APP.pages.centerpanel
 {
     public partial class final_staff : UserControl
     {
+        public bool TopLevel { get; internal set; }
         public final_staff()
         {
             InitializeComponent();

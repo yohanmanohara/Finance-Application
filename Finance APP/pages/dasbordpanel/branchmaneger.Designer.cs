@@ -50,6 +50,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(331, 69);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "Staff Log";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -66,6 +67,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(331, 69);
             this.guna2Button2.TabIndex = 7;
             this.guna2Button2.Text = "Requests";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button3
             // 
@@ -116,6 +118,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(331, 69);
             this.guna2Button5.TabIndex = 10;
             this.guna2Button5.Text = "Inventry Log";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // branchmaneger
             // 
