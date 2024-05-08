@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -28,6 +29,8 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,13 +65,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentValidation.11.9.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
+      <HintPath>..\packages\FluentValidation.11.9.1\lib\netstandard2.0\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\Videos\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
@@ -81,8 +84,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -115,6 +118,12 @@
     <Compile Include="Maindashbord.Designer.cs">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\addaccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\addaccount.Designer.cs">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\addemployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +135,24 @@
     </Compile>
     <Compile Include="pages\centerpanel\analytics.Designer.cs">
       <DependentUpon>analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\DepositPage.Designer.cs">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\SearchAccountPage.Designer.cs">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\CashierPages\TransferPage.Designer.cs">
+      <DependentUpon>TransferPage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\check balance.cs">
       <SubType>UserControl</SubType>
@@ -139,12 +166,6 @@
     <Compile Include="pages\centerpanel\CreateCustomer.Designer.cs">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\deposit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\deposit.Designer.cs">
-      <DependentUpon>deposit.cs</DependentUpon>
-    </Compile>
     <Compile Include="pages\centerpanel\EditEmployeeAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,6 +177,12 @@
     </Compile>
     <Compile Include="pages\centerpanel\employeemanegment.Designer.cs">
       <DependentUpon>employeemanegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\centerpanel\final-staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\final-staff.Designer.cs">
+      <DependentUpon>final-staff.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\HousingLoan.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +196,12 @@
     <Compile Include="pages\centerpanel\manager-financial.Designer.cs">
       <DependentUpon>manager-financial.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\manager-request.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\manager-request.Designer.cs">
+      <DependentUpon>manager-request.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\manager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,23 +214,11 @@
     <Compile Include="pages\centerpanel\Personal loan 1.Designer.cs">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\search account cashier.Designer.cs">
-      <DependentUpon>search account cashier.cs</DependentUpon>
-    </Compile>
     <Compile Include="pages\centerpanel\searchaccout.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\searchaccout.Designer.cs">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\centerpanel\transfer.Designer.cs">
-      <DependentUpon>transfer.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\centerpanel\UpdateAccount.cs">
       <SubType>UserControl</SubType>
@@ -205,17 +226,23 @@
     <Compile Include="pages\centerpanel\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\centerpanel\UpdateCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\centerpanel\UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\centerpanel\VehicleLoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pages\centerpanel\VehicleLoan.Designer.cs">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.cs">
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pages\centerpanel\withdrawal.Designer.cs">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <Compile Include="pages\centerpanel\CashierPages\WithdrawPage.Designer.cs">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\dasbordpanel\branchmaneger.cs">
       <SubType>UserControl</SubType>
@@ -317,11 +344,23 @@
     <EmbeddedResource Include="Maindashbord.resx">
       <DependentUpon>Maindashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\addaccount.resx">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\analytics.resx">
       <DependentUpon>analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\DepositPage.resx">
+      <DependentUpon>DepositPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\SearchAccountPage.resx">
+      <DependentUpon>SearchAccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\TransferPage.resx">
+      <DependentUpon>TransferPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\check balance.resx">
       <DependentUpon>check balance.cs</DependentUpon>
@@ -329,14 +368,14 @@
     <EmbeddedResource Include="pages\centerpanel\CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\deposit.resx">
-      <DependentUpon>deposit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\EditEmployeeAccount.resx">
       <DependentUpon>EditEmployeeAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\employeemanegment.resx">
       <DependentUpon>employeemanegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\final-staff.resx">
+      <DependentUpon>final-staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\HousingLoan.resx">
       <DependentUpon>HousingLoan.cs</DependentUpon>
@@ -344,29 +383,29 @@
     <EmbeddedResource Include="pages\centerpanel\manager-financial.resx">
       <DependentUpon>manager-financial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\manager-request.resx">
+      <DependentUpon>manager-request.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\manager.resx">
       <DependentUpon>manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\Personal loan 1.resx">
       <DependentUpon>Personal loan 1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\search account cashier.resx">
-      <DependentUpon>search account cashier.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\searchaccout.resx">
       <DependentUpon>searchaccout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\transfer.resx">
-      <DependentUpon>transfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\centerpanel\UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\centerpanel\VehicleLoan.resx">
       <DependentUpon>VehicleLoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pages\centerpanel\withdrawal.resx">
-      <DependentUpon>withdrawal.cs</DependentUpon>
+    <EmbeddedResource Include="pages\centerpanel\CashierPages\WithdrawPage.resx">
+      <DependentUpon>WithdrawPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\dasbordpanel\branchmaneger.resx">
       <DependentUpon>branchmaneger.cs</DependentUpon>
@@ -531,4 +570,12 @@
     <Folder Include="Core\Database\Schema\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>

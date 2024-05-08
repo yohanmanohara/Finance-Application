@@ -27,7 +27,7 @@ namespace Finance_APP.pages.centerpanel
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string customer_id = customerIDtxt.Text;
+            string customer_id = CustomerIDtxt.Text;
             string query = "SELECT * FROM customer WHERE customer_id = @Customer_ID";
 
             try
@@ -83,9 +83,69 @@ namespace Finance_APP.pages.centerpanel
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click_1(object sender, EventArgs e)
         {
+            string customerID = CustomerIDtxt.Text;
+            string query = "SELECT * FROM Customer WHERE Id= @CustomerID";
 
+            try
+            {
+                connectionString.Open();
+                using (SqlCommand command = new SqlCommand(query, connectionString))
+                {
+                    command.Parameters.AddWithValue("CustomerID", customerID);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        fullnameTextBox.Text = reader["FullName"].ToString();
+                        firstnametxt.Text = reader["FirstName"].ToString();
+                        lastnametxt.Text = reader["LastName"].ToString();
+                        genderComboBox.Text = reader["Gender"].ToString();
+                        phoneNumberTextBox.Text = reader["Mobile"].ToString();
+                        dateOfBirthDateTimePicker.Value = (DateTime)reader["DateOfBirth"];
+                        emailTextBox.Text = reader["Email"].ToString();
+                        addressTextBox.Text = reader["ResidentialAddress"].ToString();
+                        tinTextBox.Text = reader["TINNumber"].ToString();
+                        Deposittxt.Text = reader["DepositAmount"].ToString();
+                        civilStatusComboBox.Text = reader["CivilStatus"].ToString();
+                        spouseProfessionTextBox.Text = reader["SpouseProfession"].ToString();
+                        nationalityTextBoc.Text = reader["Nationality"].ToString();
+                        occupationTextBox.Text = reader["Occupation"].ToString();
+                        designationTextBox.Text = reader["Designation"].ToString();
+                        professionTextBox.Text = reader["Profession"].ToString();
+                        employerTextBox.Text = reader["Employer"].ToString();
+                        employmentStatusText.Text = reader["EmplyementStatus"].ToString();
+                        employmentStartDateTimePicker.Value = (DateTime)reader["EmployementServiceTimeStart"];
+                        incomeMethodTextBox.Text = reader["IncomeMethod"].ToString();
+                        incomeAmountTextBox.Text = reader["IncomeAmount"].ToString();
+                        nicTextBox.Text = reader["NICNumber"].ToString();
+
+
+
+
+
+
+
+
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("No records found for the entered ID.");
+                        // Clear all input fields
+                        ClearFormInputs();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                connectionString.Close();
+            }
         }
     }
     }

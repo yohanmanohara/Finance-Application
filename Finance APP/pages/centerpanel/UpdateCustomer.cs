@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Finance_APP.pages.centerpanel
 {
-    public partial class deposit : UserControl
+    public partial class UpdateCustomer : UserControl
     {
-        public deposit()
+        public UpdateCustomer()
         {
             InitializeComponent();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
