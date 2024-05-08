@@ -281,6 +281,7 @@
             this.conpassTextbox.ShadowDecoration.Parent = this.conpassTextbox;
             this.conpassTextbox.Size = new System.Drawing.Size(368, 45);
             this.conpassTextbox.TabIndex = 34;
+            this.conpassTextbox.UseSystemPasswordChar = true;
             this.conpassTextbox.TextChanged += new System.EventHandler(this.guna2TextBox10_TextChanged);
             // 
             // label17
@@ -324,6 +325,7 @@
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
             this.passwordTextBox.Size = new System.Drawing.Size(368, 45);
             this.passwordTextBox.TabIndex = 32;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.guna2TextBox9_TextChanged);
             // 
             // label16
