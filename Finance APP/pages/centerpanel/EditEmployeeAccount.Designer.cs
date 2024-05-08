@@ -34,7 +34,6 @@
             this.firstnametxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.jobtitleBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.empstatustxt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.locationTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -180,25 +179,6 @@
             this.jobtitleBox1.Size = new System.Drawing.Size(227, 36);
             this.jobtitleBox1.StartIndex = 4;
             this.jobtitleBox1.TabIndex = 37;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 20;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(73)))), ((int)(((byte)(240)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(547, 1993);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(179, 54);
-            this.guna2Button4.TabIndex = 36;
-            this.guna2Button4.Text = "Check username and  Submit";
             // 
             // empstatustxt
             // 
@@ -610,7 +590,6 @@
             this.panel1.Controls.Add(this.firstnametxt);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.jobtitleBox1);
-            this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.empstatustxt);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.locationTextBox);
@@ -743,7 +722,6 @@
         private Guna.UI2.WinForms.Guna2TextBox firstnametxt;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2ComboBox jobtitleBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2ComboBox empstatustxt;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2TextBox locationTextBox;
