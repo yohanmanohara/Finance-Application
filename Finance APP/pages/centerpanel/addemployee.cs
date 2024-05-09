@@ -268,7 +268,6 @@ namespace Finance_APP.pages.centerpanel
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            // Collect account data from the form
             string fullName = fullnameTextBox.Text;
             DateTime dateOfBirth = dateOfBirthDateTimePicker.Value;
             string gender = genderComboBox.Text;
@@ -286,7 +285,6 @@ namespace Finance_APP.pages.centerpanel
 
 
             string password = passwordTextBox.Text;
-            //check whether password and confirm password are same
             if (password != ConPass)
             {
                 MessageBox.Show("Password and Confirm Password must be same", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

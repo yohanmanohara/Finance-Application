@@ -51,12 +51,15 @@ namespace Finance_APP.pages.centerpanel
                 MessageBox.Show("Please enter a valid customer ID");
                 return;
             }
+            createAccount.Id += 1;
             createAccount.Type = accountTypeTextBox2.Text;
             createAccount.Name = accountNameTextBox3.Text;
             createAccount.Balance = 0;
-            
 
+            Console.WriteLine(createAccount.Id);
             createAccount.Save();
+
+            MessageBox.Show("Account opened successfully!");
         }
 
         private void validateButton1_Click(object sender, EventArgs e)
