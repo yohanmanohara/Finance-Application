@@ -139,7 +139,7 @@
             this.searchButton.ShadowDecoration.Parent = this.searchButton;
             this.searchButton.Size = new System.Drawing.Size(125, 48);
             this.searchButton.TabIndex = 83;
-            this.searchButton.Text = "Search";
+            this.searchButton.Text = "process";
             // 
             // senderAccountIdGuna2TextBox1
             // 
