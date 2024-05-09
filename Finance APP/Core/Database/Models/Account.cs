@@ -4,18 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
-CREATE TABLE [dbo].[Account]
-(
-	[Id]         INT        NOT NULL PRIMARY KEY, 
-    [CustomerId] INT        FOREIGN KEY REFERENCES [dbo].[Customer](Id),
-    [Type]       NCHAR(30)  NOT NULL, 
-    [Balance]    REAL       NOT NULL, 
-    [Name]       NCHAR(300) NOT NULL
-);
 
- */
 
 namespace Finance_APP.Core.Database.Models
 {

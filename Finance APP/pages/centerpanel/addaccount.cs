@@ -51,13 +51,24 @@ namespace Finance_APP.pages.centerpanel
                 MessageBox.Show("Please enter a valid customer ID");
                 return;
             }
-            createAccount.Id += 1;
             createAccount.Type = accountTypeTextBox2.Text;
             createAccount.Name = accountNameTextBox3.Text;
-            createAccount.Balance = 0;
-
+            try
+            {
+                createAccount.Balance = int.Parse(balanceTextBox4.Text);
+                if (createAccount.Balance < 0 )
+                {
+                    throw new Exception("Needs to be more than or equal to 0");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Invalid amount!");
+                return;
+            }
             Console.WriteLine(createAccount.Id);
-            createAccount.Save();
+            createAccount._table = "Account";
+            createAccount.Write();
 
             MessageBox.Show("Account opened successfully!");
         }

@@ -96,7 +96,7 @@ namespace Finance_APP.Core.Database.Models
                 }
             }
 
-            query += " WHERE id = " + Id;
+            query += " WHERE Id = " + Id;
 
             SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
             SqlCommand command = new SqlCommand(query, connection);
@@ -137,9 +137,16 @@ namespace Finance_APP.Core.Database.Models
 
         public static BaseModel New<X>() where X : BaseModel, new()
         {
-            string _table = typeof(X).Name;
-
-            string query = "SELECT MAX(id) FROM " + _table;
+            string _table;
+            if (!string.IsNullOrEmpty(manualTableOverride))
+            {
+                _table = typeof(X).Name;
+            }
+            else
+            {
+                _table = manualTableOverride;
+            }
+            string query = "SELECT MAX(Id) FROM " + _table;
 
             SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
             SqlCommand command = new SqlCommand(query, connection);
@@ -167,7 +174,7 @@ namespace Finance_APP.Core.Database.Models
         {
             string _table = typeof(X).Name;
 
-            string query = "SELECT * FROM " + _table + " WHERE id = " + id;
+            string query = "SELECT * FROM " + _table + " WHERE Id = " + id;
 
             SqlConnection connection = new SqlConnection(Config.CONNECTION_STRING);
             SqlCommand command = new SqlCommand(query, connection);
