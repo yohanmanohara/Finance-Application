@@ -82,7 +82,9 @@ namespace Finance_APP.pages.centerpanel
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e) { }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             int accountId;
             try
@@ -150,5 +152,6 @@ namespace Finance_APP.pages.centerpanel
 
             transaction.Save();
         }
+
     }
 }
